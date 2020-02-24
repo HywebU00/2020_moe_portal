@@ -1,0 +1,369 @@
+// 跳到主要內容區塊那顆要能click到
+a#gotoMainContent{
+	float: left;
+	position: absolute;
+	z-index: 4000;
+}
+// ------------------------- Header
+#Header{
+	background: url(../images/basic/bg_Header_pic.jpg) 50% top no-repeat;
+	.navbar{
+		border: 0;
+		margin-bottom: 0; // 清除navbar.less 的設定
+	}
+	// 下拉選單
+	.megamenu{
+		.container{
+			.navbar-header{
+				.Logo a{
+					h1{ font-size: 0;}
+				}
+			}
+			.Right{
+				ul{
+					li a{
+						font-size: .875em;
+						color: #fff;
+						&:hover, &:focus{
+							background: rgba(0,0,0,.5);
+						}
+					}
+				}
+				.Search{
+					text-align: right;
+					margin-top: 25px;
+					margin-bottom: 25px;
+					.input-label{ display: none; } //AA規範 lable隱藏
+					// placehold setting ------------------
+					input::-webkit-input-placeholder,
+					textarea::-webkit-input-placeholder { color: #444; }
+					input::-moz-placeholder,
+					textarea::-moz-placeholder { color: #444 }
+
+					.form-control { background: #dcdcdc; }
+					.navbar-form{
+						padding: 0;
+						.input-group{ margin-right: 5px;}
+					}
+
+					.accesskey{}
+
+					button{
+						background: $Btn-color;
+						color: #fff;
+						height: 34px;
+						span{}
+						&:hover, &:focus{
+							background: darken($Btn-color,10);
+						}
+					}
+					// 關鍵字
+					.Keywords{
+						margin-left: 15px;
+						font-size: 16px;
+						a{
+							display: inline-block;
+							color: #f66200;
+							font-weight: bold;
+							border-bottom: solid 1px #f66200;
+							line-height: 1.8;
+							margin-right: 8px;
+							&:hover, &:focus{
+								text-decoration: none;
+								border-bottom: none;
+							}
+							&:last-child{ margin-right:0; }
+						}
+					}
+				}
+			}
+			.Left{
+				.nav{
+					position: relative;
+					li a{
+						color: #fff;
+						text-shadow: 0;
+						position: relative;
+						font-size: 16px;
+						line-height: 2.2;
+						padding: 8px 10px 15px 12px;
+						.caret{
+							position: absolute;
+							color: $color-adorn;
+							left:45%;
+							bottom: 13px;
+						}
+						&:hover, &:focus{
+							background: adjust_hue(desaturate(#beed00, 55), 43);
+							.caret{}
+						}
+					}
+					li li{
+						width: 33.333%;
+						float: left;
+						display: block;
+						// &:last-child{ border-bottom: transparent;}
+						a{
+							color: #888;
+							line-height:1.6;
+							padding: 5px 10px;
+							background:none !important;
+							border-bottom: dotted 1px #d5d5d5;
+							&:hover, &:focus{ background: #e5e5e5 !important; }
+						}
+						@media (max-width: 992px) { 
+							width: 50%; 
+						}
+						@media (max-width: 767px) { 
+							float: none;
+							width: 100%; 
+						}
+					}
+				}
+				// 展開第二節點時，第一層節點的focus狀態
+				.nav .open{
+					a{
+						background: adjust_hue(desaturate(#beed00, 55), 43);
+						&:hover, &:focus{}
+						.caret{ bottom: 10px; }
+					}
+					li li a{
+						background:none;
+						&:hover, &:focus{
+							background: #e5e5e5 !important;
+						}
+					}
+				}
+			}
+		}
+		.nav{ position: relative; }
+		.collapse{ position: static; }
+		.dropdown{ position: static; }
+
+		.dropdown-menu {
+			left: 0;
+			top: 57px;
+			padding: 5px;
+			min-width: 100%;
+			width: 100%;
+		}
+		.megamenu-content { padding: 20px 30px; }
+		.dropdown.megamenu-fw{
+			.dropdown-menu{ left: 0; right: 0; }
+		}
+		#offcanvas-right{
+			.navbar-nav{
+				position:relative;
+				float: right;
+			}
+		}
+	}
+	.Right{
+		.Search{
+			position: relative;
+			.accesskey{
+				position: absolute;
+				left: -12px;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	#Header{
+		.navbar-header{
+			.Logo a{
+				// background: url(../images/basic/img_logo.png) 50% 50% no-repeat;
+				// display:block;
+				// width: 330px;
+				// height: 100px;
+				// margin-top: 30px;
+				background: url(../images/basic/img_logo.png) 50% 50% no-repeat;
+				position: absolute;
+				z-index: 3000;
+				width: 450px;
+				height: 100px;
+				top: 30px;
+			}
+		}
+		.Right{
+			height: 128px;
+			.Search{
+				margin-bottom: 15px;
+			}
+		}
+		.Left{
+			// 主選單置中
+			.navbar-nav{
+				float: none;
+				display: table;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	#Header{
+		.navbar-header{
+			.Logo a{
+				background: url(../images/basic/img_logo.png) 50% 50% no-repeat;
+				background-size: 100%;
+				position: absolute;
+				width: 280px;
+				height: 85px;
+				top: 35px;
+			}
+		}
+		.Right{
+			.Search{
+				margin-top: 12px;
+				margin-bottom: 14px;
+			}
+		}
+		.Left{
+			// 主選單置中
+			.navbar-nav{
+				float: none;
+				display: table;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	#Header{
+		background:#fff;
+		.megamenu{
+			.container{
+				.navbar-header{
+					position: relative;
+					// text-align: center;
+					box-shadow:0px 4px 5px rgba(20%,20%,40%,0.3);
+					button.navbar-toggle{}
+					button.Left, button.Right{ position: absolute; top: 0;}
+					button.Left{ left: 0; margin-left: 15px; margin-right: 0;}
+					button.Right{ right: 0;}
+
+					.Logo a{
+						background: url(../images/basic/img_logo_mobile.png) 50% 50% no-repeat;
+						background-size: 100%;
+						display:block;
+						width: 165px;
+						height: 50px;
+						margin: 0 auto;
+					}
+				}
+				.Right{
+					ul{
+						li a{
+							color: #fff;
+							font-size: 16px;
+							&:hover, &:focus{
+								background: $Btn-color;
+							}
+						}
+					}
+					.Search{
+						text-align: left;
+						margin-top: 0;
+
+						.form-control{}
+						.navbar-form{
+							margin-left: 0px;
+							margin-right: 0px;
+							padding-top: 15px;
+							box-shadow: none;
+							border-top: 1px solid darken($color-white,60);
+							border-bottom: 1px solid transparent;
+							.input-group{ margin-bottom: 8px;}
+						}
+
+						.accesskey{}
+
+						button{
+							background: $Btn-color;
+							color: #fff;
+							span{}
+							&:hover, &:focus{
+								background: adjust_hue(desaturate(darken(#beed00, 20), 37), -237);
+							}
+						}
+						// 關鍵字
+						.Keywords{
+							display: block;
+							margin-bottom: 15px;
+							margin-left: 0;
+							color: #fff;
+							a{
+								&:hover, &:focus{
+								}
+							}
+						}
+					}
+				}
+				.Left{
+					.nav{
+						.dropdown-menu{
+							background: rgba(255,255,255,1);
+							border-radius: 0;
+						}
+						li a{
+							color: #fff;
+							// text-shadow: 0;
+							// position: relative;
+							// font-size: 16px;
+							line-height: 1.6;
+							padding: 8px 10px;
+							.caret{
+								position: relative;
+								color: $color-adorn;
+								left:10px;
+								bottom: 48%;
+							}
+							&:hover, &:focus{
+								font-weight: bold;
+								background: adjust_hue(desaturate(#beed00, 55), 43);
+								.caret{ bottom: 48%; }
+							}
+						}
+						li li{
+							border-bottom: dotted 1px #d5d5d5;
+							&:last-child{ border-bottom: transparent;}
+							a{
+								color: #888;
+								line-height:1.6;
+								padding: 5px 10px;
+								background:none !important;
+								&:hover, &:focus{ background: #e5e5e5 !important; }
+							}
+						}
+					}
+					// 展開第二節點時，第一層節點的focus狀態
+					.nav .open{
+						a{
+							background: adjust_hue(desaturate(#beed00, 55), 43);
+							&:hover, &:focus{}
+							.caret{ bottom: 48%; }
+						}
+						li li a{
+							background:none;
+							&:hover, &:focus{
+								background: #e5e5e5 !important;
+							}
+						}
+					}
+				}
+
+			}
+			#offcanvas-left{
+				background:#2f2f2f;
+			}
+			#offcanvas-right{
+				background:#2f2f2f;
+				.navbar-nav{ float: none; }
+			}
+		}
+	}
+}

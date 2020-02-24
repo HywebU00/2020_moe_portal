@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="image/ico" rel="icon" href="images/basic/favicon.png" />
+	<title>經濟部中小企業處</title>
+
+	<!-- Bootstrap CSS -->
+	<link href="assets/module/bootstrap-3.3.2/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/module/bootstrap-3.3.2/css/bootstrap-theme.css" rel="stylesheet">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" href="css/all.css">
+	<!-- slick 輪播-->
+	<link href="assets/module/slick/slick.css" rel="stylesheet">
+	<link href="assets/module/slick/slick-theme.css" rel="stylesheet">
+
+	<!-- social-buttons -->
+	<link href="assets/module/fontello/css/fontello.css" rel="stylesheet">
+	<link href="assets/module/fontello/css/animation.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet"/>
+
+	<!-- 自訂CSS -->
+	<link href="css/all.css" rel="stylesheet">
+</head>
+<body>
+	<a href="#MainContent" id="gotoMainContent" title="跳到主要內容區塊" tabindex="1" class="sr-only sr-only-focusable">跳到主要內容區塊</a>
+	<!-- Header -->
+	<section id="Header">
+		<nav class="navbar megamenu" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" title="" class="navbar-toggle Left" data-toggle="collapse" data-target="#offcanvas-left">
+						<span class="sr-only">Toggle navigation</span><i class="icon-menu"></i>
+					</button>
+					<div class="Logo"><a href="#" title=""><h1>經濟部中小企業處</h1></a></div>
+					<button type="button" title="" class="navbar-toggle Right" data-toggle="collapse" data-target="#offcanvas-right">
+						<span class="sr-only">Toggle navigation</span><i class="icon-down-open"></i>
+					</button>
+				</div>
+				<div class="Right collapse navbar-collapse clearfix" id="offcanvas-right" role="navigation">
+					<div class="pull-lg-right">
+						<div class="clearfix">
+							<!-- 導盲磚U -->
+							<div class="accesskey hidden-xs">
+								<a href="#U" id="accesskeyU" name="U" title="右上方功能區塊" accesskey="U">:::</a>
+							</div>
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="" title="">回首頁</a></li>
+								<li><a href="" title="">分類檢索</a></li>
+								<li><a href="" title="">網站導覽</a></li>
+								<li><a href="" title="">常見問答</a></li>
+								<li><a href="" title="">雙語詞彙</a></li>
+								<li><a href="" title="">意見信箱</a></li>
+								<li><a href="" title="">RSS</a></li>
+								<li><a href="" title="">English</a></li>
+							</ul>
+						</div>
+						<!-- 搜尋 -->
+						<div class="Search pull-right">
+							<noscript>
+								<p>您的瀏覽器不支援javascript<br/>請點選<u><a href="#" title="全站搜尋(另開新視窗)" alt="全站搜尋(另開新視窗)" target="_blank">全站搜尋</a></u>來使用網站搜尋功能。</p>
+							</noscript>
+							<form class="navbar-form" role="search">
+								<div class="input-group">
+									<!-- 併入導盲磚S -->
+									<label for="accesskeyS" class="input-label">關鍵字搜尋</label>
+									<input type="text" class="form-control" id="accesskeyS" name="S" placeholder="關鍵字搜尋" value="關鍵字搜尋" title="關鍵字搜尋" accesskey="S" autocomplete="off">
+									<span class="input-group-btn">
+										<button type="button" title="" class="btn">
+											<span class="icon-search"></span>
+										</button>
+									</span>
+								</div>
+								<button type="button" title="" class="btn">進階搜尋</button>
+							</form>
+							<span class="Keywords">熱門：<a href="#" title="">創業貸款</a><a href="#" title="">專業諮詢日</a><a href="#" title="">我正在更新這個答案</a></span>
+						</div>
+					</div>
+				</div>
+				<!-- 主選單 -->
+				<div class="Left collapse navbar-collapse" id="offcanvas-left" role="navigation">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" title="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">消息看板<b class="caret"></b></a>
+							<ul role="menu" class="dropdown-menu">
+								<li><a href="#" title="">第二層如果字很多的測試</a></li>
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" title="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">關於本處<b class="caret"></b></a>
+							<ul role="menu" class="dropdown-menu">
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" title="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">輔導業務<b class="caret"></b></a>
+							<ul role="menu" class="dropdown-menu">
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" title="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">為民服務<b class="caret"></b></a>
+							<ul role="menu" class="dropdown-menu">
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" title="">政府資訊公開</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" title="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">開放資料<b class="caret"></b></a>
+							<ul role="menu" class="dropdown-menu">
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" title="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">中小企業統計<b class="caret"></b></a>
+							<ul role="menu" class="dropdown-menu">
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" title="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">出版品<b class="caret"></b></a>
+							<ul role="menu" class="dropdown-menu">
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" title="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">法令規章<b class="caret"></b></a>
+							<ul role="menu" class="dropdown-menu">
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" title="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">政風宣導<b class="caret"></b></a>
+							<ul role="menu" class="dropdown-menu">
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" title="">網站連結</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</section>
+	<!-- Content -->
+	<section id="MainContent" class="Content_page">
+		<!-- Function -->
+		<div class="Block">
+			<div class="container">
+				<div class="row">
+					<article class="col-sm-12 col-md-12">
+						<!-- 導盲磚C -->
+						<div class="accesskey hidden-xs">
+							<a href="#C" id="accesskeyC" name="C" title="中央內容區塊" accesskey="C">:::</a>
+						</div>
+						<!-- breadcrumb -->
+						<div id="breadcrumb" class="">
+							<ol class="breadcrumb">
+								<li><i class="icon-home-1"></i><a href="#" title="">首頁</a></li>
+								<li><a href="#" title="">消息看板</a></li>
+								<li class="active">業務消息</li>
+							</ol>
+						</div>
+						<!-- function -->
+						<div class="Function FunctionTop hidden-xs">
+							<a href="#" title="" class="icon-search">條件查詢</a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+		<!-- 主要內容 -->
+		<section class="Block">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="Title">業務消息</h2>
+						<div class="Inner">
+							<!-- Tag 分類標籤-->
+							<div class="Tag">
+								<a href="#" title="" class="here">全部</a>
+								<a href="#" title="" class="">資料大類A</a>
+								<a href="#" title="" class="">資料大類B</a>
+								<a href="#" title="" class="">資料大類C</a>
+							</div>
+							<!-- 頁數 -->
+							<section class="Page">
+								<div class="">共<span>999</span>筆資料，第<span>1/99</span>頁</div>
+							</section>
+							<!-- 圖文欄 -->
+							<div class="FotoxText">
+								<div class="row">
+									<div class="col-xs-12 col-sm-6 col-md-3">
+										<div class="thumbnail">
+											<div class="Mask">
+												<a href="#" title="">
+													<img class="img-responsive" src="images/Slider/002.jpg" alt="Image">
+													<div class="caption">
+														<div class="meta">
+															<span class="MetaTime Date">2014-09-30</span>
+														</div>
+														<h4>105年【中小企業消費者保護法規推廣與宣導說明會】法規推廣與宣導說明法規推廣與宣導說明法規推廣與宣導說明法規推廣與宣導說明</h4>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-3">
+										<div class="thumbnail">
+											<div class="Mask">
+												<a href="#" title="">
+													<img class="img-responsive" src="images/Slider/003.jpg" alt="Image">
+													<div class="caption">
+														<div class="meta">
+															<span class="MetaTime Date">2014-09-30</span>
+														</div>
+														<h4>中小企業員工加薪薪資費用加成減除辦法(2017-04)</h4>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-3">
+											<div class="thumbnail">
+												<div class="Mask">
+													<a href="#" title="">
+														<img class="img-responsive" src="images/Slider/004.jpg" alt="Image">
+														<div class="caption">
+															<div class="meta">
+																<span class="MetaTime Date">2014-09-30</span>
+															</div>
+															<h4>105年【中小企業消費者保護法規推廣與宣導說明會】</h4>
+														</div>
+													</a>
+												</div>
+											</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-3">
+										<div class="thumbnail">
+											<div class="Mask">
+												<a href="#" title="">
+													<img class="img-responsive" src="images/Slider/005.jpg" alt="Image">
+													<div class="caption">
+														<div class="meta">
+															<span class="MetaTime Date">2014-09-30</span>
+														</div>
+														<h4>105年【中小企業消費者保護法規推廣與宣導說明會】</h4>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 col-sm-6 col-md-3">
+										<div class="thumbnail">
+											<div class="Mask">
+												<a href="#" title="">
+													<img class="img-responsive" src="images/Slider/006.jpg" alt="Image">
+													<div class="caption">
+														<div class="meta">
+															<span class="MetaTime Date">2014-09-30</span>
+														</div>
+														<h4>105年【中小企業消費者保護法規推廣與宣導說明會】法規推廣與宣導說明法規推廣與宣導說明法規推廣與宣導說明法規推廣與宣導說明</h4>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-3">
+										<div class="thumbnail">
+											<div class="Mask">
+												<a href="#" title="">
+													<img class="img-responsive" src="http://placehold.it/300x225" alt="Image">
+													<div class="caption">
+														<div class="meta">
+															<span class="MetaTime Date">2014-09-30</span>
+														</div>
+														<h4>105年【中小企業消費者保護法規推廣與宣導說明會】105年【中小企業消費者保護法規推廣與宣導說明會】105年【中小企業消費者保護法規推廣與宣導說明會】</h4>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-3">
+										<div class="thumbnail">
+											<div class="Mask">
+												<a href="#" title="">
+													<img class="img-responsive" src="http://placehold.it/300x225" alt="Image">
+													<div class="caption">
+														<div class="meta">
+															<span class="MetaTime Date">2014-09-30</span>
+														</div>
+														<h4>105年【中小企業消費者保護法規推廣與宣導說明會】</h4>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-3">
+										<div class="thumbnail">
+											<div class="Mask">
+												<a href="#" title="">
+													<img class="img-responsive" src="http://placehold.it/300x225" alt="Image">
+													<div class="caption">
+														<div class="meta">
+															<span class="MetaTime Date">2014-09-30</span>
+														</div>
+														<h4>105年【中小企業消費者保護法規推廣與宣導說明會】</h4>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 頁數 -->
+							<section class="Page text-center">
+								<div class="Column_Center">
+									<ul class="pagination">
+										<li><a href="#" title="" class="" aria-label="First">第一頁</a></li>
+										<li><a href="#" title="" aria-label="Previous">上一頁</a></li>
+										<li class="active"><a href="#" title="">1</a></li>
+										<li><a href="#" title="">2</a></li>
+										<li><a href="#" title="">3</a></li>
+										<li><a href="#" title="">4</a></li>
+										<li><a href="#" title="">5</a></li>
+										<li><a href="#" title="" aria-label="Next">下一頁</a></li>
+										<li><a href="#" title="" class="" aria-label="Last">最後一頁</a></li>
+									</ul>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Function -->
+		<div class="Block">
+			<div class="container">
+				<div class="row">
+					<article class="col-sm-12 col-md-12">
+						<!-- function -->
+						<div class="Function FunctionBottom hidden-xs">
+							<a href="#" title="" class="icon-reply-1">回上一頁</a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="Btn_GoTop">
+		<span><i class="icon-up-dir-2"></i>回頁首</span>
+	</section>
+	<!-- fatfooter -->
+	<section id="FatFooter">
+		<div class="TopBg"></div>
+		<div class="container">
+			<input type="button" name="FatFooterBtn" id="FatFooterBtn" value="收合" class="btn FatFooterBtn">
+			<nav>
+				<ul>
+					<li>
+						<a href="#" title="" class="Title">消息看板</a>
+						<ul>
+							<li><a href="#" title="">業務消息</a></li>
+							<li><a href="#" title="">新聞稿</a></li>
+							<li><a href="#" title="">活動訊息</a></li>
+							<li><a href="#" title="">招標公告</a></li>
+							<li><a href="#" title="">決標公告</a></li>
+							<li><a href="#" title="">電子公布欄</a></li>
+							<li><a href="#" title="">重大政策</a></li>
+							<li><a href="#" title="">就業資訊</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" title="" class="Title">關於本處</a>
+						<ul>
+							<li><a href="#" title="">首長簡歷</a></li>
+							<li><a href="#" title="">組織沿革</a></li>
+							<li><a href="#" title="">業務執掌</a></li>
+							<li><a href="#" title="">組織架構</a></li>
+							<li><a href="#" title="">施政目標、策略與措施</a></li>
+							<li><a href="#" title="">電話一覽表</a></li>
+							<li><a href="#" title="">交通地圖</a></li>
+							<li><a href="#" title="">中小企業發展基金管理委員會</a></li>
+							<li><a href="#" title="">地方產業發展基金</a></li>
+							<li><a href="#" title="">中小企業政策審議委員會</a></li>
+							<li><a href="#" title="">中小企業處簡介</a></li>
+							<li><a href="#" title="">影音專區</a></li>
+							<li><a href="#" title="">網路相簿</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" title="" class="Title">輔導業務</a>
+						<ul>
+							<li><a href="#" title="">經營管理</a></li>
+							<li><a href="#" title="">財務融通</a></li>
+							<li><a href="#" title="">資訊應用</a></li>
+							<li><a href="#" title="">創業育成</a></li>
+							<li><a href="#" title="">品質提升</a></li>
+							<li><a href="#" title="">互助合作</a></li>
+							<li><a href="#" title="">地方特色</a></li>
+							<li><a href="#" title="">法規服務</a></li>
+							<li><a href="#" title="">績優表揚</a></li>
+							<li><a href="#" title="">國際事務</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" title="" class="Title">為民服務</a>
+						<ul>
+							<li><a href="#" title="">提升服務品質執行計畫</a></li>
+							<li><a href="#" title="">民眾抱怨申訴流程</a></li>
+							<li><a href="#" title="">線上申請</a></li>
+							<li><a href="#" title="">意見信箱</a></li>
+							<li><a href="#" title="">馬上辦服務中心</a></li>
+							<li><a href="#" title="">中小企業服務網絡</a></li>
+							<li><a href="#" title="">中小企業通廣播節目表</a></li>
+							<li><a href="#" title="">中小企業通線上廣播</a></li>
+							<li><a href="#" title="">中小企業展望與對策研討會</a></li>
+							<li><a href="#" title="">熱門議題與因應措施</a></li>
+							<li><a href="#" title="">解釋令、函釋及公告專你媽媽胸部很大</a></li>
+							<li><a href="#" title="">為民服務滿意度調查</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" title="" class="Title">政風宣導</a>
+						<ul>
+							<li><a href="#" title="">解釋令、函釋及公告專你媽媽胸部很大</a></li>
+							<li><a href="#" title="">廉政宣導</a></li>
+							<li><a href="#" title="">反詐騙宣導/消費者服務</a></li>
+							<li><a href="#" title="">安全防護宣導</a></li>
+							<li><a href="#" title="">資訊安全宣導</a></li>
+							<li><a href="#" title="">檢舉貪瀆獎勵措施</a></li>
+							<li><a href="#" title="">公務員赴大陸相關訊息</a></li>
+							<li><a href="#" title="">企業誠信與社會責任</a></li>
+							<li><a href="#" title="">經濟部災害暨緊急事故聯道一覽表</a></li>
+							<li><a href="#" title="">道一覽表</a></li>
+						</ul>
+					</li>
+					<li><a href="#" title="" class="Title">法令規章</a>
+						<ul>
+							<li><a href="#" title="">法規草案預告</a></li>
+							<li><a href="#" title="">中小企業處法規</a></li>
+							<li><a href="#" title="">中小企業處行政規則</a></li>
+							<li><a href="#" title="">中小企業發展基金管理委員會</a></li>
+							<li><a href="#" title="">地方產業發展基金行政..</a></li>
+							<li><a href="#" title="">解釋令、函釋及公告專你媽媽胸部很大</a></li>
+							<li><a href="#" title="">其他相關法令</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" title="" class="Title">下載專區</a>
+						<ul>
+							<li><a href="#" title="">申請書表</a></li>
+							<li><a href="#" title="">專案計畫作業</a></li>
+							<li><a href="#" title="">作業手冊</a></li>
+							<li><a href="#" title="">其他</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" title="" class="Title">中小企業統計</a>
+						<ul>
+							<li><a href="#" title="">中小企業白皮書</a></li>
+							<li><a href="#" title="">中小企業相關統計</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" title="" class="Title">網站連結</a>
+						<a href="#" title="" class="Title">政府公開資訊</a>
+						<a href="#" title="" class="Title">開放資料(open data)</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+	<!-- footer -->
+	<section id="Footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<div class="Footer_logo"><a href="#" title=""><img class="img-responsive" src="images/basic/img_logo_footer.png" alt=""></a></div>
+					<div class="Footer_links">
+						<ul class="Link_list">
+							<li><a href="#" title="">政府網站資料開放宣告</a></li>
+							<li><a href="#" title="">隱私權及資訊安全政策</a></li>
+							<li><a href="#" title="">開放文件格式(ODF)說明</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<div class="Footer_info">
+						<div class="Service_line">服務專線：0800-056-476 (馬上辦服務中心)</div>
+						<div class="Tax">傳真：(02)2367-1134</div>
+						<div class="Open_Tome">服務時間：星期一至星期五8:30~17:30</div>
+						<div class="Email">寫信給我們：<a href="#" title="">意見信箱</a></div>
+						<div class="Address">機關地址：10646 臺北市羅斯福路二段95號3樓</div>
+						<div class="Phone">機關電話：(02)2368-6858；(02)2368-0816</div>
+						<div>建議瀏覽器：Chrome 31、Firefox 31、IE 9.0以上版本</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<div class="Footer_icon">
+						<a class="Accessible_icon" href="#" title="無障礙2A" target="_blank"><img src="images/basic/img_ally_AA.gif" alt="無障礙2A"></a>
+						<a class="Egov" href="http://www.gov.tw/" title="E政府"><img src="images/basic/img_egov.png" alt="E政府"></a>
+					</div>
+					<div class="Footer_Social">
+						<div class="SocialLink">
+							<span><a href="#" class="Facebook" title="Facebook"><i class="icon-facebook"></i></a></span>
+							<span><a href="#" class="Instagram" title="Instagram"><i class="icon-instagram"></i></a></span>
+							<span><a href="#" class="Youtube" title="Youtube"><i class="icon-youtube"></i></a></span>
+							<span><a href="#" class="RSS" title="RSS"><i class="icon-rss"></i></a></span>
+							<span><a href="#" class="Mail" title="Mail"><i class="icon-mail"></i></a></span>
+						</div>
+						<div class="Footer_Others">
+							<div class="UpdateTime">更新日期：<span>2015/05/29</span></div>
+    						<div class="Counter">累計瀏覽人次：<span>46476653</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+
+<!-- jQuery -->
+<script src="assets/js/jquery-1.11.2.js"></script>
+<!-- Bootstrap JavaScript -->
+<script src="assets/module/bootstrap-3.3.2/js/bootstrap.min.js"></script>
+<script src="assets/module/bootstrap-3.3.2/js/bootstrap-hover-dropdown.js"></script>
+
+<!-- slick + 自訂  -->
+<script src="assets/module/slick/slick.js"></script>
+<script src="js/slick-myset.js"></script>
+
+<script src="js/myset.js"></script>
+
+</html>

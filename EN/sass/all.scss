@@ -1,0 +1,95 @@
+@charset "UTF-8";
+@import "mixin";	 // 變數
+@import "reset";
+@import "compass/css3";
+@import "extend";	 //
+@import "Framework"; // HTML框架
+@import "Header";	 // 頁頭
+@import "Footer";	 // 頁尾
+@import "Content";	 // 內頁
+
+@import "print";	 // 友善列印
+
+body,html{
+	font-family: "微軟正黑體", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	// word-wrap: break-word;
+	// word-break: break-all;
+	color:$Title-color;
+	margin-top: 10px;
+	font-weight: bold;
+	line-height: 1.4;
+}
+
+section{ margin: 0; }
+
+p{
+	margin-bottom: 15px;
+	@extend %text-line-height;
+	font-size: 1em;
+}
+
+a{
+	// @include Text;
+	color:$link-color;
+	&:hover, &:focus{
+		color: #f67400;
+	}
+}
+
+blockquote{
+	border-left: 5px solid #fff;
+	font-size: 1em;
+}
+
+@media print {
+	a[href]:after {
+		content:none !important"" ;
+	}
+}
+
+.clear-fix {
+	zoom:1; /*IE6, IE7*/
+	&:before, &:after{
+		content: "";
+		display: table;
+	}
+	&:after{
+		clear: both;
+	}
+}
+
+// ------------------------- 斷點
+@media (min-width: 1200px) {}
+@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 361px) and (max-width: 767px) {}
+@media (max-width: 360px) {}
+
+
+
+@media (min-width:1200px) {
+	.pull-lg-left{float:left!important;}
+	.pull-lg-right{float:right!important;}
+}
+@media (min-width:992px) and (max-width:1199px) {
+	.pull-md-left{float:left!important;}
+	.pull-md-right{float:right!important;}
+}
+@media (min-width:768px) and (max-width:991px) {
+	.pull-sm-left{float:left!important;}
+	.pull-sm-right{float:right!important;}
+}
+@media (max-width:767px) {
+	.pull-xs-left{float:left!important;}
+	.pull-xs-right{float:right!important;}
+}
+
+@media (min-width: 768px){
+	.navbar-nav > li > a{
+		padding: 5px 8px;
+	}
+}
