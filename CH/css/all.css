@@ -935,6 +935,9 @@ table tr td a {
   .table-responsive {
     border: solid 1px transparent;
   }
+  .table-responsive .Smooth_Table #TansForm-table tr td {
+    min-height: 60px;
+  }
   .table-responsive .Smooth_Table #TansForm-table tr td:first-child {
     width: 100%;
   }
@@ -962,7 +965,7 @@ table tr td a {
     border: none !important;
     border-bottom: 1px solid #eee !important;
     position: relative;
-    padding-left: 26% !important;
+    padding-left: 120px !important;
     white-space: normal;
     text-align: left;
   }
@@ -970,9 +973,8 @@ table tr td a {
     position: absolute;
     top: 6px;
     left: 6px;
-    width: 30%;
+    width: 100px;
     padding-right: 10px;
-    white-space: nowrap;
     text-align: left;
     font-weight: bold;
     color: #1a1a1a;
