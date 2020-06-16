@@ -837,6 +837,8 @@
 			.row{ padding: 5px 0 5px; }
 		}
 	}
+
+
 }
 
 // 內頁項目設定
@@ -1363,6 +1365,61 @@
 		}
 		.radio-inline:nth-child(3) + .radio-inline {
 			margin-left: 0;
+		}
+	}
+
+	// 常見問答
+	.QA{
+		.box{
+
+			a.que, .ans{
+				position: relative;
+				padding: 1.5em 1em 1.5em 4em;
+
+				&:before{
+					content:'問';
+					// display: inline-block;	
+					border-radius: 50%;
+					width: 42px;
+					height: 42px;
+					text-align: center;
+					line-height: 42px;
+					background: #0a7086;
+					color: #fff;
+
+					position: absolute;
+					left: .75em;
+					top: .75em;
+				}
+			}
+
+			a.que{
+				display: block;
+				border-bottom: solid 1px #c7c7c7;
+				color: #0a7086;
+
+				&:hover, &:focus{
+					text-decoration: none;
+					color: #f66200;;
+				}
+			}
+			.ans{
+				background: #eee;
+				display: none;
+				&:before{
+					content:'答';
+					background: #ff9800;
+					position: absolute;
+					left: .75em;
+					top: 1em;
+				}
+			}
+			
+			&:first-child{
+				.ans{
+					display: block;
+				}
+			}
 		}
 	}
 }

@@ -2677,6 +2677,46 @@ a#gotoMainContent {
     margin-left: 0;
   }
 }
+.Content_page .QA .box a.que, .Content_page .QA .box .ans {
+  position: relative;
+  padding: 1.5em 1em 1.5em 4em;
+}
+.Content_page .QA .box a.que:before, .Content_page .QA .box .ans:before {
+  content: '問';
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  line-height: 42px;
+  background: #0a7086;
+  color: #fff;
+  position: absolute;
+  left: .75em;
+  top: .75em;
+}
+.Content_page .QA .box a.que {
+  display: block;
+  border-bottom: solid 1px #c7c7c7;
+  color: #0a7086;
+}
+.Content_page .QA .box a.que:hover, .Content_page .QA .box a.que:focus {
+  text-decoration: none;
+  color: #f66200;
+}
+.Content_page .QA .box .ans {
+  background: #eee;
+  display: none;
+}
+.Content_page .QA .box .ans:before {
+  content: '答';
+  background: #ff9800;
+  position: absolute;
+  left: .75em;
+  top: 1em;
+}
+.Content_page .QA .box:first-child .ans {
+  display: block;
+}
 
 .pupu {
   padding-top: 1.8em;

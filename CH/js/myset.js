@@ -18,7 +18,6 @@ $(function(){
 		$(this).parent().siblings().eq(0).removeClass('in');
 	});
 
-
 	// 錨點滑動
 	$(function(){
 		// 輔導業務
@@ -126,6 +125,13 @@ $(function(){
 			$(this).val('收合內容');
 		}
 	}); 
+
+	// 常見問答
+
+	$('.QA').find('a.que').click(function(){
+		$('.ans').slideUp(300);
+		$(this).next('.ans').stop(true,false).slideDown(300);
+	});
 
 
 
