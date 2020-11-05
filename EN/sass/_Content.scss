@@ -23,20 +23,27 @@
 		background: none !important;
 		// font-size: 1.125em;
 
-		a{ color: rgba($color-black,1); }
-		i {
-			// font-size: .875em;
-			width: 28px;
-			height: 28px;
-			line-height: 28px;
-			text-align: center;
-			display: inline-block;
-			border-radius: 50%;
-			margin-right: 5px;
-			margin-left: 3px;
-			color: #fff;
-			background: rgba($color-black,.5);
+		li{
+			&:first-child{
+				padding-left: 2em;
+				background: url(../images/basic/icon/icon_home_gray.svg) left 50% no-repeat;
+			}
 		}
+
+		a{ color: rgba($color-black,1); }
+		// i {
+		// 	// font-size: .875em;
+		// 	width: 28px;
+		// 	height: 28px;
+		// 	line-height: 28px;
+		// 	text-align: center;
+		// 	display: inline-block;
+		// 	border-radius: 50%;
+		// 	margin-right: 5px;
+		// 	margin-left: 3px;
+		// 	color: #fff;
+		// 	background: rgba($color-black,.5);
+		// }
 	}
 	.breadcrumb > li + li:before {
 		content: "> ";
@@ -336,7 +343,10 @@
 				text-decoration: none;
 				.caption{
 					position: relative;
-					.meta .MetaTime{}
+					.meta .MetaTime{
+						padding-left: 1.5em;
+						background: url(../images/basic/icon/icon_clock.svg) left 50% no-repeat;
+					}
 					.meta .MetaNew{
 						@include Tag_MetasNew;
 						position: absolute;
@@ -624,24 +634,37 @@
 				background:#fff;
 				border-radius:25px;
 				border:solid 1px lighten($color-black, 70%);
+				&:before{
+					content: '';
+					display: inline-block;
+					width: 30px;
+					height: 30px;
+					line-height: 30px;
+					margin-right: 10px;
+					background: url(../images/basic/icon/icon_arrow_right_w.svg) 50% 50% no-repeat, $color-main;
+					background-size: 14px;
+					border-radius: 50%;
+					vertical-align: middle;
+					text-align: center;
+				}
 				&:hover{
 					color:#fff;
 					background:lighten($color-black, 50%);
 					text-decoration:none;
 				}
-				&:hover i{
-					color:lighten($color-black, 50%);
-					background:#fff;
-				}
-				i{
-					border-radius:50%;
-					width:30px;
-					height:30px;
-					line-height:inherit;
-					color:#fff;
-					background:$color-main;
-					margin-right:8px;
-				}
+				// &:hover i{
+				// 	color:lighten($color-black, 50%);
+				// 	background:#fff;
+				// }
+				// i{
+				// 	border-radius:50%;
+				// 	width:30px;
+				// 	height:30px;
+				// 	line-height:inherit;
+				// 	color:#fff;
+				// 	background:$color-main;
+				// 	margin-right:8px;
+				// }
 			}
 		}
 	}
@@ -797,9 +820,11 @@
 		div {
 			display: inline-block;
 			margin-right: 30px;
+			font-size: 0;
 			span {color: #333;}
 			a {
-				color: $color-adorn;
+				// color: $color-adorn;
+				color: #fff;
 				&:hover {text-decoration: none; }
 			}
 			&:last-child {

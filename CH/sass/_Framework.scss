@@ -282,11 +282,14 @@ table{
 	}
 
 	.Rss-BTN{background: #f8991d !important;}
-	.FB-BTN{background: #3a5ba0 !important;}
+	.FB-BTN{background: url(../images/basic/icon/icon_facebook_w.svg) 50% 50% no-repeat, #3a589b !important;}
 	.Twitter-BTN{background: #17b3c9 !important;}
 	.Google-BTN{background: #cf262a !important;}
 	.Plurk-BTN{background: #f2793e !important;}
-	.Print-BTN{ background: #555 !important; }
+	.Print-BTN{
+		background: url(../images/basic/icon/icon_print_w.svg) 50% 50% no-repeat, #555;
+		background-size: 22px 22px;
+	}
 }
 @media (max-width:767px) {
 	.Community_Btn{ float:none; margin: 10px 0; }

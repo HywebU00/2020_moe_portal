@@ -164,33 +164,37 @@
 		text-align: center;
 		margin-bottom: 8px;
 		transition: all .6s ease;
-		i{
-			font-size: 1.6em;
-			display: inline-block;
-			vertical-align: middle;
-			color: #fff;
-			// height: 42px;
-		}
+		// i{
+		// 	font-size: 1.6em;
+		// 	display: inline-block;
+		// 	vertical-align: middle;
+		// 	color: #fff;
+		// 	// height: 42px;
+		// }
 		&:hover, &:focus{ text-decoration: none; }
 	}
+	a.Facebook, a.Instagram, a.Youtube, a.RSS, a.Mail{
+		font-size: 0;
+	}
+
 	a.Facebook{
-		background-color: #3a589b;
+		background: url(../images/basic/icon/icon_facebook_w.svg) 50% 50% no-repeat, #3a589b;
 		&:hover, &:focus{ border-radius: 0; }
 	}
 	a.Instagram{
-		background-color: #cf3427;
+		background: url(../images/basic/icon/icon_instagram_w.svg) 50% 50% no-repeat, linear-gradient(135deg, rgba(64,93,230,1) 0%, rgba(131,58,180,1) 20%, rgba(225,48,108,1) 40%, rgba(245,96,64,1) 60%, rgba(252,175,69,1) 80%, rgba(255,220,128,1) 100%);
 		&:hover, &:focus{ border-radius: 0; }
 	}
 	a.Youtube{
-		background-color: #517fa6;
+		background: url(../images/basic/icon/icon_youtube_w.svg) 50% 50% no-repeat, #FF0000;
 		&:hover, &:focus{ border-radius: 0; }
 	}
 	a.RSS{
-		background-color: #ff6600;
+		background: url(../images/basic/icon/icon_rss_w.svg) 50% 50% no-repeat, #ff6600;
 		&:hover, &:focus{ border-radius: 0; }
 	}
 	a.Mail{
-		background-color: #77c300;
+		background: url(../images/basic/icon/icon_mail_w.svg) 50% 50% no-repeat, #77c300;
 		&:hover, &:focus{ border-radius: 0; }
 	}
 }

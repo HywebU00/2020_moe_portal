@@ -1070,13 +1070,13 @@ th {
     box-sizing: border-box;
   }
   html {
-    font-size: 0.625em;
+    /*font-size: 0.625em;*/
 
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: .875em;
+    font-size: 1em;
     line-height: 1.42857143;
     color: #333;
     background-color: #fff;
@@ -1255,40 +1255,40 @@ th {
   }
   h1,
   .h1 {
-    font-size: 36px;
+    font-size: 2.25em;
   }
   h2,
   .h2 {
-    font-size: 30px;
+    font-size: 1.875em;
   }
   h3,
   .h3 {
-    font-size: 24px;
+    font-size: 1.5em;
   }
   h4,
   .h4 {
-    font-size: 18px;
+    font-size: 1.125em;
   }
   h5,
   .h5 {
-    font-size: 14px;
+    font-size: .875em;
   }
   h6,
   .h6 {
-    font-size: 12px;
+    font-size: .75em;
   }
   p {
     margin: 0 0 10px;
   }
   .lead {
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 300;
     line-height: 1.4;
   }
   @media (min-width: 768px) {
     .lead {
-      font-size: 21px;
+      font-size: 1.3125em;
     }
   }
   small,
@@ -1458,7 +1458,7 @@ th {
   blockquote {
     padding: 10px 20px;
     margin: 0 0 20px;
-    font-size: 17.5px;
+    font-size: 1.09em;
     border-left: 5px solid #eee;
   }
   blockquote p:last-child,
@@ -1541,7 +1541,7 @@ th {
     display: block;
     padding: 9.5px;
     margin: 0 0 10px;
-    font-size: 13px;
+    font-size: .813em;
     line-height: 1.42857143;
     color: #333;
     word-break: break-all;
@@ -2480,7 +2480,7 @@ th {
     width: 100%;
     padding: 0;
     margin-bottom: 20px;
-    font-size: 21px;
+    font-size: 1.3125em;
     line-height: inherit;
     color: #333;
     border: 0;
@@ -2524,7 +2524,7 @@ th {
   output {
     display: block;
     padding-top: 7px;
-    font-size: 14px;
+    font-size: .875em;
     line-height: 1.42857143;
     color: #555;
   }
@@ -2533,7 +2533,7 @@ th {
     width: 100%;
     height: 34px;
     padding: 6px 12px;
-    font-size: 14px;
+    font-size: .875em;
     line-height: 1.42857143;
     color: #555;
     background-color: #fff;
@@ -2680,7 +2680,7 @@ th {
   .input-sm {
     height: 30px;
     padding: 5px 10px;
-    font-size: 12px;
+    font-size: .75em;
     line-height: 1.5;
     border-radius: 3px;
   }
@@ -2695,7 +2695,7 @@ th {
   .form-group-sm .form-control {
     height: 30px;
     padding: 5px 10px;
-    font-size: 12px;
+    font-size: .75em;
     line-height: 1.5;
     border-radius: 3px;
   }
@@ -2710,13 +2710,13 @@ th {
   .form-group-sm .form-control-static {
     height: 30px;
     padding: 5px 10px;
-    font-size: 12px;
+    font-size: .75em;
     line-height: 1.5;
   }
   .input-lg {
     height: 46px;
     padding: 10px 16px;
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 1.3333333;
     border-radius: 6px;
   }
@@ -2731,7 +2731,7 @@ th {
   .form-group-lg .form-control {
     height: 46px;
     padding: 10px 16px;
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 1.3333333;
     border-radius: 6px;
   }
@@ -2746,7 +2746,7 @@ th {
   .form-group-lg .form-control-static {
     height: 46px;
     padding: 10px 16px;
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 1.3333333;
   }
   .has-feedback {
@@ -2969,7 +2969,7 @@ th {
     display: inline-block;
     padding: 6px 12px;
     margin-bottom: 0;
-    font-size: 14px;
+    font-size: .875em;
     font-weight: normal;
     line-height: 1.42857143;
     text-align: center;
@@ -3325,21 +3325,21 @@ th {
   .btn-lg,
   .btn-group-lg > .btn {
     padding: 10px 16px;
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 1.3333333;
     border-radius: 6px;
   }
   .btn-sm,
   .btn-group-sm > .btn {
     padding: 5px 10px;
-    font-size: 12px;
+    font-size: .75em;
     line-height: 1.5;
     border-radius: 3px;
   }
   .btn-xs,
   .btn-group-xs > .btn {
     padding: 1px 5px;
-    font-size: 12px;
+    font-size: .75em;
     line-height: 1.5;
     border-radius: 3px;
   }
@@ -3419,7 +3419,7 @@ th {
     min-width: 160px;
     padding: 5px 0;
     margin: 2px 0 0;
-    font-size: 14px;
+    font-size: .875em;
     text-align: left;
     list-style: none;
     background-color: #fff;
@@ -3494,7 +3494,7 @@ th {
   .dropdown-header {
     display: block;
     padding: 3px 20px;
-    font-size: 12px;
+    font-size: .75em;
     line-height: 1.42857143;
     color: #777;
     white-space: nowrap;
@@ -3723,7 +3723,7 @@ th {
   .input-group-lg > .input-group-btn > .btn {
     height: 46px;
     padding: 10px 16px;
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 1.3333333;
     border-radius: 6px;
   }
@@ -3746,7 +3746,7 @@ th {
   .input-group-sm > .input-group-btn > .btn {
     height: 30px;
     padding: 5px 10px;
-    font-size: 12px;
+    font-size: .75em;
     line-height: 1.5;
     border-radius: 3px;
   }
@@ -3782,7 +3782,7 @@ th {
   }
   .input-group-addon {
     padding: 6px 12px;
-    font-size: 14px;
+    font-size: .875em;
     font-weight: normal;
     line-height: 1;
     color: #555;
@@ -3793,12 +3793,12 @@ th {
   }
   .input-group-addon.input-sm {
     padding: 5px 10px;
-    font-size: 12px;
+    font-size: .75em;
     border-radius: 3px;
   }
   .input-group-addon.input-lg {
     padding: 10px 16px;
-    font-size: 18px;
+    font-size: 1.125em;
     border-radius: 6px;
   }
   .input-group-addon input[type="radio"],
@@ -4162,7 +4162,7 @@ th {
     float: left;
     height: 50px;
     padding: 15px 15px;
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 20px;
   }
   .navbar-brand:hover,
@@ -4661,7 +4661,7 @@ th {
   .pagination-lg > li > a,
   .pagination-lg > li > span {
     padding: 10px 16px;
-    font-size: 18px;
+    font-size: 1.125em;
   }
   .pagination-lg > li:first-child > a,
   .pagination-lg > li:first-child > span {
@@ -4676,7 +4676,7 @@ th {
   .pagination-sm > li > a,
   .pagination-sm > li > span {
     padding: 5px 10px;
-    font-size: 12px;
+    font-size: .75em;
   }
   .pagination-sm > li:first-child > a,
   .pagination-sm > li:first-child > span {
@@ -4797,7 +4797,7 @@ th {
     display: inline-block;
     min-width: 10px;
     padding: 3px 7px;
-    font-size: 12px;
+    font-size: .75em;
     font-weight: bold;
     line-height: 1;
     color: #fff;
@@ -4850,7 +4850,7 @@ th {
   }
   .jumbotron p {
     margin-bottom: 15px;
-    font-size: 21px;
+    font-size: 1.3125em;
     font-weight: 200;
   }
   .jumbotron > hr {
@@ -4874,7 +4874,7 @@ th {
     }
     .jumbotron h1,
     .jumbotron .h1 {
-      font-size: 63px;
+      font-size: 4em;
     }
   }
   .thumbnail {
@@ -5015,7 +5015,7 @@ th {
     float: left;
     width: 0;
     height: 100%;
-    font-size: 12px;
+    font-size: .75em;
     line-height: 20px;
     color: #fff;
     text-align: center;
@@ -5310,7 +5310,7 @@ th {
   .panel-title {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 16px;
+    font-size: 1em;
     color: inherit;
   }
   .panel-title > a,
@@ -5676,7 +5676,7 @@ th {
   }
   .close {
     float: right;
-    font-size: 21px;
+    font-size: 1.3125em;
     font-weight: bold;
     line-height: 1;
     color: #000;
@@ -5826,7 +5826,7 @@ th {
     z-index: 1070;
     display: block;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 12px;
+    font-size: .75em;
     font-weight: normal;
     line-height: 1.4;
     visibility: visible;
@@ -5934,7 +5934,7 @@ th {
     max-width: 276px;
     padding: 1px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    font-size: .875em;
     font-weight: normal;
     line-height: 1.42857143;
     text-align: left;
@@ -5963,7 +5963,7 @@ th {
   .popover-title {
     padding: 8px 14px;
     margin: 0;
-    font-size: 14px;
+    font-size: .875em;
     background-color: #f7f7f7;
     border-bottom: 1px solid #ebebeb;
     border-radius: 5px 5px 0 0;
@@ -6133,7 +6133,7 @@ th {
     bottom: 0;
     left: 0;
     width: 15%;
-    font-size: 20px;
+    font-size: 1.25em;
     color: #fff;
     text-align: center;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
@@ -6251,7 +6251,7 @@ th {
       width: 30px;
       height: 30px;
       margin-top: -15px;
-      font-size: 30px;
+      font-size: 1.875em;
     }
     .carousel-control .glyphicon-chevron-left,
     .carousel-control .icon-prev {
