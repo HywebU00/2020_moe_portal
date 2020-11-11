@@ -1946,7 +1946,7 @@ a#gotoMainContent {
   color: #f67400;
 }
 .Main_page .thumbnail .Mask a .caption p {
-  font-size: 15px;
+  font-size: .938em;
   line-height: 1.4;
 }
 .Main_page .List.News {
