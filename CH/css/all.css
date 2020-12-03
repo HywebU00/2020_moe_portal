@@ -2050,6 +2050,7 @@ a#gotoMainContent {
 .Main_page .thumbnail .Mask a .caption .meta .MetaTime {
   padding-left: 1.5em;
   background: url(../images/basic/icon/icon_clock.svg) left 50% no-repeat;
+  background-size: 16px 16px;
 }
 .Main_page .thumbnail .Mask a .caption .meta .MetaNew {
   background: #f67400;
