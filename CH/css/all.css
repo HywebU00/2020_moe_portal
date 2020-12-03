@@ -2197,8 +2197,9 @@ a#gotoMainContent {
   vertical-align: top;
 }
 .Main_page .ActInfo a.Item .meta span:nth-child(1) {
-  padding-left: 2.5em;
-  background: url(../images/basic/icon/icon_clock_w.svg) 1em 50% no-repeat;
+  padding-left: 2.2em;
+  background: url(../images/basic/icon/icon_clock_w.svg) 0.8em 50% no-repeat;
+  background-size: 16px 16px;
 }
 .Main_page .ActInfo a.Item .meta span:nth-child(2) {
   display: inline-block;
