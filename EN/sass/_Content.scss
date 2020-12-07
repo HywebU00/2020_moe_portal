@@ -12,7 +12,10 @@
 .accesskey{
 	float: left;
 	margin-top: 2px;
-	a{ color: #fff; }
+	a{
+		color: #fff;
+		&#accesskeyC{ color: #222;}
+	}
 }
 
 // breadcrumb
@@ -25,8 +28,17 @@
 
 		li{
 			&:first-child{
-				padding-left: 2em;
-				background: url(../images/basic/icon/icon_home_gray.svg) left 50% no-repeat;
+				
+				&:before{
+					content: '';
+					display: inline-block;
+					background: url(../images/basic/icon/icon_home_gray.svg) left 50% no-repeat;
+					width: 24px;
+					height: 24px;
+					vertical-align: middle;
+					margin-right: .5em;
+					margin-left: .5em;
+				}
 			}
 		}
 

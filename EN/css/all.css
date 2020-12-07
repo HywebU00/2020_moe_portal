@@ -1063,7 +1063,6 @@ a#gotoMainContent {
 #Header .megamenu .container .Right .Search .input-group-btn button {
   background: url(../images/basic/icon/icon_search.svg) 50% 50% no-repeat;
   background-size: 14px 14px;
-  filter: invert(100%);
   width: 42px;
 }
 #Header .megamenu .container .Right .Search .Keywords {
@@ -1580,15 +1579,24 @@ a#gotoMainContent {
 .accesskey a {
   color: #fff;
 }
+.accesskey a#accesskeyC {
+  color: #222;
+}
 
 #breadcrumb .breadcrumb {
   padding: 0;
   margin: 0;
   background: none !important;
 }
-#breadcrumb .breadcrumb li:first-child {
-  padding-left: 2em;
+#breadcrumb .breadcrumb li:first-child:before {
+  content: '';
+  display: inline-block;
   background: url(../images/basic/icon/icon_home_gray.svg) left 50% no-repeat;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: .5em;
+  margin-left: .5em;
 }
 #breadcrumb .breadcrumb a {
   color: black;
