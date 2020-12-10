@@ -1081,7 +1081,11 @@
 	// 404錯誤
 	.Error{
 		text-align:center;
+		margin-top: 3em;
 		img{ margin: 0 auto;}
+	}
+	@media (max-width: 767px) {
+		.Error{ margin-top: 0; }
 	}
 
 	// 服務條款

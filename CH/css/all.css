@@ -2649,9 +2649,15 @@ a#gotoMainContent {
 }
 .Content_page .Error {
   text-align: center;
+  margin-top: 3em;
 }
 .Content_page .Error img {
   margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .Content_page .Error {
+    margin-top: 0;
+  }
 }
 .Content_page .Terms {
   background: #f5f5f5;
