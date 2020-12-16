@@ -1134,7 +1134,6 @@
 		div {
 			display: inline-block;
 			margin-right: 30px;
-			font-size: 0;
 			span {color: #333;}
 			a {
 				// color: $color-adorn;
@@ -1146,6 +1145,8 @@
 				margin-top: -10px;
 			}
 		}
+
+		.Community_Btn{ font-size: 0; }
 	}
 	@media (max-width: 767px) {
 		.Meta {

@@ -2363,7 +2363,6 @@ a#gotoMainContent {
 .Content_page .Meta div {
   display: inline-block;
   margin-right: 30px;
-  font-size: 0;
 }
 .Content_page .Meta div span {
   color: #333;
@@ -2377,6 +2376,9 @@ a#gotoMainContent {
 .Content_page .Meta div:last-child {
   margin-right: 0;
   margin-top: -10px;
+}
+.Content_page .Meta .Community_Btn {
+  font-size: 0;
 }
 @media (max-width: 767px) {
   .Content_page .Meta div:last-child {
