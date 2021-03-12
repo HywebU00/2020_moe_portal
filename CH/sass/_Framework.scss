@@ -7,7 +7,14 @@ dl{}
 dl dt {color: darken($color-gray, 90);}
 dt,dd{line-height: 180%;}
 
-b, strong{ color: #00ad30; font-size: 120%;}
+b, strong{ color: $color-secondary; font-size: 120%;}
+
+input, button, textarea, select, a{
+	&:focus{
+		outline: solid 3px #f66604 !important;
+		border-radius: 2px !important;
+	}
+}
 
 .radio label, .checkbox label{ margin-right:12px; }
 
@@ -218,6 +225,7 @@ table{
 	a, button{
 		font-size: 1em;
 		margin-bottom: 8px;
+		text-decoration: none;
 	}
 	i{
 		margin-left: 5px;
@@ -253,7 +261,7 @@ table{
 		padding: .5em 1.25em;
 	}
 	.btn-switch{
-		background: #2a879e;
+		background: #0a748e;
 		color: #fff;
 	}
 }
@@ -308,6 +316,7 @@ table{
 		text-align: center;
 		background:#555;
 		color: #fff;
+		text-decoration: none;
 		&:hover, &:focus{
 			background: adjust_hue(desaturate(#beed00, 55), 43);
 			color: #fff;
@@ -342,6 +351,10 @@ table{
 				height:300px;
 				margin: 0 auto;
 			}
+			a{
+				display: block;
+			}
+
 			.Text{
 				// position: absolute;
 				// bottom: 0;
@@ -358,13 +371,13 @@ table{
 					line-height: 2.2;
 					text-align: left;
 				}
-				a{
-					text-decoration: none;
-					color: #fff;
-					&:hover,&:focus{
-						// color: #ff4700;
-					}
-				}
+				// a{
+				// 	text-decoration: none;
+				// 	color: #fff;
+				// 	&:hover,&:focus{
+				// 		// color: #ff4700;
+				// 	}
+				// }
 				h3{
 					margin-top: 10px;
 					margin-bottom: 10px;

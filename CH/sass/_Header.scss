@@ -1,8 +1,34 @@
 // 跳到主要內容區塊那顆要能click到
 a#gotoMainContent{
-	float: left;
+	// float: left;
+	// position: absolute;
+	// z-index: 4000;
+
 	position: absolute;
-	z-index: 4000;
+    top: -2.2em;
+    left: 50%;
+    margin-left: -480px;
+    padding: 0 .5em;
+    height: 2em;
+    line-height: 2em;
+    background: #781f79;
+    color: #fff;
+    text-decoration: none;
+    z-index: 999999999999;
+    opacity: 0;
+    transition: .5s;
+    border-radius: 0px 0px 4px 4px;
+    color: #FFF;
+
+    @media (max-width: 767px) { 
+        display: none;
+    }
+    &:hover, &:focus {
+        outline: none;
+        top: 0;
+        opacity: 1;
+    }
+
 }
 // ------------------------- Header
 #Header{
@@ -24,6 +50,7 @@ a#gotoMainContent{
 					li a{
 						font-size: .875em;
 						color: #fff;
+						text-decoration: none;
 						&:hover, &:focus{
 							background: rgba(0,0,0,.5);
 						}
@@ -75,9 +102,9 @@ a#gotoMainContent{
 						font-size: 1em;
 						a{
 							display: inline-block;
-							color: #f66200;
+							color: #ca5000;
 							font-weight: bold;
-							border-bottom: solid 1px #f66200;
+							border-bottom: solid 1px #ca5000;
 							line-height: 1.8;
 							margin-right: 8px;
 							&:hover, &:focus{
@@ -101,6 +128,7 @@ a#gotoMainContent{
 						line-height: 2.2;
 						// padding: 8px 16px 15px 16px;
 						padding: 8px 2em 15px 2em;
+						text-decoration: none;
 						.caret{
 							position: absolute;
 							color: $color-adorn;

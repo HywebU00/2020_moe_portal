@@ -55,6 +55,10 @@ a:active, a:hover {
   outline: 0;
 }
 
+a:focus {
+  outline: solid 3px #f66604;
+}
+
 /* Text-level semantics
  * ========================================================================== */
 abbr[title] {
@@ -217,8 +221,13 @@ dt, dd {
 }
 
 b, strong {
-  color: #00ad30;
+  color: #00880A;
   font-size: 120%;
+}
+
+input:focus, button:focus, textarea:focus, select:focus, a:focus {
+  outline: solid 3px #f66604 !important;
+  border-radius: 2px !important;
 }
 
 .radio label, .checkbox label {
@@ -446,14 +455,14 @@ table tr td a {
   margin: 0 auto;
   padding: 5px 20px;
   font-size: 1.125em;
-  background: #27a5ea;
+  background: #082c6d;
   color: #fff;
   padding: 5px 15px;
   border-radius: 0;
   margin-bottom: 20px;
 }
 .Btn_More:hover, .Btn_More:focus {
-  background: #117ab3;
+  background: #030f26;
   color: #fff;
 }
 
@@ -465,6 +474,7 @@ table tr td a {
 .Btns a, .Btns button {
   font-size: 1em;
   margin-bottom: 8px;
+  text-decoration: none;
 }
 .Btns i {
   margin-left: 5px;
@@ -472,18 +482,18 @@ table tr td a {
 }
 
 .Btn_Search {
-  background: #f67400;
+  background: #50595d;
   color: #fff;
   width: 100%;
   font-size: 1em;
 }
 .Btn_Search:hover, .Btn_Search:focus {
-  background: #aa5000;
+  background: #c35c00;
   color: #fff;
 }
 
 #Btn_GoTop a {
-  background: url(../images/basic/icon/icon_arrow_up_w.svg) 50% 4px no-repeat, #2481a0;
+  background: url(../images/basic/icon/icon_arrow_up_w.svg) 50% 4px no-repeat, #19124e;
   background-size: 16px 20px;
   color: #fff;
   text-decoration: none;
@@ -502,16 +512,16 @@ table tr td a {
   cursor: pointer;
 }
 #Btn_GoTop a:hover, #Btn_GoTop a:focus {
-  background: url(../images/basic/icon/icon_arrow_up_w.svg) 50% 2px no-repeat, #f67400;
+  background: url(../images/basic/icon/icon_arrow_up_w.svg) 50% 2px no-repeat;
   background-size: 16px 20px;
 }
 
 .Btn-Sent {
-  background: #068fa1 !important;
+  background: #082c6d !important;
   color: #fff !important;
 }
 .Btn-Sent:hover {
-  background: #08bbd2 !important;
+  background: #0b3f9d !important;
 }
 
 .Btn-Normal {
@@ -529,7 +539,7 @@ table tr td a {
   padding: .5em 1.25em;
 }
 .btn_grp .btn-switch {
-  background: #2a879e;
+  background: #0a748e;
   color: #fff;
 }
 
@@ -592,6 +602,7 @@ table tr td a {
   text-align: center;
   background: #555;
   color: #fff;
+  text-decoration: none;
 }
 .FontSize_Change a:hover, .FontSize_Change a:focus {
   background: #4aac41;
@@ -620,6 +631,9 @@ table tr td a {
   height: 300px;
   margin: 0 auto;
 }
+.Slider .Singleplay .Pic a {
+  display: block;
+}
 .Slider .Singleplay .Pic .Text {
   text-align: left;
   overflow: hidden;
@@ -633,10 +647,6 @@ table tr td a {
   margin-bottom: 0;
   line-height: 2.2;
   text-align: left;
-}
-.Slider .Singleplay .Pic .Text a {
-  text-decoration: none;
-  color: #fff;
 }
 .Slider .Singleplay .Pic .Text h3 {
   margin-top: 10px;
@@ -711,7 +721,7 @@ table tr td a {
 }
 .Slider .BannerSlide .slick-dots li.slick-active button:before {
   opacity: 1;
-  color: #beed00 !important;
+  color: #c34f00 !important;
 }
 .Slider .slick-slider {
   margin-bottom: 0;
@@ -853,7 +863,7 @@ table tr td a {
   line-height: 2;
 }
 .List .media-body .media-More:hover {
-  background: #068fa1;
+  background: #082c6d;
   text-decoration: none;
 }
 .List .media-body .media-heading {
@@ -863,7 +873,7 @@ table tr td a {
   padding: 5px 0;
   display: block;
   font-weight: bold;
-  color: #068fa1;
+  color: #082c6d;
 }
 .List .media-body .media-heading a:hover {
   text-decoration: none;
@@ -1000,9 +1010,31 @@ table tr td a {
 }
 
 a#gotoMainContent {
-  float: left;
   position: absolute;
-  z-index: 4000;
+  top: -2.2em;
+  left: 50%;
+  margin-left: -480px;
+  padding: 0 .5em;
+  height: 2em;
+  line-height: 2em;
+  background: #781f79;
+  color: #fff;
+  text-decoration: none;
+  z-index: 999999999999;
+  opacity: 0;
+  transition: .5s;
+  border-radius: 0px 0px 4px 4px;
+  color: #FFF;
+}
+@media (max-width: 767px) {
+  a#gotoMainContent {
+    display: none;
+  }
+}
+a#gotoMainContent:hover, a#gotoMainContent:focus {
+  outline: none;
+  top: 0;
+  opacity: 1;
 }
 
 #Header {
@@ -1018,6 +1050,7 @@ a#gotoMainContent {
 #Header .megamenu .container .Right ul li a {
   font-size: .875em;
   color: #fff;
+  text-decoration: none;
 }
 #Header .megamenu .container .Right ul li a:hover, #Header .megamenu .container .Right ul li a:focus {
   background: rgba(0, 0, 0, 0.5);
@@ -1048,18 +1081,18 @@ a#gotoMainContent {
   margin-right: 5px;
 }
 #Header .megamenu .container .Right .Search button {
-  background: #2481a0;
+  background: #19124e;
   color: #fff;
   height: 34px;
 }
 #Header .megamenu .container .Right .Search button:hover, #Header .megamenu .container .Right .Search button:focus {
-  background: #1b6076;
+  background: #0c0824;
 }
 #Header .megamenu .container .Right .Search .input-group-btn {
-  background: #2481a0;
+  background: #19124e;
 }
 #Header .megamenu .container .Right .Search .input-group-btn:hover, #Header .megamenu .container .Right .Search .input-group-btn:focus {
-  background: #1b6076;
+  background: #0c0824;
 }
 #Header .megamenu .container .Right .Search .input-group-btn button {
   background: url(../images/basic/icon/icon_search.svg) 50% 50% no-repeat;
@@ -1072,9 +1105,9 @@ a#gotoMainContent {
 }
 #Header .megamenu .container .Right .Search .Keywords a {
   display: inline-block;
-  color: #f66200;
+  color: #ca5000;
   font-weight: bold;
-  border-bottom: solid 1px #f66200;
+  border-bottom: solid 1px #ca5000;
   line-height: 1.8;
   margin-right: 8px;
 }
@@ -1095,10 +1128,11 @@ a#gotoMainContent {
   font-weight: bold;
   line-height: 2.2;
   padding: 8px 2em 15px 2em;
+  text-decoration: none;
 }
 #Header .megamenu .container .Left .nav li a .caret {
   position: absolute;
-  color: #beed00;
+  color: #c34f00;
   left: 45%;
   bottom: 13px;
 }
@@ -1258,7 +1292,7 @@ a#gotoMainContent {
     font-size: 1em;
   }
   #Header .megamenu .container .Right ul li a:hover, #Header .megamenu .container .Right ul li a:focus {
-    background: #2481a0;
+    background: #19124e;
   }
   #Header .megamenu .container .Right .Search {
     text-align: left;
@@ -1276,7 +1310,7 @@ a#gotoMainContent {
     margin-bottom: 8px;
   }
   #Header .megamenu .container .Right .Search button {
-    background: #2481a0;
+    background: #19124e;
     color: #fff;
   }
   #Header .megamenu .container .Right .Search button:hover, #Header .megamenu .container .Right .Search button:focus {
@@ -1299,7 +1333,7 @@ a#gotoMainContent {
   }
   #Header .megamenu .container .Left .nav li a .caret {
     position: relative;
-    color: #beed00;
+    color: #c34f00;
     left: 10px;
     bottom: 48%;
   }
@@ -1348,14 +1382,12 @@ a#gotoMainContent {
   }
 }
 #FatFooter {
-  background-color: #343434;
+  background-color: #333;
   position: relative;
   border-bottom: solid 1px #595959;
 }
 #FatFooter a {
   display: block;
-}
-#FatFooter a:hover {
   text-decoration: none;
 }
 #FatFooter nav {
@@ -1427,7 +1459,7 @@ a#gotoMainContent {
   }
 }
 #Footer {
-  background: #343434;
+  background: #333;
   color: #fff;
   padding: 30px 0;
   color: #a0a0a0;
@@ -1578,6 +1610,7 @@ a#gotoMainContent {
   background: rgba(0, 0, 0, 0.5);
   padding: 5px 10px;
   border-radius: 15px;
+  text-decoration: none;
 }
 .Function a:before {
   color: #fff;
@@ -1586,7 +1619,6 @@ a#gotoMainContent {
 .Function a:hover, .Function a:focus {
   color: #fff;
   background: black;
-  text-decoration: none;
 }
 
 .FunctionTop {
@@ -1640,7 +1672,7 @@ a#gotoMainContent {
 .Main_page h2 {
   text-align: center;
   font-size: 2em;
-  color: #343434;
+  color: #333;
   line-height: 2;
   font-weight: bold;
 }
@@ -1661,7 +1693,7 @@ a#gotoMainContent {
   padding: 20px 0 20px;
 }
 .Main_page .View_area {
-  background: #1d86b2;
+  background: #0173A2;
 }
 .Main_page .View_area .Anchors {
   height: 220px;
@@ -1848,7 +1880,7 @@ a#gotoMainContent {
   line-height: 1.2;
 }
 .Main_page .Busniess .Business_List section a:hover, .Main_page .Busniess .Business_List section a:focus {
-  background-color: #f67400;
+  background-color: #50595d;
   text-decoration: none;
   color: #fff;
   text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.96);
@@ -1962,13 +1994,15 @@ a#gotoMainContent {
   line-height: 1.2;
 }
 .Main_page .Busniess-2 .Business_List section a:hover, .Main_page .Busniess-2 .Business_List section a:focus {
-  background-color: #f67400;
+  background-color: #c34f00;
   text-decoration: none;
   color: #fff;
   text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.96);
 }
-.Main_page .Busniess-2 .row div:nth-child(2) h4 {
+.Main_page .Busniess-2 .row div:nth-child(2) h3 {
   margin-top: 0;
+  font-size: 112.5%;
+  color: #222;
 }
 .Main_page .Busniess-2 .row div:nth-child(2) .form-group .col-sm-12 {
   margin-bottom: 6px;
@@ -2048,6 +2082,7 @@ a#gotoMainContent {
 }
 .Main_page .thumbnail .Mask a {
   text-decoration: none;
+  display: block;
 }
 .Main_page .thumbnail .Mask a .caption {
   position: relative;
@@ -2058,7 +2093,7 @@ a#gotoMainContent {
   background-size: 16px 16px;
 }
 .Main_page .thumbnail .Mask a .caption .meta .MetaNew {
-  background: #f67400;
+  background: #c34f00;
   color: #fff;
   padding: 0 15px;
   font-size: 1em;
@@ -2069,15 +2104,15 @@ a#gotoMainContent {
   height: 30px;
   line-height: 30px;
 }
-.Main_page .thumbnail .Mask a .caption h4 {
+.Main_page .thumbnail .Mask a .caption h3 {
   font-size: 1.25em;
   line-height: 1.15;
   max-height: 46px;
   overflow: hidden;
-  color: #08bbd2;
+  color: #082c6d;
 }
-.Main_page .thumbnail .Mask a .caption h4:hover, .Main_page .thumbnail .Mask a .caption h4:focus {
-  color: #f67400;
+.Main_page .thumbnail .Mask a .caption h3:hover, .Main_page .thumbnail .Mask a .caption h3:focus {
+  color: #c35c00;
 }
 .Main_page .thumbnail .Mask a .caption p {
   font-size: 1em;
@@ -2194,7 +2229,7 @@ a#gotoMainContent {
 }
 .Main_page .ActInfo a.Item .meta {
   color: #fff;
-  background: #67ba1e;
+  background: #106332;
 }
 .Main_page .ActInfo a.Item .meta span {
   line-height: 31px;
@@ -2216,7 +2251,7 @@ a#gotoMainContent {
   padding-left: 5px;
 }
 .Main_page .ActInfo a.Item .meta .MetaNew {
-  background: #f67400;
+  background: #c34f00;
   color: #fff;
   padding: 0 15px;
   font-size: 1em;
@@ -2246,13 +2281,14 @@ a#gotoMainContent {
   height: 190px;
   margin: 0 auto;
 }
-.Main_page .Community .Video > a > h4 {
-  color: #08bbd2;
+.Main_page .Community .Video > a > h3 {
+  color: #0b3f9d;
+  font-size: 1.25em;
 }
 .Main_page .Community .Video > a:hover {
   text-decoration: underline;
 }
-.Main_page .Community .Video > a:hover > h4 {
+.Main_page .Community .Video > a:hover > h3 {
   color: #f67400;
 }
 .Main_page .Links {
@@ -2279,17 +2315,17 @@ a#gotoMainContent {
 }
 .Main_page .Links a.Item:hover, .Main_page .Links a.Item:focus {
   color: #fff;
-  background: #343434;
+  background: #00880A;
   text-decoration: none;
 }
 .Main_page .Links a.red {
-  color: #f10e0e;
+  color: #a90000;
 }
 .Main_page .Links a.blue {
-  color: #013de6;
+  color: #002ba2;
 }
 .Main_page .Links a.green {
-  color: #00b350;
+  color: #00652d;
 }
 @media (min-width: 992px) {
   .Main_page .Links .row {
@@ -2311,7 +2347,7 @@ a#gotoMainContent {
   font-style: normal;
   display: block;
   font-size: 1em;
-  border-left: 5px solid #068fa1;
+  border-left: 5px solid #082c6d;
   padding: 2em;
   box-sizing: border-box;
   margin-left: .5em;
@@ -2337,7 +2373,7 @@ a#gotoMainContent {
   height: 30px;
   line-height: 30px;
   margin-right: 10px;
-  background: url(../images/basic/icon/icon_arrow_right_w.svg) 50% 50% no-repeat, #068fa1;
+  background: url(../images/basic/icon/icon_arrow_right_w.svg) 50% 50% no-repeat, #082c6d;
   background-size: 14px;
   border-radius: 50%;
   vertical-align: middle;
@@ -2384,16 +2420,16 @@ a#gotoMainContent {
   height: 34px;
   line-height: 34px;
   text-align: center;
-  color: #fff;
-  background: #b4b4b4;
+  color: #333;
+  background: #dadada;
 }
 .Content_page .Tag a:hover, .Content_page .Tag a:focus {
   color: #fff;
-  background: #068fa1;
+  background: #082c6d;
   text-decoration: none;
 }
 .Content_page .Tag a.here {
-  background: #068fa1;
+  background: #082c6d;
   color: #fff;
   text-decoration: none;
 }
@@ -2401,7 +2437,7 @@ a#gotoMainContent {
   margin: 10px 0;
 }
 .Content_page .Page span {
-  color: #f66200;
+  color: #c34f00;
   font-size: 1.25em;
   margin: 0 3px;
 }
@@ -2443,7 +2479,7 @@ a#gotoMainContent {
 .Content_page .Page .pagination > li > a.NextTenPage:hover {
   text-decoration: underline;
   color: #fff;
-  background: rgba(6, 143, 161, 0.5);
+  background: rgba(8, 44, 109, 0.5);
   text-decoration: none;
 }
 .Content_page .Page .pagination a {
@@ -2458,11 +2494,11 @@ a#gotoMainContent {
 .Content_page .Page .pagination > li > a:hover,
 .Content_page .Page .pagination > li > span:hover {
   color: #fff;
-  background: #17dcf6;
+  background: #0f52cc;
 }
 .Content_page .Page .pagination > li.active a,
 .Content_page .Page .pagination > li.active span {
-  background: #068fa1;
+  background: #082c6d;
   color: #fff;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2525,6 +2561,7 @@ a#gotoMainContent {
 }
 .Content_page .FotoxText .thumbnail .Mask a {
   text-decoration: none;
+  display: block;
 }
 .Content_page .FotoxText .thumbnail .Mask a img {
   max-width: 100%;
@@ -2534,10 +2571,10 @@ a#gotoMainContent {
 .Content_page .FotoxText .thumbnail .Mask a .caption h4 {
   margin: 5px 0;
   line-height: 1.2;
-  color: #08bbd2;
+  color: #082c6d;
 }
-.Content_page .FotoxText .thumbnail .Mask a .caption h4:hover, .Content_page .FotoxText .thumbnail .Mask a .caption h4:focus {
-  color: #f67400;
+.Content_page .FotoxText .thumbnail .Mask a:hover .caption h4, .Content_page .FotoxText .thumbnail .Mask a:focus .caption h4 {
+  color: #c35c00;
 }
 .Content_page .FotoxText .LeftFoto {
   float: left;
@@ -2723,7 +2760,7 @@ a#gotoMainContent {
 }
 .Content_page .QA .box a.que:hover, .Content_page .QA .box a.que:focus {
   text-decoration: none;
-  color: #f66200;
+  color: #c34f00;
 }
 .Content_page .QA .box .ans {
   background: #eee;
@@ -2731,7 +2768,7 @@ a#gotoMainContent {
 }
 .Content_page .QA .box .ans:before {
   content: '答';
-  background: #ff9800;
+  background: #c34f00;
   position: absolute;
   left: .75em;
   top: 1em;
@@ -2773,7 +2810,7 @@ body, html {
 h1, h2, h3, h4, h5, h6 {
   word-wrap: break-word;
   word-break: break-all;
-  color: #068fa1;
+  color: #082c6d;
   margin-top: 10px;
   font-weight: bold;
 }
@@ -2784,10 +2821,12 @@ p {
 }
 
 a {
-  color: #08bbd2;
+  color: #0b3f9d;
+  text-decoration: underline;
 }
 a:hover, a:focus {
-  color: #f67400;
+  color: #c34f00;
+  text-decoration: none;
 }
 
 blockquote {

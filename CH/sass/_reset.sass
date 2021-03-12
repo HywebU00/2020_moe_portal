@@ -104,6 +104,10 @@ a
 	&:active,
 	&:hover
 		outline: 0
+a 
+	&:focus
+		outline: solid 3px #f66604
+
 
 /* Text-level semantics
 	 ========================================================================== */
@@ -252,8 +256,9 @@ html input[disabled]
 @if get-browser-support(firefox, 31)
 	button::-moz-focus-inner,
 	input::-moz-focus-inner
-		border: 0
+		// border: 0
 		padding: 0
+		outline: solid 3px #f66604
 
 // Address Firefox 4+ setting `line-height` on `input` using `!important` in the UA stylesheet.
 @if get-browser-support(firefox, 31)

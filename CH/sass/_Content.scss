@@ -75,6 +75,7 @@
 		background: rgba($color-black,.5);
 		padding: 5px 10px;
 		border-radius: 15px;
+		text-decoration: none;
 		&:before {
 			color: #fff;
 			margin-right: 8px;
@@ -82,7 +83,6 @@
 		&:hover,&:focus {
 			color: #fff;
 			background: rgba($color-black,1);
-			text-decoration: none;
 		}
 	}
 }
@@ -132,7 +132,7 @@
 	h2{
 		text-align: center;
 		font-size: 2em;
-		color: $color-secondary;
+		color: $color-darkgray;
 		line-height: 2;
 		font-weight: bold;
 		span{
@@ -150,7 +150,7 @@
 
 	// 錨點 + single slider (.View_area)
 	.View_area{
-		background:#1d86b2;
+		background: #0173A2;
 		.Anchors{
 			// background: url(../images/basic/bg_ViewArea.png) 50% top no-repeat;
 			height: 220px;
@@ -461,7 +461,7 @@
 					}
 					&:hover, &:focus{
 						// background-position: 50% bottom;
-						background-color: $Btn_Search_color;
+						background-color: $color-adorn;
 						text-decoration: none;
 						color: #fff;
 						text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.96);
@@ -472,7 +472,11 @@
 
 		.row{
 			div:nth-child(2){
-				h4{ margin-top: 0; }
+				h3{
+					margin-top: 0;
+					font-size: 112.5%;
+					color: #222;
+				}
 				.form-group{
 					.col-sm-12{
 						margin-bottom: 6px;
@@ -574,6 +578,8 @@
 			}
 			a{
 				text-decoration: none;
+				display: block;
+
 				.caption{
 					position: relative;
 					.meta .MetaTime{
@@ -590,13 +596,13 @@
 						height: 30px;
 						line-height: 30px;
 					}
-					h4{
+					h3{
 						font-size: 1.25em;
 						line-height: 1.15;
 						max-height: 46px;
 						overflow: hidden;
-						color: #08bbd2;
-						&:hover, &:focus{ color: #f67400;}
+						color: #082c6d;
+						&:hover, &:focus{ color: darken(#f67400,10);}
 					}
 					p{
 						font-size: 1em;
@@ -756,7 +762,7 @@
 			}
 			.meta{
 				color: #fff;
-				background: adjust_hue(desaturate(darken(#beed00, 4), 28), 20);
+				background: adjust_hue(desaturate(darken($color-secondary, 4), 28), 20);
 				span{
 					line-height: 31px;
 					padding-left: 10px;
@@ -825,11 +831,12 @@
 				    height: 190px;
 				    margin: 0 auto;
 				}
-				>h4{
+				>h3{
 					color:$link-color;
+					font-size: 1.25em;
 				}
 				&:hover{
-					>h4{ color: #f67400; }
+					>h3{ color: #f67400; }
 					text-decoration: underline;
 				}
 			}
@@ -857,9 +864,9 @@
 				text-decoration: none;
 			}
 		}
-		a.red{ color: #f10e0e;}
-		a.blue{ color: #013de6;}
-		a.green{ color: #00b350;}
+		a.red{ color: #a90000;}
+		a.blue{ color: #002ba2;}
+		a.green{ color: #00652d;}
 	}
 	@media (min-width: 992px) {
 		.Links{
@@ -1031,8 +1038,8 @@
 			height: 34px;
 			line-height: 34px;
 			text-align: center;
-			color: #fff;
-			background: lighten($color-secondary,50);
+			color: #333;
+			background: #dadada;
 			&:hover,&:focus {
 				color: #fff;
 				background: $color-main;
@@ -1051,7 +1058,7 @@
 		// font-size: 1em;
 		margin:10px 0;
 		span{
-			color: #f66200;
+			color: $color-adorn;
 			font-size: 1.25em;
 			margin:0 3px;
 		}
@@ -1169,6 +1176,8 @@
 				overflow: hidden;
 				a{
 					text-decoration: none;
+					display: block;
+
 					img{
 						max-width: 100%;
 						height: 190px;
@@ -1178,8 +1187,15 @@
 						h4{
 							margin: 5px 0;
 							line-height: 1.2;
-							color: #08bbd2;
-							&:hover, &:focus{ color: #f67400;}
+							color: #082c6d;
+						}
+					}
+
+					&:hover, &:focus{
+						.caption{
+							h4{
+								color: darken(#f67400,10);
+							}
 						}
 					}
 				}
@@ -1449,7 +1465,7 @@
 
 				&:hover, &:focus{
 					text-decoration: none;
-					color: #f66200;;
+					color: $color-adorn;;
 				}
 			}
 			.ans{
@@ -1457,7 +1473,7 @@
 				display: none;
 				&:before{
 					content:'答';
-					background: #ff9800;
+					background: $color-adorn;
 					position: absolute;
 					left: .75em;
 					top: 1em;

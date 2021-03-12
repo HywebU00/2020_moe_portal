@@ -33,8 +33,10 @@ p{
 a{
 	// @include Text;
 	color:$link-color;
+	text-decoration: underline;
 	&:hover, &:focus{
-		color: #f67400;
+		color: $color-adorn;
+		text-decoration: none;
 	}
 }
 
