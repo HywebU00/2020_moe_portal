@@ -459,6 +459,7 @@ table tr td a {
   color: #fff;
   padding: 5px 15px;
   border-radius: 0;
+  text-decoration: none;
   margin-bottom: 20px;
 }
 .Btn_More:hover, .Btn_More:focus {
@@ -2207,9 +2208,9 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   background: #fff;
   margin-bottom: 15px;
   transition: all 0.2s linear;
+  text-decoration: none;
 }
 .Main_page .ActInfo a.Item:hover, .Main_page .ActInfo a.Item:focus {
-  text-decoration: none;
   transform: scale(1.05);
 }
 .Main_page .ActInfo a.Item .Mask {
@@ -2275,6 +2276,10 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
 }
 .Main_page .Community a.btn {
   margin-top: 20px;
+}
+.Main_page .Community .Video > a {
+  display: block;
+  text-decoration: none;
 }
 .Main_page .Community .Video > a img {
   max-width: 100%;

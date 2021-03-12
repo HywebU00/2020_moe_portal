@@ -59,6 +59,8 @@ $color-black: #000;
 	color:$color-white;
 	padding: 5px 15px;
 	border-radius:0;
+	text-decoration: none;
+	
 	&:hover, &:focus{
 		background:darken($Btn_More_color,15);
 		color:$color-white;
