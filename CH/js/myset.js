@@ -1,5 +1,16 @@
 $(function(){
 
+	// 主選單鍵盤控制
+
+	// 1.第一層被 keyup 時，第二層選單展開
+	$('.nav .dropdown').keyup(function() {
+		$(this).addClass('open');
+	});
+    // 2.第二層選單 last-child focusout 時，它的 ul 關閉
+	$('.nav .dropdown .dropdown-menu').find('li:last>a').focusout(function() {
+		$(this).parents('.dropdown').removeClass('open');
+	});
+
 	// 第二節點靠齊高度
 	// 把 a.dropdown-toggle 的高度數值，丟進.dropdown-menu 的top
 	var _first = $('#Header .Left .nav>li a');
