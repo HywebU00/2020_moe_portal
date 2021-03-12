@@ -2291,9 +2291,6 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   color: #0b3f9d;
   font-size: 1.25em;
 }
-.Main_page .Community .Video > a:hover {
-  text-decoration: underline;
-}
 .Main_page .Community .Video > a:hover > h3 {
   color: #f67400;
 }
