@@ -460,6 +460,7 @@ table tr td a {
   padding: 5px 15px;
   border-radius: 0;
   text-decoration: none;
+  border-radius: 16px;
   margin-bottom: 20px;
 }
 .Btn_More:hover, .Btn_More:focus {
@@ -2260,8 +2261,8 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   float: right;
 }
 .Main_page .ActInfo .Btn_More {
-  background: transparent;
-  border-color: #fff;
+  background: #fff;
+  color: #082c6d;
 }
 .Main_page .ActInfo .Btn_More:hover, .Main_page .ActInfo .Btn_More:focus {
   background: #555;
