@@ -107,6 +107,7 @@ a#gotoMainContent{
 							border-bottom: solid 1px #ca5000;
 							line-height: 1.8;
 							margin-right: 8px;
+							text-decoration: none;	
 							&:hover, &:focus{
 								text-decoration: none;
 								border-bottom: none;
@@ -131,7 +132,7 @@ a#gotoMainContent{
 						text-decoration: none;
 						.caret{
 							position: absolute;
-							color: $color-adorn;
+							color: #beed00;
 							left:45%;
 							bottom: 13px;
 						}

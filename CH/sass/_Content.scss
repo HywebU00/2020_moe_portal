@@ -170,6 +170,7 @@
 					// margin: 0 2px;
 					line-height: 2.6;
 					font-size: 1.2em;
+					text-decoration: none;
 					span{
 						display: block;
 						width: 108px;
@@ -861,6 +862,7 @@
 			font-size: 1.125em;
 			color: #555;
 			background: #fff;
+			text-decoration: none;
 			transition: all .3s ease;
 			&:hover, &:focus{
 				color: #fff;
@@ -1188,10 +1190,11 @@
 						margin: 0 auto;
 					}
 					.caption{
-						h4{
+						h3{
 							margin: 5px 0;
 							line-height: 1.2;
 							color: #082c6d;
+							font-size: 1.125em;
 						}
 					}
 

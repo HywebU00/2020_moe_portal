@@ -353,6 +353,10 @@ table{
 			}
 			a{
 				display: block;
+				text-decoration: none;
+				&:hover, &:focus{
+					text-decoration: none;
+				}
 			}
 
 			.Text{
