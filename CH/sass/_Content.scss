@@ -43,7 +43,11 @@
 			}
 		}
 
-		a{ color: rgba($color-black,1); }
+		a{
+			color: rgba($color-black,1);
+			text-decoration: none;
+
+		}
 		// i {
 		// 	// font-size: .875em;
 		// 	width: 28px;
@@ -889,6 +893,11 @@
 	.Block{
 		padding: 20px 0;
 		.Block{ padding: 0 0;}
+
+		.List_Download,
+		.List_Link{
+			a{ text-decoration: none; }
+		}
 	}
 
 	p{ margin-bottom: 1.5em; }
@@ -970,6 +979,7 @@
 				background:#fff;
 				border-radius:25px;
 				border:solid 1px lighten($color-black, 70%);
+				text-decoration: none;
 				&:before{
 					content: '';
 					display: inline-block;
@@ -1046,6 +1056,7 @@
 			text-align: center;
 			color: #333;
 			background: #dadada;
+			text-decoration: none;
 			&:hover,&:focus {
 				color: #fff;
 				background: $color-main;
@@ -1388,6 +1399,7 @@
 			dt{color:#fff;}
 		}
 		ul{ margin-bottom: 15px;}
+		a{ text-decoration: none; }
 	}
 
 	// 404錯誤
@@ -1469,6 +1481,7 @@
 				display: block;
 				border-bottom: solid 1px #c7c7c7;
 				color: #0a7086;
+				text-decoration: none;
 
 				&:hover, &:focus{
 					text-decoration: none;

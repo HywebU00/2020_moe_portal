@@ -1601,6 +1601,7 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
 }
 #breadcrumb .breadcrumb a {
   color: black;
+  text-decoration: none;
 }
 #breadcrumb .breadcrumb > li + li:before {
   content: "> ";
@@ -2349,6 +2350,10 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
 .Content_page .Block .Block {
   padding: 0 0;
 }
+.Content_page .Block .List_Download a,
+.Content_page .Block .List_Link a {
+  text-decoration: none;
+}
 .Content_page p {
   margin-bottom: 1.5em;
 }
@@ -2375,6 +2380,7 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   background: #fff;
   border-radius: 25px;
   border: solid 1px #b3b3b3;
+  text-decoration: none;
 }
 .Content_page .Link_Box .Items a:before {
   content: '';
@@ -2432,6 +2438,7 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   text-align: center;
   color: #333;
   background: #dadada;
+  text-decoration: none;
 }
 .Content_page .Tag a:hover, .Content_page .Tag a:focus {
   color: #fff;
@@ -2697,6 +2704,9 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
 .Content_page .Sitemap ul {
   margin-bottom: 15px;
 }
+.Content_page .Sitemap a {
+  text-decoration: none;
+}
 .Content_page .Error {
   text-align: center;
   margin-top: 3em;
@@ -2768,6 +2778,7 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   display: block;
   border-bottom: solid 1px #c7c7c7;
   color: #0a7086;
+  text-decoration: none;
 }
 .Content_page .QA .box a.que:hover, .Content_page .QA .box a.que:focus {
   text-decoration: none;
