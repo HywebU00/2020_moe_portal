@@ -124,19 +124,6 @@ $(function(){
 	    });
 	});
 
-	// accesskeyU、accesskeyC
-	$(function(){
-		$('.accesskey a#accesskeyU').keydown(function(e) {
-	        $(this).focus();
-	        e.preventDefault();
-	    });
-
-	    $('.accesskey a#accesskeyC').keydown(function(e) {
-	        $(this).focus();
-	        e.preventDefault();
-	    });
-	}
-
 	// Animate
 	// $(function(){
 	// 	$('').hover(function(){},function(){})

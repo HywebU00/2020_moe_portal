@@ -16,6 +16,15 @@
 		color: #fff;
 
 		&#accesskeyC{ color: #222;}
+
+		&#accesskeyU, 
+		&#accesskeyC{
+			&:hover, &:focus{
+				background: #f67400;
+				color: #fff;
+				outline: solid 3px transparent;
+			}
+		}
 	}
 }
 

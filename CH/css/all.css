@@ -1584,6 +1584,11 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
 .accesskey a#accesskeyC {
   color: #222;
 }
+.accesskey a#accesskeyU:hover, .accesskey a#accesskeyU:focus, .accesskey a#accesskeyC:hover, .accesskey a#accesskeyC:focus {
+  background: #f67400;
+  color: #fff;
+  outline: solid 3px transparent;
+}
 
 #breadcrumb .breadcrumb {
   padding: 0;
