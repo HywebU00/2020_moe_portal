@@ -2093,6 +2093,10 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
 .Main_page .thumbnail .Mask a {
   text-decoration: none;
   display: block;
+  border: 3px solid  transparent;
+}
+.Main_page .thumbnail .Mask a:hover, .Main_page .thumbnail .Mask a:focus {
+  border: 3px solid  #f66604;
 }
 .Main_page .thumbnail .Mask a .caption {
   position: relative;
@@ -2126,9 +2130,6 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
 }
 .Main_page .thumbnail .Mask a .caption p {
   font-size: 1em;
-}
-.Main_page .thumbnail .Mask a:hover, .Main_page .thumbnail .Mask a:focus {
-  outline: solid 3px #f66604;
 }
 .Main_page .List.News {
   background: #f3f3f3;

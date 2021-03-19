@@ -585,6 +585,11 @@
 				text-decoration: none;
 				display: block;
 
+				border: 3px solid  transparent;
+				&:hover, &:focus{
+					border: 3px solid  #f66604;
+				}
+
 				.caption{
 					position: relative;
 					.meta .MetaTime{
@@ -618,10 +623,6 @@
 						// max-height: 100px;
 						// background: #ddd;
 					}
-				}
-
-				&:hover, &:focus{
-					outline: solid 3px #f66604;
 				}
 			}
 		}
