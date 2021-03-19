@@ -33,10 +33,10 @@ p{
 a{
 	// @include Text;
 	color:$link-color;
-	text-decoration: underline;
+	// text-decoration: underline;
 	&:hover, &:focus{
 		color: $color-adorn;
-		text-decoration: none;
+		// text-decoration: none;
 	}
 }
 

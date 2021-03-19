@@ -30,38 +30,75 @@ $(function(){
 	});
 
 	// 錨點滑動
-	$(function(){
-		// 輔導業務
-		$("a[href=#Busniess]").click(function() {
-			$("html,body").animate({
-				scrollTop:$("#Busniess").offset().top
-			}, 600);
-		});
-		// 新聞稿
-		$("a[href=#News]").click(function() {
-			$("html,body").animate({
-				scrollTop:$("#News").offset().top
-			}, 600);
-		});
-		// 業務消息
-		$("a[href=#BizNews]").click(function() {
-			$("html,body").animate({
-				scrollTop:$("#BizNews").offset().top
-			}, 1000);
-		});
-		// 活動訊息
-		$("a[href=#ActInfo]").click(function() {
-			$("html,body").animate({
-				scrollTop:$("#ActInfo").offset().top
-			}, 1000);
-		});
-		// 粉絲專頁
-		$("a[href=#Community]").click(function() {
-			$("html,body").animate({
-				scrollTop:$("#Community").offset().top
-			}, 1600);
-		});
-	})
+
+	// 輔導業務
+	$(document).on('click', 'a[href^="#Busniess"]', function (event) {
+	    event.preventDefault();
+	    $('html, body').animate({
+	        scrollTop: $($.attr(this, 'href')).offset().top
+	    }, 600);
+	});
+	// 新聞稿
+	$(document).on('click', 'a[href^="#News"]', function (event) {
+	    event.preventDefault();
+	    $('html, body').animate({
+	        scrollTop: $($.attr(this, 'href')).offset().top
+	    }, 600);
+	});
+	// 業務消息
+	$(document).on('click', 'a[href^="#BizNews"]', function (event) {
+	    event.preventDefault();
+	    $('html, body').animate({
+	        scrollTop: $($.attr(this, 'href')).offset().top
+	    }, 1000);
+	});
+	// 活動訊息
+	$(document).on('click', 'a[href^="#ActInfo"]', function (event) {
+	    event.preventDefault();
+	    $('html, body').animate({
+	        scrollTop: $($.attr(this, 'href')).offset().top
+	    }, 1000);
+	});
+	// 粉絲專頁
+	$(document).on('click', 'a[href^="#Community"]', function (event) {
+	    event.preventDefault();
+	    $('html, body').animate({
+	        scrollTop: $($.attr(this, 'href')).offset().top
+	    }, 1600);
+	});
+
+	// $(function(){
+	// 	// 輔導業務
+	// 	$("a[href=#Busniess]").click(function() {
+	// 		$("html,body").animate({
+	// 			scrollTop:$("#Busniess").offset().top
+	// 		}, 600);
+	// 	});
+	// 	// 新聞稿
+	// 	$("a[href=#News]").click(function() {
+	// 		$("html,body").animate({
+	// 			scrollTop:$("#News").offset().top
+	// 		}, 600);
+	// 	});
+	// 	// 業務消息
+	// 	$("a[href=#BizNews]").click(function() {
+	// 		$("html,body").animate({
+	// 			scrollTop:$("#BizNews").offset().top
+	// 		}, 1000);
+	// 	});
+	// 	// 活動訊息
+	// 	$("a[href=#ActInfo]").click(function() {
+	// 		$("html,body").animate({
+	// 			scrollTop:$("#ActInfo").offset().top
+	// 		}, 1000);
+	// 	});
+	// 	// 粉絲專頁
+	// 	$("a[href=#Community]").click(function() {
+	// 		$("html,body").animate({
+	// 			scrollTop:$("#Community").offset().top
+	// 		}, 1600);
+	// 	});
+	// })
 
 	// Go Top
 	$(function(){

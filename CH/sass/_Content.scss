@@ -619,6 +619,10 @@
 						// background: #ddd;
 					}
 				}
+
+				&:hover, &:focus{
+					outline: solid 3px #f66604;
+				}
 			}
 		}
 	}
