@@ -1590,6 +1590,17 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   outline: none !important;
 }
 
+a.accesskey {
+  float: left;
+  margin-top: 2px;
+  color: #fff;
+}
+a#U:hover, a#U:focus, a#C:hover, a#C:focus {
+  background: #f67400 !important;
+  color: #fff;
+  outline: none !important;
+}
+
 #breadcrumb .breadcrumb {
   padding: 0;
   margin: 0;

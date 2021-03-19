@@ -28,6 +28,24 @@
 	}
 }
 
+a{
+	&.accesskey{
+		float: left;
+		margin-top: 2px;
+		color: #fff;
+	}
+
+	&#U, 
+	&#C{
+		&:hover, &:focus{
+			background: #f67400 !important;
+			color: #fff;
+			outline: none !important;
+		}
+	}
+}
+
+
 // breadcrumb
 #breadcrumb {
 	.breadcrumb {
