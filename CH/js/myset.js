@@ -124,10 +124,23 @@ $(function(){
 	    });
 	});
 
-	// Animate
+	// accesskeyU、accesskeyC
 	$(function(){
-		$('').hover(function(){},function(){})
-	})
+		$('.accesskey a#accesskeyU').keydown(function(e) {
+	        $(this).focus();
+	        e.preventDefault();
+	    });
+
+	    $('.accesskey a#accesskeyC').keydown(function(e) {
+	        $(this).focus();
+	        e.preventDefault();
+	    });
+	}
+
+	// Animate
+	// $(function(){
+	// 	$('').hover(function(){},function(){})
+	// })
 
 	//Fatfooter 內容收合
 	$(function(){
