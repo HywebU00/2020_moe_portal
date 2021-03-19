@@ -124,6 +124,26 @@ $(function(){
 	    });
 	});
 
+	// accesskeyU、accesskeyC
+	// 火狐爛東西
+	$("body").on("keydown", function (event) {
+	    if (event.target === document.getElementById('accesskeyC')) {
+	    	alert('有');
+	    }
+	});
+
+	// $(function(){
+	// 	$('a#accesskeyU').keydown(function(e) {
+	//         $(this).focus();
+	//         e.preventDefault();
+	//     });
+
+	//     $('a#accesskeyC').keydown(function(e) {
+	//         $(this).focus();
+	//         e.preventDefault();
+	//     });
+	// }
+
 	// Animate
 	// $(function(){
 	// 	$('').hover(function(){},function(){})
