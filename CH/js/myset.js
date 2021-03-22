@@ -124,31 +124,6 @@ $(function(){
 	    });
 	});
 
-	// accesskeyU、accesskeyC
-	// 火狐爛東西
-	// $("body").on("keydown", function (event) {
-	//     if (event.target === document.getElementById('accesskeyC')) {
-	//     	alert('有');
-	//     }
-	// });
-
-	// $(function(){
-	// 	$('a#accesskeyU').keydown(function(e) {
-	//         $(this).focus();
-	//         e.preventDefault();
-	//     });
-
-	//     $('a#accesskeyC').keydown(function(e) {
-	//         $(this).focus();
-	//         e.preventDefault();
-	//     });
-	// }
-
-	// Animate
-	// $(function(){
-	// 	$('').hover(function(){},function(){})
-	// })
-
 	//Fatfooter 內容收合
 	$(function(){
 		$(".FatFooterBtn").click(function() {
@@ -205,6 +180,30 @@ $(function(){
 		$('.ans').slideUp(300);
 		$(this).next('.ans').stop(true,false).slideDown(300);
 	});
+
+	// 無障礙快捷鍵盤組合
+	$(document).on('keydown', function(e) {
+        // alt+S 查詢
+        if (e.altKey && e.keyCode == 83) {
+            $('html, body').animate({ scrollTop: 0 }, 200, 'easeOutExpo');
+            $('.Search').find('input[type="text"]').focus();
+        }
+        // alt+U header
+        if (e.altKey && e.keyCode == 85) {
+            $('html, body').animate({ scrollTop: 0 }, 200, 'easeOutExpo');
+            $('#Header .accesskey').find('a#accesskeyU').focus();
+        }
+        // alt+C 主要內容區
+        if (e.altKey && e.keyCode == 67) {
+            $('html, body').stop(true, true).animate({ scrollTop: $('#MainContent').find('.accesskey').offset().top }, 800, 'easeOutExpo');
+            $('#MainContent .accesskey').find('a#accesskeyC').focus();
+        }
+        // alt+B footer
+        // if (e.altKey && e.keyCode == 90) {
+        //     $('html, body').stop(true, true).animate({ scrollTop: $('footer').find('.accesskey').offset().top }, 800, 'easeOutExpo');
+        //     $('footer').find('.accesskey').focus();
+        // }
+    });
 
 
 

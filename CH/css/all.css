@@ -56,7 +56,7 @@ a:active, a:hover {
 }
 
 a:focus {
-  outline: solid 3px #f66604;
+  box-shadow: 0 0px 0px 2px #f66604 inset;
 }
 
 /* Text-level semantics
@@ -1580,25 +1580,18 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
 }
 .accesskey a {
   color: #fff;
+  display: inline-block;
 }
 .accesskey a#accesskeyC {
   color: #222;
 }
+.accesskey a#accesskeyU, .accesskey a#accesskeyC {
+  display: block;
+}
 .accesskey a#accesskeyU:hover, .accesskey a#accesskeyU:focus, .accesskey a#accesskeyC:hover, .accesskey a#accesskeyC:focus {
-  background: #f67400 !important;
+  background: #f67400;
   color: #fff;
-  outline: none !important;
-}
-
-a.accesskey {
-  float: left;
-  margin-top: 2px;
-  color: #fff;
-}
-a#U:hover, a#U:focus, a#C:hover, a#C:focus {
-  background: #f67400 !important;
-  color: #fff;
-  outline: none !important;
+  outline: none;
 }
 
 #breadcrumb .breadcrumb {

@@ -14,36 +14,41 @@
 	margin-top: 2px;
 	a{
 		color: #fff;
+		display: inline-block;
+
 
 		&#accesskeyC{ color: #222;}
 
 		&#accesskeyU, 
 		&#accesskeyC{
+			display: block;
 			&:hover, &:focus{
-				background: #f67400 !important;
+				background: #f67400;
+				// box-shadow: 0 0px 0px 2px #f66604 inset !important;
 				color: #fff;
-				outline: none !important;
+				outline: none;
 			}
 		}
 	}
 }
 
-a{
-	&.accesskey{
-		float: left;
-		margin-top: 2px;
-		color: #fff;
-	}
+// a{
+// 	&.accesskey{
+// 		float: left;
+// 		margin-top: 2px;
+// 		color: #fff;
+// 		display: block;
+// 	}
 
-	&#U, 
-	&#C{
-		&:hover, &:focus{
-			background: #f67400 !important;
-			color: #fff;
-			outline: none !important;
-		}
-	}
-}
+// 	&#U, 
+// 	&#C{
+// 		&:hover, &:focus{
+// 			background: #f67400 !important;
+// 			// box-shadow: 0 0px 0px 2px #f66604 inset !important;
+// 			color: #fff;
+// 		}
+// 	}
+// }
 
 
 // breadcrumb
