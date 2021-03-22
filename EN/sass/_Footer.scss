@@ -1,6 +1,6 @@
 // ------------------------- #FatFooter
 #FatFooter {
-	background-color: $color-secondary;
+	background-color: $color-darkgray;
 	position: relative;
 	border-bottom: solid 1px #595959;
 	a{
@@ -19,7 +19,7 @@
 				margin-bottom: 25px;
 				a{
 					margin:0 10px 5px;
-					color: $color-adorn;
+					color: #beed00;
 					font-size: 1.125em;
 					padding: 5px 8px;
 					border: solid 1px transparent;
@@ -85,7 +85,7 @@
 
 // ------------------------- #Footer
 #Footer{
-	background: $color-secondary;
+	background: $color-darkgray;
 	color: #fff;
 	padding: 30px 0;
 	color: #a0a0a0;
@@ -99,7 +99,7 @@
 	}
 
 	a{
-		color: $color-adorn;
+		color: #beed00;
 		font-weight: bold;
 		&:hover, &:focus{}
 	}
@@ -109,7 +109,7 @@
 		margin:0 5px;
 		height: 42px;
 		display: inline-flex;
-		span{ color: darken(#40b00c,5)};
+		span{ color: #fff};
 	}
 
 	.Footer_logo{ margin-bottom: 10px; }
@@ -127,7 +127,7 @@
 				&:hover, &:focus{
 					text-decoration: none;
 					color: #000;
-					background-color: darken($color-adorn,10);
+					background-color: darken(#beed00,10);
 				}
 			}
 		}

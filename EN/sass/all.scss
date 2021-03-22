@@ -36,7 +36,8 @@ a{
 	// @include Text;
 	color:$link-color;
 	&:hover, &:focus{
-		color: #f67400;
+		color: $color-adorn;
+		text-decoration: none;
 	}
 }
 

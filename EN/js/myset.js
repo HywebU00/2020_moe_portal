@@ -1,5 +1,16 @@
 $(function(){
 
+	// 主選單鍵盤控制
+
+	// 1.第一層被 keyup 時，第二層選單展開
+	$('.nav .dropdown').keyup(function() {
+		$(this).addClass('open');
+	});
+    // 2.第二層選單 last-child focusout 時，它的 ul 關閉
+	$('.nav .dropdown .dropdown-menu').find('li:last>a').focusout(function() {
+		$(this).parents('.dropdown').removeClass('open');
+	});
+
 	// 左右主選單 點一個秀一個
 	$('#Header .navbar-header .pull-right').click(function(){
 		$(this).parent().siblings().eq(1).removeClass('in');
@@ -57,8 +68,13 @@ $(function(){
 		});
 		$('#Btn_GoTop').click(function(){
 			$('html,body').animate({scrollTop:0},1200);
-			// return false;
+			return false;
 		});
+
+		$('#Btn_GoTop').keydown(function(e) {
+	        $('body').find('a#gotoMainContent').focus();
+	        e.preventDefault();
+	    });
 	});
 
 	// Animate
@@ -115,6 +131,30 @@ $(function(){
 			$(this).val('收合內容');
 		}
 	}); 
+
+	// 無障礙快捷鍵盤組合
+	$(document).on('keydown', function(e) {
+        // alt+S 查詢
+        if (e.altKey && e.keyCode == 83) {
+            $('html, body').animate({ scrollTop: 0 }, 200, 'easeOutExpo');
+            $('.Search').find('input[type="text"]').focus();
+        }
+        // alt+U header
+        if (e.altKey && e.keyCode == 85) {
+            $('html, body').animate({ scrollTop: 0 }, 200, 'easeOutExpo');
+            $('#Header .accesskey').find('a#accesskeyU').focus();
+        }
+        // alt+C 主要內容區
+        if (e.altKey && e.keyCode == 67) {
+            $('html, body').stop(true, true).animate({ scrollTop: $('#MainContent').find('.accesskey').offset().top }, 800, 'easeOutExpo');
+            $('#MainContent .accesskey').find('a#accesskeyC').focus();
+        }
+        // alt+B footer
+        // if (e.altKey && e.keyCode == 90) {
+        //     $('html, body').stop(true, true).animate({ scrollTop: $('footer').find('.accesskey').offset().top }, 800, 'easeOutExpo');
+        //     $('footer').find('.accesskey').focus();
+        // }
+    });
 
 	// U00頁籤 eason+偉良
 	// jQuery(document).ready(function() {

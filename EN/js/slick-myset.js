@@ -29,7 +29,7 @@ $(function(){
         // next arrow
         nextArrow: '<button type="button" data-role="none" class="slick-next">Next</button>',
         infinite: true,          //無限輪播
-        autoplay: true,          //自動輪播
+        autoplay: false,          //自動輪播
         autoplaySpeed: 3000      //輪播速度
     });
 

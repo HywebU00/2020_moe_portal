@@ -7,7 +7,14 @@ dl{}
 dl dt {color: darken($color-gray, 90);}
 dt,dd{line-height: 180%;}
 
-b, strong{ color: #00ad30; font-size: 120%;}
+b, strong{ color: $color-secondary; font-size: 120%;}
+
+input, button, textarea, select, a{
+	&:focus{
+		outline: solid 3px #f66604 !important;
+		border-radius: 2px !important;
+	}
+}
 
 .radio label, .checkbox label{ margin-right:12px; }
 
@@ -253,7 +260,7 @@ table{
 		padding: .5em 1.25em;
 	}
 	.btn-switch{
-		background: #2a879e;
+		background: #0a748e;
 		color: #fff;
 	}
 }
@@ -347,6 +354,13 @@ table{
 				height:325px;
 				margin: 0 auto;
 			}
+			a{
+				display: block;
+				text-decoration: none;
+				&:hover, &:focus{
+					text-decoration: none;
+				}
+			}
 			.Text{
 				// position: absolute;
 				// bottom: 0;
@@ -362,14 +376,14 @@ table{
 					line-height: 2.2;
 					text-align: center;
 				}
-				a{
-					text-decoration: none;
-					color: #555;
+				// a{
+				// 	text-decoration: none;
+				// 	color: #555;
 
-					&:hover,&:focus{
-						color: #ff4700;
-					}
-				}
+				// 	&:hover,&:focus{
+				// 		color: #ff4700;
+				// 	}
+				// }
 				h3{
 					margin-top: 10px;
 					margin-bottom: 10px;
@@ -526,6 +540,7 @@ table{
 				color: gray !important;
 				opacity: .4;
 				font-size: .75em;
+				border-radius: 50%;
 			}
 		}
 		li.slick-active button{
