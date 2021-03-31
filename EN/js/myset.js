@@ -87,9 +87,9 @@ $(function(){
 		$(".FatFooterBtn").click(function() {
 			$('#FatFooter>div>nav>ul>li>ul').slideToggle(function() {
 				if ($(this).is(':visible')) {
-					document.getElementById("FatFooterBtn").value = "收合";
+					document.getElementById("FatFooterBtn").value = "Close";
 				} else {
-					document.getElementById("FatFooterBtn").value = "展開";
+					document.getElementById("FatFooterBtn").value = "Open";
 				}
 			});
 			$(this).toggleClass('close');

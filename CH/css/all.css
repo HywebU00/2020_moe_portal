@@ -458,8 +458,6 @@ table tr td a {
   background: #082c6d;
   color: #fff;
   padding: 5px 15px;
-  border-radius: 0;
-  text-decoration: none;
   border-radius: 16px;
   margin-bottom: 20px;
 }
@@ -1436,6 +1434,7 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   display: block;
   border-radius: 0 0 3px 3px;
   font-size: 1em;
+  line-height: 22px;
   width: 120px;
   background-color: #000;
   color: #fff;
@@ -1448,6 +1447,8 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
 #FatFooter .close {
   float: none;
   opacity: 1;
+  text-shadow: none;
+  font-weight: normal;
 }
 
 @media (min-width: 1200px) {
