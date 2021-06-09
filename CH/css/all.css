@@ -1755,7 +1755,8 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
 .Main_page .View_area .Anchors .Anchor_List a .Fans:before,
 .Main_page .View_area .Anchors .Anchor_List a .Act_Info:before,
 .Main_page .View_area .Anchors .Anchor_List a .Counseling:before,
-.Main_page .View_area .Anchors .Anchor_List a .Resource:before {
+.Main_page .View_area .Anchors .Anchor_List a .Resource:before,
+.Main_page .View_area .Anchors .Anchor_List a .Disease:before {
   content: "";
   display: block;
   width: 100px;
@@ -1781,6 +1782,9 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
 }
 .Main_page .View_area .Anchors .Anchor_List a .Resource:before {
   background-image: url(../images/basic/img_Anchor_Resource.png);
+}
+.Main_page .View_area .Anchors .Anchor_List a .Disease:before {
+  background-image: url(../images/basic/img_Anchor_Disease.png);
 }
 .Main_page .View_area .Slider {
   margin-bottom: 30px;

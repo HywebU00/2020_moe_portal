@@ -228,7 +228,8 @@
 					.Fans:before,
 					.Act_Info:before,
 					.Counseling:before,
-					.Resource:before{
+					.Resource:before,
+					.Disease:before{
 						content: "";
 						display: block;
 						width: 100px;
@@ -243,6 +244,7 @@
 					.Act_Info:before{ background-image: url(../images/basic/img_Anchor_Act_Info.png); }
 					.Counseling:before{ background-image: url(../images/basic/img_Anchor_Counseling.png); }
 					.Resource:before{ background-image: url(../images/basic/img_Anchor_Resource.png); }
+					.Disease:before{ background-image: url(../images/basic/img_Anchor_Disease.png); }
 				}
 			}
 		}
