@@ -53,6 +53,71 @@ $(function(){
 		});
 	})
 
+	/*------------------------------------*/
+    //////////分享按鈕 share dropdwon////////
+    /*------------------------------------*/
+    $('.Community_Btn .share').children('ul').hide();
+    $('.Community_Btn .share').prepend('<a href="#" class="shareButton">share分享按鈕</a>');
+    var _shareButton = $('.shareButton');
+    _shareButton.off().click(function(e) {
+        $(this).siblings('ul').stop(true, true).slideToggle();
+        e.preventDefault();
+    });
+    _shareButton.keyup(function(event) {
+        $(this).siblings('ul').stop(true, true).slideDown();
+    });
+    $('.Community_Btn .share').find('li:last>a').focusout(function(event) {
+        $(this).parent().parent('ul').hide();
+    });
+    // 點外面關閉share
+    $(document).on('touchend click', function(e) {
+        var container = $(".Community_Btn .share");
+        if (!container.is(e.target) && container.has(e.target).length === 0) {
+            $('.Community_Btn .share ul').hide();
+        }
+    });
+
+    // CP頁 slider fancybox
+    $('.cppic_slider').slick({
+	    dots: false,
+	    infinite: false,
+	    speed: 500,
+	    slidesToShow: 4,
+	    slidesToScroll: 1,
+	    autoplay: false,
+	    autoplaySpeed: 1500,
+	    // pauseOnHover: true,
+	    // pauseOnFocus: true,
+	    // focusOnSelect: true,
+	    // accessibility: true,
+	    // lazyLoad: 'ondemand',
+	    // ease: 'ease',
+	    responsive: [{
+	        breakpoint: 768,
+	        settings: {
+	            slidesToShow: 2,
+	            slidesToScroll: 2,
+	            infinite: true,
+	            dots: true
+	        }
+	    }, {
+	        breakpoint: 545,
+	        settings: {
+	            arrows: true,
+	            slidesToShow: 2,
+	            slidesToScroll: 2
+	        }
+	    }, {
+	        breakpoint: 480,
+	        settings: {
+	            arrows: true,
+	            slidesToShow: 1,
+	            slidesToScroll: 1,
+	            arrows: false
+	        }
+	    }]
+	});
+
 	// Go Top
 	$(function(){
 		var GoTop_Offset = $('#Btn_GoTop').offset().top;

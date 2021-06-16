@@ -23,6 +23,9 @@
 	<link href="assets/module/slick/slick.css" rel="stylesheet">
 	<link href="assets/module/slick/slick-theme.css" rel="stylesheet">
 
+	<!-- 燈箱facybox -->
+	<link rel="stylesheet" type="text/css" href="assets/module/facybox/dist/jquery.fancybox.min.css">
+
 	<!-- social-buttons -->
 	<link href="assets/module/fontello/css/fontello.css" rel="stylesheet">
 	<link href="assets/module/fontello/css/animation.css" rel="stylesheet">
@@ -204,7 +207,19 @@
 								<div class="MetaDay"><i class="icon-calendar"></i><span>Post date：</span>2015/10/15</div>
 								<div class="MetaDay"><i class="icon-eye"></i><span>Visitors：</span>9999</div>
 								<div class="Community_Btn">
-									<a href="#" class="FB-BTN" title="">Facebook</a>
+									<!-- 社群分享 -->
+			                        <div class="share">
+			                            <ul>
+			                                <li><a href="#"><img src="images/basic/icon_facebook.png" alt="facebook"></a></li>
+			                                <li><a href="#"><img src="images/basic/icon_twitter.png" alt="twitter"></a></li>
+			                                <li><a href="#"><img src="images/basic/icon_line.png" alt="line"></a></li>
+			                                <li><a href="#"><img src="images/basic/icon_youtube.png" alt="youtube"></a></li>
+			                                <li><a href="#"><img src="images/basic/icon_googleplus.png" alt="google plus"></a></li>
+			                                <li><a href="#"><img src="images/basic/icon_instagram.png" alt="instagram"></a></li>
+			                                <li><a href="#"><img src="images/basic/icon_linkedin.png" alt="LinkedIn"></a></li>
+			                                <li><a href="#"><img src="images/basic/icon_rss.png" alt="RSS"></a></li>
+			                            </ul>
+			                        </div>
 									<a href="#" class="Print-BTN" title="">友善列印</a>
 								</div>
 							</div>
@@ -212,7 +227,11 @@
 							<div class="Block">
 								<div class="FotoxText clearfix">
 									<div class="LeftFoto">
-										<img src="images/Slider/002.jpg" class="img-responsive" alt="">
+										<a href="images/Slider/002.jpg" data-fancybox="images" data-caption="說明文字">
+							                <img src="images/Slider/002.jpg" alt="">
+							                <noscript><img src="images/Slider/002.jpg" alt=""></noscript>
+							                <span class="caption">說明文字</span>
+							            </a>
 									</div>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dignissimos, nemo, reprehenderit sunt modi rerum. Odio odit, voluptatem ab debitis, dicta ipsum nobis dolores reiciendis earum esse, temporibus neque perspiciatis.</p>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dignissimos, nemo, reprehenderit sunt modi rerum. Odio odit, voluptatem ab debitis, dicta ipsum nobis dolores reiciendis earum esse, temporibus neque perspiciatis.</p>
@@ -248,6 +267,48 @@
 									<p>此步道前2.5 公里路段大抵沿昔日運材軌道而行，山徑寬敞平緩，繞行於山腰之間，輕鬆易行，沿途可觀察動物生態、板岩岩壁、翠綠苔蘚、紅檜林、柳杉林、山櫻花林，以及里程碑、工寮、轉轍器等鐵道歷史遺跡。步道自3 公里處漸次離開山腰路，起伏變大，轉折進入稜脈，3.2 公里至步道終點的路段則綿亙於稜線上，成片的山毛櫸林即在稜脈北側迎風坡，係台灣面積最大的山毛櫸純林，妝點著南澳北溪源頭的群山萬嶺，令人嘆為觀止。</p>
 
 								</div>
+							</div>
+
+							<!-- 燈箱照片 -->
+							<div class="lightbox_slider_block">
+							    <h3>燈箱照片</h3>
+							    <div class="cppic_slider">
+							        <div class="img-container">
+							            <a href="images/demo/06.jpg" data-fancybox="images" data-caption="第1張圖說">
+							                <img src="images/demo/06.jpg" alt="">
+							                <noscript><img src="images/demo/06.jpg" alt=""></noscript>
+							                <span class="caption">第1張圖說</span>
+							            </a>
+							        </div>
+							        <div class="img-container">
+							            <a href="images/demo/07.jpg" data-fancybox="images" data-caption="第2張圖說">
+							                <img src="images/demo/07.jpg" alt="">
+							                <noscript><img src="images/demo/07.jpg" alt=""></noscript>
+							                <span class="caption">第2張圖說</span>
+							            </a>
+							        </div>
+							        <div class="img-container">
+							            <a href="images/demo/08.jpg" data-fancybox="images" data-caption="第3張圖說">
+							                <img src="images/demo/08.jpg" alt="">
+							                <noscript><img src="images/demo/08.jpg" alt=""></noscript>
+							                <span class="caption">第3張圖說</span>
+							            </a>
+							        </div>
+							        <div class="img-container">
+							            <a href="images/demo/10.jpg" data-fancybox="images" data-caption="第4張圖說">
+							                <img src="images/demo/10.jpg" alt="">
+							                <noscript><img src="images/demo/10.jpg" alt=""></noscript>
+							                <span class="caption">第4張圖說</span>
+							            </a>
+							        </div>
+							        <div class="img-container">
+							            <a href="images/demo/12.jpg" data-fancybox="images" data-caption="第5張圖說">
+							                <img src="images/demo/12.jpg" alt="">
+							                <noscript><img src="images/demo/12.jpg" alt=""></noscript>
+							                <span class="caption">第5張圖說</span>
+							            </a>
+							        </div>
+							    </div>
 							</div>
 
 							<blockquote dir="ltr">
@@ -652,6 +713,8 @@
 	<!-- Bootstrap JavaScript -->
 	<script src="assets/module/bootstrap-3.3.2/js/bootstrap.min.js"></script>
 	<script src="assets/module/bootstrap-3.3.2/js/bootstrap-hover-dropdown.js"></script>
+	<!-- 燈箱facybox -->
+	<script src="assets/module/facybox/dist/jquery.fancybox.min.js"></script>
 	<!-- slick + 自訂  -->
 	<script src="assets/module/slick/slick.js"></script>
 	<script src="js/slick-myset.js"></script>
