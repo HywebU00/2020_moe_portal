@@ -2592,7 +2592,7 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
 .Content_page .lightbox_slider_block .cppic_slider {
   padding-left: 16px;
   padding-right: 16px;
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 .Content_page .lightbox_slider_block .img-container {
   margin: 0px 15px;
@@ -2642,6 +2642,29 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   width: 10px;
   height: 10px;
   margin: 0 10px;
+}
+.Content_page .lightbox_slider_block .slick-dots li button {
+  /* 點的顏色 */
+  background: #666;
+  opacity: .4;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.Content_page .lightbox_slider_block .slick-dots li button:before {
+  color: transparent;
+}
+.Content_page .lightbox_slider_block .slick-dots li button:hover, .Content_page .lightbox_slider_block .slick-dots li button:focus {
+  opacity: 1;
+  background: #21baff;
+}
+.Content_page .lightbox_slider_block .slick-dots li button:focus {
+  opacity: 1;
+  background: #ff3e4d;
+}
+.Content_page .lightbox_slider_block .slick-dots li.slick-active button {
+  opacity: 1;
+  background: #004d99;
 }
 .Content_page .lightbox_slider_block .slick-prev, .Content_page .lightbox_slider_block .slick-next {
   font-size: 0em;
