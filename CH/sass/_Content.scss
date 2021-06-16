@@ -1514,7 +1514,7 @@ $aHover: darken($aColor, 10);
 	    .cppic_slider {
 	        padding-left: 16px;
 	        padding-right: 16px;
-	        margin-bottom: 0;
+	        margin-bottom: 30px;
 	    }
 	    .img-container {
 	        margin: 0px 15px;
@@ -1541,13 +1541,51 @@ $aHover: darken($aColor, 10);
 	    }
 	    // dots
 	    .slick-dots {
-	        bottom: -30px;
-	        li {
-	            width: 10px;
+		    // 位置距離
+		    bottom: -30px;
+		    li {
+		        // 兩點的距離
+		        width: 10px;
 	            height: 10px;
 	            margin: 0 10px;
-	        }
-	    }
+		        button {
+		            /* 點的顏色 */
+		            background: #666;
+		            opacity: .4;
+		            width: 15px;
+		            height: 15px;
+		            border-radius: 50%;
+		            
+		            &:before{ color: transparent; }
+		            &:hover, &:focus {
+		                opacity: 1;
+		                // 點hover的顏色
+		                background: #21baff;
+		            }
+		            &:focus {
+		                opacity: 1;
+		                // 點focus的顏色
+		                background: #ff3e4d;
+		                // box-shadow: 0px 0px 0px 1px #ff3e4d; /* 讓focus過去的點大一些 */
+		            }
+		        }
+		        &.slick-active {
+		            button {
+		                opacity: 1;
+		                // 點 active 的顏色
+		                background: $aHover;
+		                &:hover {
+		                    // 點 active  hover的顏色
+		                    // background: #ff3e4d;
+		                }
+		                &:focus {
+		                    // 點 active  focus的顏色
+		                    // background: #ff3e4d;
+		                }
+		            }
+		        }
+		    }
+		}
 	    //Arrows
 	    // .slick-prev {
 	    //     // left: -1 * $grid-gutter-width/2;
