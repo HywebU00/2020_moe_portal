@@ -554,7 +554,6 @@ table tr td a {
 .Community_Btn .Print-BTN {
   width: 40px;
   height: 40px;
-  line-height: 40px;
   text-align: center;
   display: inline-block;
   border-radius: 50%;
@@ -2582,6 +2581,73 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
 .Content_page .Meta .Community_Btn {
   font-size: 0;
 }
+.Content_page .Meta .Community_Btn .share {
+  box-sizing: border-box;
+  text-align: center;
+  height: 40px;
+  margin: 0 4px;
+  position: relative;
+}
+.Content_page .Meta .Community_Btn .share a.shareButton {
+  display: block;
+  background: #50902b;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-indent: -9999px;
+  text-align: center;
+  position: relative;
+}
+.Content_page .Meta .Community_Btn .share a.shareButton:before {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  top: 20%;
+  left: 20%;
+  background: url(../images/basic/icon_share.png) no-repeat center center !important;
+  background-size: 24px !important;
+}
+.Content_page .Meta .Community_Btn .share a.shareButton:hover, .Content_page .Meta .Community_Btn .share a.shareButton:focus {
+  background: #004d99;
+}
+.Content_page .Meta .Community_Btn .share ul {
+  display: none;
+  position: absolute;
+  top: 46px;
+  padding: 6px;
+  background: #FFF;
+  box-shadow: 2px 2px 5px RGBA(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 999;
+  height: auto;
+}
+.Content_page .Meta .Community_Btn .share ul li {
+  display: block;
+  margin: 0 auto 0.5em;
+}
+.Content_page .Meta .Community_Btn .share ul li:last-child {
+  margin-bottom: 0;
+}
+.Content_page .Meta .Community_Btn .share ul li img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.Content_page .Meta .Community_Btn .share ul li a {
+  background: transparent;
+  display: block;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 4px;
+}
+.Content_page .Meta .Community_Btn .share ul li a:hover, .Content_page .Meta .Community_Btn .share ul li a:focus {
+  background: transparent;
+}
+.Content_page .Meta .Community_Btn .share ul li a:hover img, .Content_page .Meta .Community_Btn .share ul li a:focus img {
+  filter: grayscale(1);
+}
 @media (max-width: 767px) {
   .Content_page .Meta div:last-child {
     margin-top: 10px;
@@ -2634,6 +2700,21 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   margin: 0 auto;
   background: #eee;
 }
+.Content_page .FotoxText .LeftFoto a {
+  display: block;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  color: #fff;
+}
+.Content_page .FotoxText .LeftFoto a span.caption {
+  display: block;
+  width: 100%;
+  padding: .5em 1em;
+  background: rgba(0, 0, 0, 0.6);
+}
+.Content_page .FotoxText .LeftFoto a:hover, .Content_page .FotoxText .LeftFoto a:focus {
+  text-decoration: none;
+}
 .Content_page .FotoxText ol, .Content_page .FotoxText ul {
   display: table;
 }
@@ -2648,6 +2729,126 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
     width: auto;
     margin: 0 auto;
   }
+}
+.Content_page .lightbox_slider_block {
+  background: #fff;
+  padding: 1em 0;
+  clear: both;
+}
+.Content_page .lightbox_slider_block h3 {
+  font-size: 1.625em;
+  font-weight: bold;
+  color: #082c6d;
+  border-bottom: solid 1px #b6b6b6;
+  padding-bottom: 15px;
+}
+.Content_page .lightbox_slider_block .cppic_slider {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 0;
+}
+.Content_page .lightbox_slider_block .img-container {
+  margin: 0px 15px;
+  position: relative;
+  overflow: hidden;
+  overflow: hidden;
+}
+.Content_page .lightbox_slider_block .img-container:before {
+  display: inline-block;
+  content: "";
+  padding-top: 75%;
+}
+.Content_page .lightbox_slider_block .img-container img {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+.Content_page .lightbox_slider_block .img-container img {
+  object-fit: contain;
+}
+.Content_page .lightbox_slider_block .caption {
+  padding: .5em !important;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.75) !important;
+  color: #FFF;
+  bottom: -2em !important;
+  left: 0;
+  font-size: .938em !important;
+  height: 2em !important;
+  line-height: 1 !important;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: .3s ease-out;
+}
+.Content_page .lightbox_slider_block .slick-dots {
+  bottom: -30px;
+}
+.Content_page .lightbox_slider_block .slick-dots li {
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+}
+.Content_page .lightbox_slider_block .slick-prev, .Content_page .lightbox_slider_block .slick-next {
+  font-size: 0em;
+  line-height: 0em;
+  position: absolute;
+  top: calc(50% - 20px);
+  display: block;
+  width: 40px !important;
+  height: 60px !important;
+  padding: 0 !important;
+  min-width: auto;
+  z-index: 2;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  transition: .3s ease-out;
+}
+.Content_page .lightbox_slider_block .slick-prev:hover, .Content_page .lightbox_slider_block .slick-prev:focus, .Content_page .lightbox_slider_block .slick-next:hover, .Content_page .lightbox_slider_block .slick-next:focus {
+  border: none !important;
+  outline: none;
+  box-shadow: 0px 0px 0px 2px #50902b inset;
+}
+.Content_page .lightbox_slider_block .slick-prev {
+  left: -10px;
+  background: url("../images/slick/icon_arrow_left_inverse.png") center center no-repeat RGBA(255, 255, 255, 0.5);
+  background-size: 30px 30px;
+  /* 箭頭 hover及focus 樣式 */
+}
+.Content_page .lightbox_slider_block .slick-prev:hover, .Content_page .lightbox_slider_block .slick-prev:focus {
+  background: url("../images/slick/icon_arrow_left_inverse.png") center center no-repeat RGBA(255, 255, 255, 0.8);
+  background-size: 30px 30px;
+}
+.Content_page .lightbox_slider_block .slick-next {
+  right: -10px;
+  background: url("../images/slick/icon_arrow_right_inverse.png") center center no-repeat RGBA(255, 255, 255, 0.5);
+  background-size: 30px 30px;
+  /* 箭頭 hover及focus 樣式 */
+}
+.Content_page .lightbox_slider_block .slick-next:hover, .Content_page .lightbox_slider_block .slick-next:focus {
+  background: url("../images/slick/icon_arrow_right_inverse.png") center center no-repeat RGBA(255, 255, 255, 0.8);
+  background-size: 30px 30px;
+}
+.Content_page .lightbox_slider_block a {
+  color: #555;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.Content_page .lightbox_slider_block a:hover .caption, .Content_page .lightbox_slider_block a:focus .caption {
+  bottom: 0 !important;
 }
 .Content_page .Feedback h4 {
   margin: 0 0 20px;
