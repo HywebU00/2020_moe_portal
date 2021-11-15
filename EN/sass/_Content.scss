@@ -670,7 +670,22 @@ $aHover: darken($aColor, 10);
 .Content_page{
 	.Block{
 		padding: 20px 0;
-		.Block{ padding: 0 0;}
+		.Block{
+			padding: 0 0;
+			margin: 2em 0;
+		}
+
+		.List_Download,
+		.List_Link{
+			h3{
+				font-size: 1.625em;
+				font-weight: bold;
+			    color: #082c6d;
+			    border-bottom: solid 1px #b6b6b6;
+			    padding-bottom: 15px;
+			}
+			a{ text-decoration: none; }
+		}
 	}
 
 	p{ margin-bottom: 1.5em; }
@@ -1173,6 +1188,7 @@ $aHover: darken($aColor, 10);
 	        position: relative;
 	        @include aspect-ratio(4, 3);
 	        overflow: hidden;
+	        background: #f0f0f0;
 	        img {
 	            object-fit: contain;
 	        }

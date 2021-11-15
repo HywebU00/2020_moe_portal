@@ -2216,6 +2216,19 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
 }
 .Content_page .Block .Block {
   padding: 0 0;
+  margin: 2em 0;
+}
+.Content_page .Block .List_Download h3,
+.Content_page .Block .List_Link h3 {
+  font-size: 1.625em;
+  font-weight: bold;
+  color: #082c6d;
+  border-bottom: solid 1px #b6b6b6;
+  padding-bottom: 15px;
+}
+.Content_page .Block .List_Download a,
+.Content_page .Block .List_Link a {
+  text-decoration: none;
 }
 .Content_page p {
   margin-bottom: 1.5em;
@@ -2599,6 +2612,7 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   position: relative;
   overflow: hidden;
   overflow: hidden;
+  background: #f0f0f0;
 }
 .Content_page .lightbox_slider_block .img-container:before {
   display: inline-block;
