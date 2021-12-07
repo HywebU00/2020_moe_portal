@@ -57,7 +57,7 @@ $(function(){
     //////////分享按鈕 share dropdwon////////
     /*------------------------------------*/
     $('.Community_Btn .share').children('ul').hide();
-    $('.Community_Btn .share').prepend('<a href="#" class="shareButton" title="分享">share分享按鈕</a>');
+    $('.Community_Btn .share').prepend('<a href="#" class="shareButton" title="Share">share分享按鈕</a>');
     var _shareButton = $('.shareButton');
     _shareButton.off().click(function(e) {
         $(this).siblings('ul').stop(true, true).slideToggle();
