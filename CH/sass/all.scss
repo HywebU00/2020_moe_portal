@@ -27,7 +27,8 @@ h1, h2, h3, h4, h5, h6 {
 p{
 	margin-bottom: 15px;
 	@extend %text-line-height;
-	font-size: 1em;
+	// font-size: 1em;
+	font-size: 100%
 }
 
 a{
@@ -42,7 +43,8 @@ a{
 
 blockquote{
 	border-left: 5px solid #fff;
-	font-size: 1em;
+	// font-size: 1em;
+	font-size: 100%
 }
 
 @media print {

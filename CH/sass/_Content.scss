@@ -957,8 +957,17 @@ $aHover: darken($aColor, 10);
 // 內頁項目設定
 .Content_page{
 
+	font-size: 110%;
+
 	.Block{
 		padding: 20px 0;
+
+		>.container{
+			@media (min-width: 1200px) {
+				width: calc(1170px * .85);
+			}
+		}
+
 		.Block{
 			padding: 0 0;
 			margin: 2em 0;

@@ -2362,8 +2362,16 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   }
 }
 
+.Content_page {
+  font-size: 110%;
+}
 .Content_page .Block {
   padding: 20px 0;
+}
+@media (min-width: 1200px) {
+  .Content_page .Block > .container {
+    width: calc(1170px * .85);
+  }
 }
 .Content_page .Block .Block {
   padding: 0 0;
@@ -3092,7 +3100,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-bottom: 15px;
-  font-size: 1em;
+  font-size: 100%;
 }
 
 a {
@@ -3104,7 +3112,7 @@ a:hover, a:focus {
 
 blockquote {
   border-left: 5px solid #fff;
-  font-size: 1em;
+  font-size: 100%;
 }
 
 @media print {

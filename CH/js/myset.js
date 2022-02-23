@@ -208,7 +208,7 @@ $(function(){
 		$(".FontSmall").click(function(){
 			$(this).siblings().removeClass('active');
 			$(this).addClass('active');
-			$(".Content_page").css({fontSize:"85%"});
+			$(".Content_page").css({fontSize:"100%"});
 		});
 		$(".FontDefault").click(function(){
 			$(this).siblings().removeClass('active');
@@ -218,7 +218,7 @@ $(function(){
 		$(".FontLarge").click(function(){
 			$(this).siblings().removeClass('active');
 			$(this).addClass('active');
-			$(".Content_page").css({fontSize:"115%"});
+			$(".Content_page").css({fontSize:"120%"});
 		});
 	});
 
