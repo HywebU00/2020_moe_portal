@@ -2507,7 +2507,7 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   width: calc(100%/9*2);
 }
 .Content_page .Page .Column_Center {
-  width: calc(100%/9*5 - 4px);
+  width: calc(100%/9*6 - 4px);
 }
 .Content_page .Page .Column_Right {
   width: calc(100%/9*2 - 4px);
