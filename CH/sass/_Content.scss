@@ -1359,7 +1359,7 @@ $aHover: darken($aColor, 10);
 		.thumbnail{
 			border-radius: 0;
 			.Mask{
-				height: 268px;
+				height: 276px;
 				margin-bottom: 8px;
 				overflow: hidden;
 				a{
@@ -1377,6 +1377,12 @@ $aHover: darken($aColor, 10);
 							line-height: 1.2;
 							color: #082c6d;
 							font-size: 1.125em;
+
+							// 刪節號
+							display: -webkit-box;
+							-webkit-box-orient: vertical;
+							-webkit-line-clamp: 2;
+							overflow: hidden;
 						}
 					}
 
@@ -1705,17 +1711,18 @@ $aHover: darken($aColor, 10);
 
 				.Title{
 					float:left;
-					width:15%;
+					width:180px;
 					margin:0 !important;
 				}
 				.Value{
 					float:left;
-					width:85%;
+					width:calc(100% - 180px);
 					height:15px;
 					background:#fff;
 					border: solid 1px #d5d5d5;
 					border-radius: 15px;
 					overflow:hidden;
+					margin: 5px 0;
 					span{
 						display:block;
 						background: #a0a0a0;

@@ -213,7 +213,7 @@ $(function(){
 		$(".FontDefault").click(function(){
 			$(this).siblings().removeClass('active');
 			$(this).addClass('active');
-			$(".Content_page").css({fontSize:"100%"});
+			$(".Content_page").css({fontSize:"110%"});
 	  	});
 		$(".FontLarge").click(function(){
 			$(this).siblings().removeClass('active');

@@ -2211,8 +2211,16 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   color: #00b350;
 }
 
+.Content_page {
+  font-size: 110%;
+}
 .Content_page .Block {
   padding: 20px 0;
+}
+@media (min-width: 1200px) {
+  .Content_page .Block > .container {
+    width: calc(1170px * .85);
+  }
 }
 .Content_page .Block .Block {
   padding: 0 0;
@@ -2765,17 +2773,18 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
 }
 .Content_page .Feedback .Proportion section .Title {
   float: left;
-  width: 15%;
+  width: 180px;
   margin: 0 !important;
 }
 .Content_page .Feedback .Proportion section .Value {
   float: left;
-  width: 85%;
+  width: calc(100% - 180px);
   height: 15px;
   background: #fff;
   border: solid 1px #d5d5d5;
   border-radius: 15px;
   overflow: hidden;
+  margin: 5px 0;
 }
 .Content_page .Feedback .Proportion section .Value span {
   display: block;

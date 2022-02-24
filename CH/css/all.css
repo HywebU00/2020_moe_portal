@@ -2674,7 +2674,7 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   border-radius: 0;
 }
 .Content_page .FotoxText .thumbnail .Mask {
-  height: 268px;
+  height: 276px;
   margin-bottom: 8px;
   overflow: hidden;
 }
@@ -2692,6 +2692,10 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   line-height: 1.2;
   color: #082c6d;
   font-size: 1.125em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 .Content_page .FotoxText .thumbnail .Mask a:hover .caption h4, .Content_page .FotoxText .thumbnail .Mask a:focus .caption h4 {
   color: #c35c00;
@@ -2922,17 +2926,18 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
 }
 .Content_page .Feedback .Proportion section .Title {
   float: left;
-  width: 15%;
+  width: 180px;
   margin: 0 !important;
 }
 .Content_page .Feedback .Proportion section .Value {
   float: left;
-  width: 85%;
+  width: calc(100% - 180px);
   height: 15px;
   background: #fff;
   border: solid 1px #d5d5d5;
   border-radius: 15px;
   overflow: hidden;
+  margin: 5px 0;
 }
 .Content_page .Feedback .Proportion section .Value span {
   display: block;
