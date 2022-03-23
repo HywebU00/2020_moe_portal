@@ -185,8 +185,7 @@ $aHover: darken($aColor, 10);
 		}
 	}
 }
-.gsc-input-box{ border:0!important; }
-.gsc-search-box.gsc-search-box-tools{ margin-bottom: 2rem!important; }
+// .gsc-search-box.gsc-search-box-tools{ margin-bottom: 2rem!important; }
 .table.gsc-search-box table td{ border-bottom: 0!important; }
 .gs-result .gs-title, .gs-result .gs-title * { color: #082c6d!important; }
 
@@ -204,7 +203,16 @@ $aHover: darken($aColor, 10);
 .gsc-result-info-container,.gsc-orderby-container{ border:0!important; }
 .gsc-selected-option{ white-space: nowrap; }
 
-.gsc-input-box{ border: 0; }
+.gsc-input {
+    border: transparent !important;
+ }
+.gsc-input-box{
+	border: 0 !important;
+	table{
+		margin-bottom: 0 !important;
+		height: 35px;
+	}
+}
 
 // RWD Youtube
 .youtube{ margin-bottom: 1.5em; }

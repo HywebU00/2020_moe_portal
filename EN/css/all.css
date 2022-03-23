@@ -1704,14 +1704,6 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   border: 0 !important;
 }
 
-.gsc-input-box {
-  border: 0 !important;
-}
-
-.gsc-search-box.gsc-search-box-tools {
-  margin-bottom: 2rem !important;
-}
-
 .table.gsc-search-box table td {
   border-bottom: 0 !important;
 }
@@ -1755,8 +1747,16 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   white-space: nowrap;
 }
 
+.gsc-input {
+  border: transparent !important;
+}
+
 .gsc-input-box {
-  border: 0;
+  border: 0 !important;
+}
+.gsc-input-box table {
+  margin-bottom: 0 !important;
+  height: 35px;
 }
 
 .youtube {
