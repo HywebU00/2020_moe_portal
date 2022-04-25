@@ -166,28 +166,52 @@ $(function(){
 	// })
 
 	// Go Top
-	$(function(){
-		var GoTop_Offset = $('#Btn_GoTop').offset().top;
+	// $(function(){
+	// 	var GoTop_Offset = $('#Btn_GoTop').offset().top;
 
-		$('#Btn_GoTop').hide();
+	// 	$('#Btn_GoTop').hide();
 
-		$(window).scroll(function() {
-			if ( $(this).scrollTop() > 300){
-				$('#Btn_GoTop').fadeIn(600);
-			}else {
-				$('#Btn_GoTop').stop().fadeOut(600);
-			}
-		});
-		$('#Btn_GoTop').click(function(){
-			$('html,body').animate({scrollTop:0},1200);
-			return false;
-		});
+	// 	$(window).scroll(function() {
+	// 		if ( $(this).scrollTop() > 300){
+	// 			$('#Btn_GoTop').fadeIn(600);
+	// 		}else {
+	// 			$('#Btn_GoTop').stop().fadeOut(600);
+	// 		}
+	// 	});
+	// 	$('#Btn_GoTop').click(function(){
+	// 		$('html,body').animate({scrollTop:0},1200);
+	// 		return false;
+	// 	});
 
-		$('#Btn_GoTop').keydown(function(e) {
-	        $('body').find('a#gotoMainContent').focus();
-	        e.preventDefault();
-	    });
-	});
+	// 	$('#Btn_GoTop').keydown(function(e) {
+	//         $('body').find('a#gotoMainContent').focus();
+	//         e.preventDefault();
+	//     });
+	// });
+
+	/*-----------------------------------*/
+    ///////////////置頂go to top////////////
+    /*-----------------------------------*/
+    $(window).bind('scroll', function() {
+        if ($(this).scrollTop() > 200) {
+            $('#Btn_GoTop').fadeIn();
+        } else {
+            $('#Btn_GoTop').fadeOut();
+        }
+    });
+    /*-----------------------------------*/
+    /////click event to scroll to top//////
+    /*-----------------------------------*/
+    $('#Btn_GoTop').click(function(e) {
+        $('html, body').animate({ scrollTop: 0 }, 400, 'easeOutExpo');
+        $('a.goCenter').focus(); //加入這行
+        e.preventDefault();
+    });
+    $('#Btn_GoTop').keydown(function(e) {
+        $('body').find('a#gotoMainContent').focus();
+        e.preventDefault();
+    });
+    
 
 	//Fatfooter 內容收合
 	$(function(){

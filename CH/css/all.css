@@ -664,6 +664,10 @@ table tr td a {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.Slider .Singleplay .slick-dots {
+  bottom: -30px;
+  justify-content: flex-end;
+}
 .Slider .BannerSlide .Set {
   position: relative;
 }
