@@ -2774,8 +2774,7 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   float: left;
   display: block;
   width: 480px;
-  padding: 6px;
-  margin: 0 15px 15px 0;
+  margin: 0 2.25em 1em 0;
   box-sizing: border-box;
 }
 .Content_page .FotoxText .LeftFoto p {
@@ -2793,8 +2792,6 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
 }
 .Content_page .FotoxText .LeftFoto a {
   display: block;
-  padding-bottom: 8px;
-  padding-top: 8px;
   color: #fff;
 }
 .Content_page .FotoxText .LeftFoto a span.caption {
@@ -2806,15 +2803,11 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
 .Content_page .FotoxText .LeftFoto a:hover, .Content_page .FotoxText .LeftFoto a:focus {
   text-decoration: none;
 }
-.Content_page .FotoxText ol, .Content_page .FotoxText ul {
-  display: table;
-}
 @media (max-width: 767px) {
   .Content_page .FotoxText .LeftFoto {
     float: none;
     width: auto;
-    padding: 0 6px;
-    margin: 0px;
+    margin: 0 0 1em;
     width: 100%;
   }
   .Content_page .FotoxText .LeftFoto img {
