@@ -216,21 +216,28 @@ dl dt {
   color: #0e0e0e;
 }
 
-dt, dd {
+dt,
+dd {
   line-height: 180%;
 }
 
-b, strong {
+b,
+strong {
   color: #00880A;
   font-size: 120%;
 }
 
-input:focus, button:focus, textarea:focus, select:focus, a:focus {
+input:focus,
+button:focus,
+textarea:focus,
+select:focus,
+a:focus {
   outline: solid 3px #f66604 !important;
   border-radius: 2px !important;
 }
 
-.radio label, .checkbox label {
+.radio label,
+.checkbox label {
   margin-right: 12px;
 }
 
@@ -244,11 +251,13 @@ table tr:nth-child(odd) {
 table tr:hover, table tr:focus {
   background-color: #fff3e3;
 }
-table tr th, table tr td {
+table tr th,
+table tr td {
   padding: 8px;
   line-height: 1.42857143;
 }
-table tr th p, table tr td p {
+table tr th p,
+table tr td p {
   margin-bottom: 0 !important;
 }
 table tr th {
@@ -256,7 +265,8 @@ table tr th {
   border: #a7a7a7 1px solid;
   color: #fff;
 }
-table tr th b, table tr th strong {
+table tr th b,
+table tr th strong {
   color: #fff;
   font-size: 100%;
 }
@@ -280,7 +290,8 @@ table tr td a {
   color: #fff;
   text-align: center;
 }
-.table table tr th b, .table table tr th strong {
+.table table tr th b,
+.table table tr th strong {
   color: #fff;
   font-size: 100%;
 }
@@ -471,7 +482,8 @@ table tr td a {
     margin-top: -20px;
   }
 }
-.Btns a, .Btns button {
+.Btns a,
+.Btns button {
   font-size: 1em;
   margin-bottom: 8px;
   text-decoration: none;
@@ -559,7 +571,12 @@ table tr td a {
   border-radius: 50%;
   margin: 0 5px;
 }
-.Community_Btn .Rss-BTN i, .Community_Btn .FB-BTN i, .Community_Btn .Twitter-BTN i, .Community_Btn .Google-BTN i, .Community_Btn .Plurk-BTN i, .Community_Btn .Print-BTN i {
+.Community_Btn .Rss-BTN i,
+.Community_Btn .FB-BTN i,
+.Community_Btn .Twitter-BTN i,
+.Community_Btn .Google-BTN i,
+.Community_Btn .Plurk-BTN i,
+.Community_Btn .Print-BTN i {
   color: #fff;
   font-size: 1.25em;
 }
@@ -659,7 +676,8 @@ table tr td a {
   border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
   color: #fff;
 }
-.Slider .Singleplay .Pic .Text h3, .Slider .Singleplay .Pic .Text p {
+.Slider .Singleplay .Pic .Text h3,
+.Slider .Singleplay .Pic .Text p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -683,7 +701,8 @@ table tr td a {
   height: 80px;
   border: solid 1px #e5e5e5;
 }
-.Slider .BannerSlide .slick-prev, .Slider .BannerSlide .slick-next {
+.Slider .BannerSlide .slick-prev,
+.Slider .BannerSlide .slick-next {
   width: 28px;
   height: 60px;
 }
@@ -733,7 +752,8 @@ table tr td a {
 .Slider .slick-slider {
   margin-bottom: 0;
 }
-.Slider .slick-prev, .Slider .slick-next {
+.Slider .slick-prev,
+.Slider .slick-next {
   width: 35px;
   height: 66px;
   top: 40%;
@@ -811,7 +831,8 @@ table tr td a {
     height: 80px;
     margin: 0 auto;
   }
-  .Slider .BannerSlide .slick-prev, .Slider .BannerSlide .slick-next {
+  .Slider .BannerSlide .slick-prev,
+  .Slider .BannerSlide .slick-next {
     top: 48%;
   }
   .Slider .BannerSlide .slick-prev {
@@ -827,7 +848,6 @@ table tr td a {
 }
 .List li a {
   display: block;
-  border-bottom: dotted 1px #b3b3b3;
   padding: 5px 15px;
   text-decoration: none;
   letter-spacing: 1px;
@@ -917,7 +937,8 @@ table tr td a {
 .Smooth_Table #TansForm-table tr:hover, .Smooth_Table #TansForm-table tr:focus {
   background-color: #fff3e3;
 }
-.Smooth_Table #TansForm-table tr td, .Smooth_Table #TansForm-table tr th {
+.Smooth_Table #TansForm-table tr td,
+.Smooth_Table #TansForm-table tr th {
   padding: 10px 8px;
 }
 .Smooth_Table #TansForm-table tr td {
@@ -960,7 +981,11 @@ table tr td a {
     background-color: transparent !important;
     display: block;
   }
-  .table-responsive .Smooth_Table .break-table thead, .table-responsive .Smooth_Table .break-table tbody, .table-responsive .Smooth_Table .break-table th, .table-responsive .Smooth_Table .break-table td, .table-responsive .Smooth_Table .break-table tr {
+  .table-responsive .Smooth_Table .break-table thead,
+  .table-responsive .Smooth_Table .break-table tbody,
+  .table-responsive .Smooth_Table .break-table th,
+  .table-responsive .Smooth_Table .break-table td,
+  .table-responsive .Smooth_Table .break-table tr {
     display: block;
   }
   .table-responsive .Smooth_Table .break-table thead tr {
@@ -1598,6 +1623,425 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   outline: none;
 }
 
+.file_download,
+.List {
+  width: 100%;
+  margin: 0 auto 2em;
+  clear: both;
+  zoom: 1;
+}
+.file_download:before, .file_download:after,
+.List:before,
+.List:after {
+  content: "";
+  display: table;
+}
+.file_download:after,
+.List:after {
+  clear: both;
+}
+.file_download h3,
+.List h3 {
+  padding: 12px 0px 15px 0px;
+  margin: 0.5em 0px 0.2em;
+  border-bottom: solid 1px #b6b6b6;
+}
+.file_download ul,
+.List ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.file_download li,
+.List li {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding: .5em 0 .5em 1.5em;
+  border-bottom: solid 1px #eee;
+}
+.file_download li:before,
+.List li:before {
+  content: '·';
+  font-size: 2em;
+  font-weight: bold;
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  top: .32em;
+  left: .1em;
+  color: #666;
+}
+.file_download li .file_name,
+.List li .file_name {
+  line-height: 1.8em;
+  margin: .2em .5em .2em 0;
+  color: #222;
+}
+.file_download li .file_name ~ span,
+.List li .file_name ~ span {
+  flex: 0 0 auto;
+  margin: .2em;
+  font-size: .875em;
+  line-height: 1.5em;
+  vertical-align: middle;
+  color: #666;
+}
+.file_download li .file_name ~ span a,
+.List li .file_name ~ span a {
+  color: #fff;
+  display: inline-block;
+  margin-right: 8px;
+}
+.file_download li span.file_doc a,
+.List li span.file_doc a {
+  color: #fff;
+  font-weight: bold;
+  padding: .2em .8em;
+  border-radius: 3px;
+}
+.file_download li span.file_doc a:hover, .file_download li span.file_doc a:focus,
+.List li span.file_doc a:hover,
+.List li span.file_doc a:focus {
+  color: #fff;
+}
+.file_download li span.file_docx a,
+.List li span.file_docx a {
+  color: #fff;
+  font-weight: bold;
+  padding: .2em .8em;
+  border-radius: 3px;
+}
+.file_download li span.file_docx a:hover, .file_download li span.file_docx a:focus,
+.List li span.file_docx a:hover,
+.List li span.file_docx a:focus {
+  color: #fff;
+}
+.file_download li span.file_odt a,
+.List li span.file_odt a {
+  color: #fff;
+  font-weight: bold;
+  padding: .2em .8em;
+  border-radius: 3px;
+}
+.file_download li span.file_odt a:hover, .file_download li span.file_odt a:focus,
+.List li span.file_odt a:hover,
+.List li span.file_odt a:focus {
+  color: #fff;
+}
+.file_download li span.file_xls a,
+.List li span.file_xls a {
+  color: #fff;
+  font-weight: bold;
+  padding: .2em .8em;
+  border-radius: 3px;
+}
+.file_download li span.file_xls a:hover, .file_download li span.file_xls a:focus,
+.List li span.file_xls a:hover,
+.List li span.file_xls a:focus {
+  color: #fff;
+}
+.file_download li span.file_xlsx a,
+.List li span.file_xlsx a {
+  color: #fff;
+  font-weight: bold;
+  padding: .2em .8em;
+  border-radius: 3px;
+}
+.file_download li span.file_xlsx a:hover, .file_download li span.file_xlsx a:focus,
+.List li span.file_xlsx a:hover,
+.List li span.file_xlsx a:focus {
+  color: #fff;
+}
+.file_download li span.file_csv a,
+.List li span.file_csv a {
+  color: #fff;
+  font-weight: bold;
+  padding: .2em .8em;
+  border-radius: 3px;
+}
+.file_download li span.file_csv a:hover, .file_download li span.file_csv a:focus,
+.List li span.file_csv a:hover,
+.List li span.file_csv a:focus {
+  color: #fff;
+}
+.file_download li span.file_ods a,
+.List li span.file_ods a {
+  color: #fff;
+  font-weight: bold;
+  padding: .2em .8em;
+  border-radius: 3px;
+}
+.file_download li span.file_ods a:hover, .file_download li span.file_ods a:focus,
+.List li span.file_ods a:hover,
+.List li span.file_ods a:focus {
+  color: #fff;
+}
+.file_download li span.file_ppt a,
+.List li span.file_ppt a {
+  color: #fff;
+  font-weight: bold;
+  padding: .2em .8em;
+  border-radius: 3px;
+}
+.file_download li span.file_ppt a:hover, .file_download li span.file_ppt a:focus,
+.List li span.file_ppt a:hover,
+.List li span.file_ppt a:focus {
+  color: #fff;
+}
+.file_download li span.file_pptx a,
+.List li span.file_pptx a {
+  color: #fff;
+  font-weight: bold;
+  padding: .2em .8em;
+  border-radius: 3px;
+}
+.file_download li span.file_pptx a:hover, .file_download li span.file_pptx a:focus,
+.List li span.file_pptx a:hover,
+.List li span.file_pptx a:focus {
+  color: #fff;
+}
+.file_download li span.file_odp a,
+.List li span.file_odp a {
+  color: #fff;
+  font-weight: bold;
+  padding: .2em .8em;
+  border-radius: 3px;
+}
+.file_download li span.file_odp a:hover, .file_download li span.file_odp a:focus,
+.List li span.file_odp a:hover,
+.List li span.file_odp a:focus {
+  color: #fff;
+}
+.file_download li span.file_zip a,
+.List li span.file_zip a {
+  color: #fff;
+  font-weight: bold;
+  padding: .2em .8em;
+  border-radius: 3px;
+}
+.file_download li span.file_zip a:hover, .file_download li span.file_zip a:focus,
+.List li span.file_zip a:hover,
+.List li span.file_zip a:focus {
+  color: #fff;
+}
+.file_download li span.file_txt a,
+.List li span.file_txt a {
+  color: #fff;
+  font-weight: bold;
+  padding: .2em .8em;
+  border-radius: 3px;
+}
+.file_download li span.file_txt a:hover, .file_download li span.file_txt a:focus,
+.List li span.file_txt a:hover,
+.List li span.file_txt a:focus {
+  color: #fff;
+}
+.file_download li span.file_mov a,
+.List li span.file_mov a {
+  color: #fff;
+  font-weight: bold;
+  padding: .2em .8em;
+  border-radius: 3px;
+}
+.file_download li span.file_mov a:hover, .file_download li span.file_mov a:focus,
+.List li span.file_mov a:hover,
+.List li span.file_mov a:focus {
+  color: #fff;
+}
+.file_download li span.file_mp3 a,
+.List li span.file_mp3 a {
+  color: #fff;
+  font-weight: bold;
+  padding: .2em .8em;
+  border-radius: 3px;
+}
+.file_download li span.file_mp3 a:hover, .file_download li span.file_mp3 a:focus,
+.List li span.file_mp3 a:hover,
+.List li span.file_mp3 a:focus {
+  color: #fff;
+}
+.file_download li span.file_jpg a,
+.List li span.file_jpg a {
+  color: #fff;
+  font-weight: bold;
+  padding: .2em .8em;
+  border-radius: 3px;
+}
+.file_download li span.file_jpg a:hover, .file_download li span.file_jpg a:focus,
+.List li span.file_jpg a:hover,
+.List li span.file_jpg a:focus {
+  color: #fff;
+}
+.file_download li span.file_wmv a,
+.List li span.file_wmv a {
+  color: #fff;
+  font-weight: bold;
+  padding: .2em .8em;
+  border-radius: 3px;
+}
+.file_download li span.file_wmv a:hover, .file_download li span.file_wmv a:focus,
+.List li span.file_wmv a:hover,
+.List li span.file_wmv a:focus {
+  color: #fff;
+}
+.file_download li span.file_mp4 a,
+.List li span.file_mp4 a {
+  color: #fff;
+  font-weight: bold;
+  padding: .2em .8em;
+  border-radius: 3px;
+}
+.file_download li span.file_mp4 a:hover, .file_download li span.file_mp4 a:focus,
+.List li span.file_mp4 a:hover,
+.List li span.file_mp4 a:focus {
+  color: #fff;
+}
+.file_download li span.file_pdf a,
+.List li span.file_pdf a {
+  color: #fff;
+  font-weight: bold;
+  padding: .2em .8em;
+  border-radius: 3px;
+}
+.file_download li span.file_pdf a:hover, .file_download li span.file_pdf a:focus,
+.List li span.file_pdf a:hover,
+.List li span.file_pdf a:focus {
+  color: #fff;
+}
+.file_download li span.file_other a,
+.List li span.file_other a {
+  color: #fff;
+  font-weight: bold;
+  padding: .2em .8em;
+  border-radius: 3px;
+}
+.file_download li span.file_other a:hover, .file_download li span.file_other a:focus,
+.List li span.file_other a:hover,
+.List li span.file_other a:focus {
+  color: #fff;
+}
+.file_download li span.file_doc a, .file_download li span.file_docx a, .file_download li span.file_odt a,
+.List li span.file_doc a,
+.List li span.file_docx a,
+.List li span.file_odt a {
+  background: #275cb7;
+}
+.file_download li span.file_doc a:hover, .file_download li span.file_doc a:focus, .file_download li span.file_docx a:hover, .file_download li span.file_docx a:focus, .file_download li span.file_odt a:hover, .file_download li span.file_odt a:focus,
+.List li span.file_doc a:hover,
+.List li span.file_doc a:focus,
+.List li span.file_docx a:hover,
+.List li span.file_docx a:focus,
+.List li span.file_odt a:hover,
+.List li span.file_odt a:focus {
+  background: #2351a2;
+}
+.file_download li span.file_xls a, .file_download li span.file_xlsx a, .file_download li span.file_csv a, .file_download li span.file_ods a,
+.List li span.file_xls a,
+.List li span.file_xlsx a,
+.List li span.file_csv a,
+.List li span.file_ods a {
+  background: #387947;
+}
+.file_download li span.file_xls a:hover, .file_download li span.file_xls a:focus, .file_download li span.file_xlsx a:hover, .file_download li span.file_xlsx a:focus, .file_download li span.file_csv a:hover, .file_download li span.file_csv a:focus, .file_download li span.file_ods a:hover, .file_download li span.file_ods a:focus,
+.List li span.file_xls a:hover,
+.List li span.file_xls a:focus,
+.List li span.file_xlsx a:hover,
+.List li span.file_xlsx a:focus,
+.List li span.file_csv a:hover,
+.List li span.file_csv a:focus,
+.List li span.file_ods a:hover,
+.List li span.file_ods a:focus {
+  background: #30683d;
+}
+.file_download li span.file_ppt a, .file_download li span.file_pptx a, .file_download li span.file_odp a, .file_download li span.file_pdf a,
+.List li span.file_ppt a,
+.List li span.file_pptx a,
+.List li span.file_odp a,
+.List li span.file_pdf a {
+  background: #c55a3b;
+}
+.file_download li span.file_ppt a:hover, .file_download li span.file_ppt a:focus, .file_download li span.file_pptx a:hover, .file_download li span.file_pptx a:focus, .file_download li span.file_odp a:hover, .file_download li span.file_odp a:focus, .file_download li span.file_pdf a:hover, .file_download li span.file_pdf a:focus,
+.List li span.file_ppt a:hover,
+.List li span.file_ppt a:focus,
+.List li span.file_pptx a:hover,
+.List li span.file_pptx a:focus,
+.List li span.file_odp a:hover,
+.List li span.file_odp a:focus,
+.List li span.file_pdf a:hover,
+.List li span.file_pdf a:focus {
+  background: #b25135;
+}
+.file_download li span.file_pdf a,
+.List li span.file_pdf a {
+  background: #c00;
+}
+.file_download li span.file_pdf a:hover, .file_download li span.file_pdf a:focus,
+.List li span.file_pdf a:hover,
+.List li span.file_pdf a:focus {
+  background: #b30000;
+}
+.file_download li span.file_zip a,
+.List li span.file_zip a {
+  background: #eb712e;
+}
+.file_download li span.file_zip a:hover, .file_download li span.file_zip a:focus,
+.List li span.file_zip a:hover,
+.List li span.file_zip a:focus {
+  background: #e96117;
+}
+.file_download li span.file_txt a, .file_download li span.file_other a,
+.List li span.file_txt a,
+.List li span.file_other a {
+  background: #555;
+}
+.file_download li span.file_txt a:hover, .file_download li span.file_txt a:focus, .file_download li span.file_other a:hover, .file_download li span.file_other a:focus,
+.List li span.file_txt a:hover,
+.List li span.file_txt a:focus,
+.List li span.file_other a:hover,
+.List li span.file_other a:focus {
+  background: #484848;
+}
+.file_download li span.file_mov a,
+.List li span.file_mov a {
+  background: #009999;
+}
+.file_download li span.file_mov a:hover, .file_download li span.file_mov a:focus,
+.List li span.file_mov a:hover,
+.List li span.file_mov a:focus {
+  background: teal;
+}
+.file_download li span.file_mp3 a, .file_download li span.file_mp4 a,
+.List li span.file_mp3 a,
+.List li span.file_mp4 a {
+  background: #088ecc;
+}
+.file_download li span.file_mp3 a:hover, .file_download li span.file_mp3 a:focus, .file_download li span.file_mp4 a:hover, .file_download li span.file_mp4 a:focus,
+.List li span.file_mp3 a:hover,
+.List li span.file_mp3 a:focus,
+.List li span.file_mp4 a:hover,
+.List li span.file_mp4 a:focus {
+  background: #077db3;
+}
+.file_download li span.file_jpg a,
+.List li span.file_jpg a {
+  background: #6c29a4;
+}
+.file_download li span.file_jpg a:hover, .file_download li span.file_jpg a:focus,
+.List li span.file_jpg a:hover,
+.List li span.file_jpg a:focus {
+  background: #5f2490;
+}
+.file_download li span.file_wmv a,
+.List li span.file_wmv a {
+  background: #430a1f;
+}
+.file_download li span.file_wmv a:hover, .file_download li span.file_wmv a:focus,
+.List li span.file_wmv a:hover,
+.List li span.file_wmv a:focus {
+  background: #2d0715;
+}
+
 #breadcrumb .breadcrumb {
   padding: 0;
   margin: 0;
@@ -1671,7 +2115,7 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
 }
 
 .gsc-control-cse.gsc-control-cse-zh-TW table td {
-  padding: 0 0.5em !important;
+  padding: 0 .5em !important;
 }
 .gsc-control-cse.gsc-control-cse-zh-TW table td.gsib_a, .gsc-control-cse.gsc-control-cse-zh-TW table td.gsib_b, .gsc-control-cse.gsc-control-cse-zh-TW table td.gsc-search-button {
   border: 0 !important;
@@ -1681,7 +2125,8 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   border-bottom: 0 !important;
 }
 
-.gs-result .gs-title, .gs-result .gs-title * {
+.gs-result .gs-title,
+.gs-result .gs-title * {
   color: #082c6d !important;
 }
 
@@ -1712,7 +2157,8 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   vertical-align: middle;
 }
 
-.gsc-result-info-container, .gsc-orderby-container {
+.gsc-result-info-container,
+.gsc-orderby-container {
   border: 0 !important;
 }
 
@@ -2176,10 +2622,10 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
 .Main_page .thumbnail .Mask a {
   text-decoration: none;
   display: block;
-  border: 3px solid  transparent;
+  border: 3px solid transparent;
 }
 .Main_page .thumbnail .Mask a:hover, .Main_page .thumbnail .Mask a:focus {
-  border: 3px solid  #f66604;
+  border: 3px solid #f66604;
 }
 .Main_page .thumbnail .Mask a .caption {
   position: relative;
@@ -2226,14 +2672,14 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   position: absolute;
   height: 40px;
   bottom: 0;
-  width: calc( 100% - 8px );
+  width: calc(100% - 8px);
   background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 60%, white 100%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 60%, white 100%);
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 60%, #ffffff 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
   /* IE6-9 */
 }
 .Main_page .List.News .thumbnail .Mask {
@@ -2250,14 +2696,14 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   position: absolute;
   height: 40px;
   bottom: 0;
-  width: calc( 100% - 8px );
+  width: calc(100% - 8px);
   background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 60%, white 100%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 60%, white 100%);
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 60%, #ffffff 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
   /* IE6-9 */
 }
 .Main_page .List.BizNews .thumbnail .Mask {
@@ -2341,7 +2787,7 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
 }
 .Main_page .ActInfo a.Item .meta span:nth-child(2) {
   display: inline-block;
-  width: calc( 100% - 200px);
+  width: calc(100% - 200px);
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -2611,7 +3057,7 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   text-decoration: none;
   display: inline-block;
   min-width: 25px;
-  font-family: "微軟正黑體",Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "微軟正黑體", Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 .Content_page .Page .pagination > li > a:hover,
 .Content_page .Page .pagination > li > span:hover {
@@ -2906,7 +3352,8 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   opacity: 1;
   background: #004d99;
 }
-.Content_page .lightbox_slider_block .slick-prev, .Content_page .lightbox_slider_block .slick-next {
+.Content_page .lightbox_slider_block .slick-prev,
+.Content_page .lightbox_slider_block .slick-next {
   font-size: 0em;
   line-height: 0em;
   position: absolute;
@@ -2923,7 +3370,9 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   box-shadow: none;
   transition: .3s ease-out;
 }
-.Content_page .lightbox_slider_block .slick-prev:hover, .Content_page .lightbox_slider_block .slick-prev:focus, .Content_page .lightbox_slider_block .slick-next:hover, .Content_page .lightbox_slider_block .slick-next:focus {
+.Content_page .lightbox_slider_block .slick-prev:hover, .Content_page .lightbox_slider_block .slick-prev:focus,
+.Content_page .lightbox_slider_block .slick-next:hover,
+.Content_page .lightbox_slider_block .slick-next:focus {
   border: none !important;
   outline: none;
   box-shadow: 0px 0px 0px 2px #50902b inset;
@@ -3088,11 +3537,13 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
     margin-left: 0;
   }
 }
-.Content_page .QA .box a.que, .Content_page .QA .box .ans {
+.Content_page .QA .box a.que,
+.Content_page .QA .box .ans {
   position: relative;
   padding: 1.5em 1em 1.5em 4em;
 }
-.Content_page .QA .box a.que:before, .Content_page .QA .box .ans:before {
+.Content_page .QA .box a.que:before,
+.Content_page .QA .box .ans:before {
   content: '問';
   border-radius: 50%;
   width: 42px;

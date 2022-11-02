@@ -1,79 +1,127 @@
-#MainContent{}
+#MainContent {}
 
 ul li,
-ol li{line-height: 180%; }
+ol li {
+	line-height: 180%;
+}
 
-dl{}
-dl dt {color: darken($color-gray, 90);}
-dt,dd{line-height: 180%;}
+dl {}
 
-b, strong{ color: $color-secondary; font-size: 120%;}
+dl dt {
+	color: darken($color-gray, 90);
+}
 
-input, button, textarea, select, a{
-	&:focus{
+dt,
+dd {
+	line-height: 180%;
+}
+
+b,
+strong {
+	color: $color-secondary;
+	font-size: 120%;
+}
+
+input,
+button,
+textarea,
+select,
+a {
+	&:focus {
 		outline: solid 3px #f66604 !important;
 		border-radius: 2px !important;
 	}
 }
 
-.radio label, .checkbox label{ margin-right:12px; }
+.radio label,
+.checkbox label {
+	margin-right: 12px;
+}
 
 // .red{ color: #f10e0e;}
 // .blue{ color: #013de6;}
 // .green{ color: #00b350;}
 
-table{
+table {
 	margin-bottom: 25px;
 	width: 100%;
-	tr{
-		&:nth-child(odd){
-			background: lighten($color-gray,2);
+
+	tr {
+		&:nth-child(odd) {
+			background: lighten($color-gray, 2);
 		}
-		&:hover, &:focus{
+
+		&:hover,
+		&:focus {
 			background-color: #fff3e3;
 		}
-		th, td{
+
+		th,
+		td {
 			padding: 8px;
 			line-height: 1.42857143;
-			p{ margin-bottom: 0 !important; }
+
+			p {
+				margin-bottom: 0 !important;
+			}
 		}
-		th{
-			background: darken($color-gray,60);
+
+		th {
+			background: darken($color-gray, 60);
 			border: #a7a7a7 1px solid;
 			color: #fff;
-			b, strong{ color: #fff; font-size: 100%;}
+
+			b,
+			strong {
+				color: #fff;
+				font-size: 100%;
+			}
 		}
-		td{
+
+		td {
 			border: solid 1px darken($color-gray, 10);
-			a{ word-break: break-all; }
+
+			a {
+				word-break: break-all;
+			}
 		}
 	}
 }
+
 // 調整那畸形的兩格
-.table > thead > tr > th {
-    text-align: center;
-    border-bottom: 0;
+.table>thead>tr>th {
+	text-align: center;
+	border-bottom: 0;
 }
-.table{
-	table{
+
+.table {
+	table {
 		background: #fff;
-		tr{
+
+		tr {
 			th {
-				background: darken($color-gray,60);
+				background: darken($color-gray, 60);
 				color: #fff;
 				text-align: center;
-				b, strong{ color: #fff; font-size: 100%;}
+
+				b,
+				strong {
+					color: #fff;
+					font-size: 100%;
+				}
 			}
-			td{
+
+			td {
 				text-align: center;
 			}
 		}
-		> thead > tr > th,
-		> tbody > tr > th,
-		> tfoot > tr > th,
-		> thead > tr > td,
-		> tbody > tr > td,
-		> tfoot > tr > td {
+
+		>thead>tr>th,
+		>tbody>tr>th,
+		>tfoot>tr>th,
+		>thead>tr>td,
+		>tbody>tr>td,
+		>tfoot>tr>td {
 			padding: 8px;
 			line-height: 1.42857143;
 			vertical-align: middle;
@@ -82,251 +130,342 @@ table{
 		}
 	}
 }
+
 @media (max-width: 767px) {
-	.table{
-		table{
-			> thead > tr > th,
-			> tbody > tr > th,
-			> tfoot > tr > th,
-			> thead > tr > td,
-			> tbody > tr > td,
-			> tfoot > tr > td {
+	.table {
+		table {
+
+			>thead>tr>th,
+			>tbody>tr>th,
+			>tfoot>tr>th,
+			>thead>tr>td,
+			>tbody>tr>td,
+			>tfoot>tr>td {
 				// min-width: 100%;
 				max-width: 100%;
 			}
 		}
 	}
 }
+
 .table-hover {
-	> tbody > tr:hover {
+	>tbody>tr:hover {
 		background-color: #fff3e3;
 	}
 }
+
 .table-bordered {
 	border: 1px solid darken($color-gray, 30);
+
 	th {
-		background: darken($color-gray,60);
+		background: darken($color-gray, 60);
 		color: #fff;
 		// text-align: center;
 	}
 }
-.table-bordered > thead > tr > th,
-.table-bordered > tbody > tr > th,
-.table-bordered > tfoot > tr > th{ border: #a7a7a7 1px solid;  vertical-align: middle;}
-.table-bordered > thead > tr > td,
-.table-bordered > tbody > tr > td,
-.table-bordered > tfoot > tr > td{ border: #ddd 1px solid; }
+
+.table-bordered>thead>tr>th,
+.table-bordered>tbody>tr>th,
+.table-bordered>tfoot>tr>th {
+	border: #a7a7a7 1px solid;
+	vertical-align: middle;
+}
+
+.table-bordered>thead>tr>td,
+.table-bordered>tbody>tr>td,
+.table-bordered>tfoot>tr>td {
+	border: #ddd 1px solid;
+}
 
 
 // CP2 th在左側 寬度固定
-.TH_Left{
+.TH_Left {
+
 	// th 的設定
-	th{ width: 20% }
+	th {
+		width: 20%
+	}
 }
+
 @media (max-width: 767px) {
-	.TH_Left{
-		th{ width: 35% }
+	.TH_Left {
+		th {
+			width: 35%
+		}
 	}
 }
 
 // LP4 th在上方
-.TH_top{
+.TH_top {
+
 	// th 的對齊設定
-	> caption + thead > tr:first-child > th,
-	> colgroup + thead > tr:first-child > th,
-	> thead:first-child > tr:first-child > th,
-	> caption + thead > tr:first-child > td,
-	> colgroup + thead > tr:first-child > td,
-	> thead:first-child > tr:first-child > td{
+	>caption+thead>tr:first-child>th,
+	>colgroup+thead>tr:first-child>th,
+	>thead:first-child>tr:first-child>th,
+	>caption+thead>tr:first-child>td,
+	>colgroup+thead>tr:first-child>td,
+	>thead:first-child>tr:first-child>td {
 		text-align: center;
 		vertical-align: middle;
 	}
+
 	// td 的對齊設定
-	> thead > tr > td,
-	> tbody > tr > td,
-	> tfoot > tr > td{
+	>thead>tr>td,
+	>tbody>tr>td,
+	>tfoot>tr>td {
 		vertical-align: middle;
+
 		&:first-child,
-		&:nth-child(6), &:nth-child(7), &:nth-child(8){ 
+		&:nth-child(6),
+		&:nth-child(7),
+		&:nth-child(8) {
 			text-align: center;
 		}
 	}
 }
 
 // 工程師的月曆
-.dhtmlxcalendar{
+.dhtmlxcalendar {
 	width: 177px !important;
 	height: 182px !important;
 }
-.dhtmlxcalendar table{margin-bottom: 0;}
-.dhtmlxcalendar table tr td{
+
+.dhtmlxcalendar table {
+	margin-bottom: 0;
+}
+
+.dhtmlxcalendar table tr td {
 	border: solid 1px transparent;
 	padding: 0;
 }
 
 // FB share---------------------------------------------------------
 .fb-comments,
-.fb-comments iframe[style]{ width: 100% !important;}
+.fb-comments iframe[style] {
+	width: 100% !important;
+}
+
 // 讓所有容器的寬度都變成 100%
 .fb_iframe_widget,
 .fb_iframe_widget span,
-.fb_iframe_widget span iframe[style]{ width: 100% !important;}
+.fb_iframe_widget span iframe[style] {
+	width: 100% !important;
+}
+
 // FB share 自訂
 .fbblock {
-    width: 360px;
-    height: 300px;
-    float: right;
+	width: 360px;
+	height: 300px;
+	float: right;
 
-    @media (max-width: 1200px) and (min-width: 992px) {
-        float: right;
-        width: 310px;
-        height: 300px !important;
-        overflow: hidden;
-    }
-    @media (max-width: 991px) {
-        float: none;
-        clear: both;
-        margin: 0 auto;
-        width: 100%;
-    }
-    @media (max-width: 480px) {
-        float: none;
-        clear: both;
-        margin: 0 auto;
-        width: 100% !important;
-    }
-    iframe,
-    iframe[style] {
-        width: 340px;
-        height: 352px;
-        @media (max-width: 1200px) and (min-width: 992px) {
-            width: 310px;
-            height: 300px !important;
-        }
-        @media (max-width: 991px) {
-            width: 340px;
-            margin: 0 auto;
-        }
-        @media (max-width: 480px) {
-            width: 100% !important;
-            margin: 0 auto;
-        }
-    }
+	@media (max-width: 1200px) and (min-width: 992px) {
+		float: right;
+		width: 310px;
+		height: 300px !important;
+		overflow: hidden;
+	}
+
+	@media (max-width: 991px) {
+		float: none;
+		clear: both;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	@media (max-width: 480px) {
+		float: none;
+		clear: both;
+		margin: 0 auto;
+		width: 100% !important;
+	}
+
+	iframe,
+	iframe[style] {
+		width: 340px;
+		height: 352px;
+
+		@media (max-width: 1200px) and (min-width: 992px) {
+			width: 310px;
+			height: 300px !important;
+		}
+
+		@media (max-width: 991px) {
+			width: 340px;
+			margin: 0 auto;
+		}
+
+		@media (max-width: 480px) {
+			width: 100% !important;
+			margin: 0 auto;
+		}
+	}
 }
 
 // ------------------------- 按鈕
-.Btn_More{
+.Btn_More {
 	@include Btn_More;
 	margin-bottom: 20px;
 }
-@media (max-width: 767px) { .Btn_More{ margin-top: -20px;} }
 
-.Btns{
-	a, button{
+@media (max-width: 767px) {
+	.Btn_More {
+		margin-top: -20px;
+	}
+}
+
+.Btns {
+
+	a,
+	button {
 		font-size: 1em;
 		margin-bottom: 8px;
 		text-decoration: none;
 	}
-	i{
+
+	i {
 		margin-left: 5px;
 		font-size: 1.2em;
 	}
 }
 
-.Btn_Search{ @include Btn_Search; }  // 搜尋
-#Btn_GoTop{ @include Btn_GoTop;}     // 到頂端
+.Btn_Search {
+	@include Btn_Search;
+}
 
-.Btn-Sent{
-	background:$color-main !important;
-	color:#fff !important;
-	&:hover{
-		background:lighten($color-main, 10%) !important;
+// 搜尋
+#Btn_GoTop {
+	@include Btn_GoTop;
+}
+
+// 到頂端
+
+.Btn-Sent {
+	background: $color-main !important;
+	color: #fff !important;
+
+	&:hover {
+		background: lighten($color-main, 10%) !important;
 	}
 }
-.Btn-Normal{
-	background:rgba($color-black,.5) !important;
-	color:#fff !important;
-	&:hover{
-		background:rgba($color-black,1) !important;
+
+.Btn-Normal {
+	background: rgba($color-black, .5) !important;
+	color: #fff !important;
+
+	&:hover {
+		background: rgba($color-black, 1) !important;
 	}
 }
 
 // 展開收合
-.btn_grp{
+.btn_grp {
 
-	.btn{
+	.btn {
 		margin: 0 auto;
 		display: inherit;
 		font-size: 1.125em;
 		padding: .5em 1.25em;
 	}
-	.btn-switch{
+
+	.btn-switch {
 		background: #0a748e;
 		color: #fff;
 	}
 }
 
 // 社群按鈕
-.Community_Btn{
+.Community_Btn {
 	float: right;
+
 	.Rss-BTN,
 	.FB-BTN,
 	.Twitter-BTN,
 	.Google-BTN,
 	.Plurk-BTN,
-	.Print-BTN{
+	.Print-BTN {
 		width: 40px;
 		height: 40px;
 		// line-height: 40px;
 		text-align: center;
 		display: inline-block;
 		border-radius: 50%;
-		margin:0 5px;
+		margin: 0 5px;
 	}
 
-	.Rss-BTN i,.FB-BTN i,.Twitter-BTN i,.Google-BTN i,.Plurk-BTN i,.Print-BTN i{
+	.Rss-BTN i,
+	.FB-BTN i,
+	.Twitter-BTN i,
+	.Google-BTN i,
+	.Plurk-BTN i,
+	.Print-BTN i {
 		color: #fff;
 		font-size: 1.25em;
 	}
 
-	.Rss-BTN{background: #f8991d !important;}
-	.FB-BTN{background: url(../images/basic/icon/icon_facebook_w.svg) 50% 50% no-repeat, #3a589b !important;}
-	.Twitter-BTN{background: #17b3c9 !important;}
-	.Google-BTN{background: #cf262a !important;}
-	.Plurk-BTN{background: #f2793e !important;}
-	.Print-BTN{
+	.Rss-BTN {
+		background: #f8991d !important;
+	}
+
+	.FB-BTN {
+		background: url(../images/basic/icon/icon_facebook_w.svg) 50% 50% no-repeat, #3a589b !important;
+	}
+
+	.Twitter-BTN {
+		background: #17b3c9 !important;
+	}
+
+	.Google-BTN {
+		background: #cf262a !important;
+	}
+
+	.Plurk-BTN {
+		background: #f2793e !important;
+	}
+
+	.Print-BTN {
 		background: url(../images/basic/icon/icon_print_w.svg) 50% 50% no-repeat, #555;
 		background-size: 22px 22px;
 	}
 }
+
 @media (max-width:767px) {
-	.Community_Btn{ float:none; margin: 10px 0; }
+	.Community_Btn {
+		float: none;
+		margin: 10px 0;
+	}
 }
 
 
 // 字級按鈕
-.FontSize_Change{
+.FontSize_Change {
 	position: absolute;
 	right: 15px;
 	top: 0;
-	a{
+
+	a {
 		display: inline-block;
 		width: 46px;
 		line-height: 46px;
 		text-align: center;
-		background:#555;
+		background: #555;
 		color: #fff;
 		text-decoration: none;
-		&:hover, &:focus{
+
+		&:hover,
+		&:focus {
 			background: adjust_hue(desaturate(#beed00, 55), 43);
 			color: #fff;
 			text-decoration: none;
 		}
 	}
-	.active{ background: adjust_hue(desaturate(#beed00, 55), 43); }
+
+	.active {
+		background: adjust_hue(desaturate(#beed00, 55), 43);
+	}
 }
+
 @media (max-width:767px) {
-	.FontSize_Change{
+	.FontSize_Change {
 		position: relative;
 		margin: 10px 15px;
 	}
@@ -334,47 +473,53 @@ table{
 
 
 // Slider ---------------------------------------------------------
-.Slider{
+.Slider {
 	// 清除.Box的樣式
-	padding:0 !important; 
-	border:0 !important;
+	padding: 0 !important;
+	border: 0 !important;
 	// margin: 0 !important;
 
 	// 單張輪播(主圖)
-	.Singleplay{
-		.Pic{
+	.Singleplay {
+		.Pic {
 			// 圖片 + 文字項目
 			// position: relative;
 			width: 555px;
-			img{
+
+			img {
 				width: auto;
-				height:300px;
+				height: 300px;
 				margin: 0 auto;
 			}
-			a{
+
+			a {
 				display: block;
 				text-decoration: none;
-				&:hover, &:focus{
+
+				&:hover,
+				&:focus {
 					text-decoration: none;
 				}
 			}
 
-			.Text{
+			.Text {
 				// position: absolute;
 				// bottom: 0;
 				text-align: left;
 				overflow: hidden;
 				font-size: 1em;
-				text-align:center;
-				background: rgba(0,0,0,.4);
+				text-align: center;
+				background: rgba(0, 0, 0, .4);
 				padding: 0 15px;
 				color: #fff;
+
 				// width: 100%;
-				p{
+				p {
 					margin-bottom: 0;
 					line-height: 2.2;
 					text-align: left;
 				}
+
 				// a{
 				// 	text-decoration: none;
 				// 	color: #fff;
@@ -382,15 +527,17 @@ table{
 				// 		// color: #ff4700;
 				// 	}
 				// }
-				h3{
+				h3 {
 					margin-top: 10px;
 					margin-bottom: 10px;
 					padding-bottom: 15px;
 					font-size: 1.25em;
-					border-bottom: dotted 1px rgba(255,255,255,.5);
+					border-bottom: dotted 1px rgba(255, 255, 255, .5);
 					color: #fff;
 				}
-				h3,p{
+
+				h3,
+				p {
 					// 單行文字 過長就刪節號
 					overflow: hidden;
 					text-overflow: ellipsis;
@@ -399,7 +546,7 @@ table{
 			}
 		}
 
-		.slick-dots{
+		.slick-dots {
 			bottom: -30px;
 			justify-content: flex-end;
 		}
@@ -407,83 +554,105 @@ table{
 
 	// Banner 輪播 (10張)
 	.BannerSlide {
-		.Set{
+		.Set {
 			position: relative;
-			a{
-				display:inline-block;
+
+			a {
+				display: inline-block;
 				@include Clear_inline_block;
-				width:calc(100% / 5);
+				width: calc(100% / 5);
 				padding: 2px 8px;
 				margin: 0 -2px;
 
 				img {
 					width: 220px;
 					height: 80px;
-					border:solid 1px #e5e5e5;
+					border: solid 1px #e5e5e5;
 				}
 			}
 		}
 
 		// 自訂左右按鍵樣式
-		.slick-prev,.slick-next{
+		.slick-prev,
+		.slick-next {
 			width: 28px;
 			height: 60px;
 			// top:35%;
 		}
 
-		.slick-prev{
-			left:-10px;
+		.slick-prev {
+			left: -10px;
 			display: block;
 			background: url(../images/basic/slick/left2.png) no-repeat 0 0;
 			opacity: 0.5;
-			&:hover,&:focus{
+
+			&:hover,
+			&:focus {
 				opacity: 1;
 				background: url(../images/basic/slick/left2.png) no-repeat 0 0;
 			}
 		}
-		.slick-next{
-			right:-10px;
+
+		.slick-next {
+			right: -10px;
 			background: url(../images/basic/slick/right2.png) no-repeat 0 0;
 			opacity: 0.5;
-			&:hover,&:focus{
+
+			&:hover,
+			&:focus {
 				opacity: 1;
 				background: url(../images/basic/slick/right2.png) no-repeat 0 0;
 			}
 		}
 
 		//  隱藏左右按鈕預設圖片
-		.slick-prev{
-			&:before,&:hover:before,&:focus:before{
+		.slick-prev {
+
+			&:before,
+			&:hover:before,
+			&:focus:before {
 				opacity: 0;
 			}
 		}
-		.slick-prev.slick-disabled{
-			&:before{
+
+		.slick-prev.slick-disabled {
+			&:before {
 				opacity: 0;
 			}
 		}
-		.slick-next{
-			&:before,&:hover:before,&:focus:before{
+
+		.slick-next {
+
+			&:before,
+			&:hover:before,
+			&:focus:before {
 				opacity: 0;
 			}
 		}
-		.slick-next.slick-disabled{
-			&:before,&:hover:before,&:focus:before{
+
+		.slick-next.slick-disabled {
+
+			&:before,
+			&:hover:before,
+			&:focus:before {
 				opacity: 0;
 			}
 		}
+
 		// 圓���位置
-		.slick-dots { 
+		.slick-dots {
 			bottom: 0px;
-			li button{
-				&:before{
+
+			li button {
+				&:before {
 					color: #fff;
 					opacity: .4;
 					font-size: .75em;
 				}
 			}
-			li.slick-active button{
-				&:before{
+
+			li.slick-active button {
+				&:before {
 					opacity: 1;
 					color: $color-adorn !important;
 				}
@@ -491,56 +660,79 @@ table{
 		}
 	}
 
-	.slick-slider { margin-bottom: 0; }
+	.slick-slider {
+		margin-bottom: 0;
+	}
 
 	// 自訂左右按鍵樣式
-	.slick-prev,.slick-next{
+	.slick-prev,
+	.slick-next {
 		width: 35px;
 		height: 66px;
-		top:40%;
+		top: 40%;
 	}
-	.slick-prev{
-		left:15px;
+
+	.slick-prev {
+		left: 15px;
 		background: url('../images/basic/slick/left-white.png');
-		&:hover,&:focus{
+
+		&:hover,
+		&:focus {
 			background: url('../images/basic/slick/left-white.png');
 		}
 	}
-	.slick-next{
-		right:15px;
+
+	.slick-next {
+		right: 15px;
 		background: url('../images/basic/slick/right-white.png');
-		&:hover,&:focus{
+
+		&:hover,
+		&:focus {
 			background: url('../images/basic/slick/right-white.png');
 		}
 	}
 
 	// 隱藏左右按鈕預設圖片
-	.slick-prev{
-		&:before,&:hover:before,&:focus:before{
+	.slick-prev {
+
+		&:before,
+		&:hover:before,
+		&:focus:before {
 			opacity: 0;
 		}
 	}
-	.slick-prev.slick-disabled{
-		&:before{
+
+	.slick-prev.slick-disabled {
+		&:before {
 			opacity: 0;
 		}
 	}
-	.slick-next{
-		&:before,&:hover:before,&:focus:before{
+
+	.slick-next {
+
+		&:before,
+		&:hover:before,
+		&:focus:before {
 			opacity: 0;
 		}
 	}
-	.slick-next.slick-disabled{
-		&:before,&:hover:before,&:focus:before{
+
+	.slick-next.slick-disabled {
+
+		&:before,
+		&:hover:before,
+		&:focus:before {
 			opacity: 0;
 		}
 	}
+
 	// 圓點位置
 	.slick-dots {
 		// bottom: -35px;
 		text-align: right;
-		li button{
-			&:before{
+
+		li button {
+			&:before {
 				color: #fff !important;
 				opacity: .4;
 				font-size: .75em;
@@ -551,24 +743,28 @@ table{
 				height: 14px;
 			}
 		}
-		li.slick-active button{
-			&:before{
+
+		li.slick-active button {
+			&:before {
 				opacity: 1;
-				color: #000 !important;;
+				color: #000 !important;
+				;
 			}
 		}
 	}
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
-	.Slider{
-		.Singleplay{
-			.Pic{
-				.Text{
+	.Slider {
+		.Singleplay {
+			.Pic {
+				.Text {
 					width: 555px;
 					margin: 0 auto;
 				}
 			}
 		}
+
 		// 圓點位置
 		.slick-dots {
 			bottom: -40px;
@@ -576,25 +772,28 @@ table{
 		}
 	}
 }
+
 @media (max-width:767px) {
-	.Slider{
-		.Singleplay{
-			.Pic img{
+	.Slider {
+		.Singleplay {
+			.Pic img {
 				height: 210px;
 			}
 		}
+
 		// 圓點位置
 		.slick-dots {
 			bottom: -40px;
 			text-align: center;
 		}
+
 		// Banner輪播
 		.BannerSlide {
-			.Set{
-				a{
-					display:inline-block;
+			.Set {
+				a {
+					display: inline-block;
 					@include Clear_inline_block;
-					width:calc(100% / 2);
+					width: calc(100% / 2);
 					padding: 0 8px;
 
 					img {
@@ -604,15 +803,19 @@ table{
 					}
 				}
 			}
+
 			// 自訂左右按鍵樣式
-			.slick-prev,.slick-next{
-				top:48%;
+			.slick-prev,
+			.slick-next {
+				top: 48%;
 			}
-			.slick-prev{
-				left:0;
+
+			.slick-prev {
+				left: 0;
 			}
-			.slick-next{
-				right:0;
+
+			.slick-next {
+				right: 0;
 			}
 		}
 	}
@@ -620,89 +823,105 @@ table{
 
 
 // ------------------------- 列表
-.List{
-	margin:5px 0;
+.List {
+	margin: 5px 0;
 	font-size: 1em;
-	ol{
+
+	ol {
 		// @include List_Style(none);
 	}
-	li{
-		a{
+
+	li {
+		a {
 			// @include One_Line_Text;
 			display: block;
-			border-bottom: dotted 1px lighten($color-black,70%);
+			// border-bottom: dotted 1px lighten($color-black,70%);
 			padding: 5px 15px;
-			text-decoration:none;
+			text-decoration: none;
 			// color:$color-main;
 			letter-spacing: 1px;
 			font-weight: bold;
-			&:hover{
-				background:lighten($color-black, 97%);
+
+			&:hover {
+				background: lighten($color-black, 97%);
 			}
-			span.Date{
+
+			span.Date {
 				margin-left: 12px;
 				color: #55545f;
 			}
 		}
-		&:last-child a{
+
+		&:last-child a {
 			border-bottom: dotted 1px transparent;
 		}
 	}
-	p{
+
+	p {
 		margin-bottom: 0;
 		overflow: hidden;
 	}
 
-	.media{
-		margin:10px 0;
-		.pic{
+	.media {
+		margin: 10px 0;
+
+		.pic {
 			width: 100%;
-			img{
+
+			img {
 				max-width: 100%;
 				max-height: 240px;
 				margin: 0 auto;
 			}
 		}
 	}
-	.media-body{
+
+	.media-body {
 		width: 100%;
-		display:block;
-		.media-More{ 
-			background:lighten($color-black, 20%);
+		display: block;
+
+		.media-More {
+			background: lighten($color-black, 20%);
 			color: #fff;
-			padding:3px 10px;
+			padding: 3px 10px;
 			border-radius: 3px;
 			line-height: 2;
-			&:hover{
-				background:$color-main;
-				text-decoration:none;
+
+			&:hover {
+				background: $color-main;
+				text-decoration: none;
 			}
 		}
 
 		.media-heading {
 			font-size: $font-size;
-			a{
+
+			a {
 				// @include One_Line_Text;
 				padding: 5px 0;
-				display:block;
+				display: block;
 				font-weight: bold;
-				color:$color-main;
-				&:hover{
-					text-decoration:none;
-					background:lighten($color-black, 97%);
+				color: $color-main;
+
+				&:hover {
+					text-decoration: none;
+					background: lighten($color-black, 97%);
 				}
 
 			}
 		}
 	}
 }
+
 @media (max-width:767px) {
-	.List{
-		.media{
-			height:100%;
-			.pic{
+	.List {
+		.media {
+			height: 100%;
+
+			.pic {
 				width: 100%;
-				img{
+
+				img {
 					width: 100%;
 					height: 60%;
 				}
@@ -713,35 +932,54 @@ table{
 
 // ------------------------- RWD Table
 
-.Smooth_Table{
+.Smooth_Table {
+
 	a,
 	a:hover,
-	a:focus{}
-	&:before, &:after{
+	a:focus {}
+
+	&:before,
+	&:after {
 		display: table;
 		content: '';
 	}
+
 	// Table版
-	#TansForm-table{
+	#TansForm-table {
 		width: 99.9%;
 		background-color: #ffffff;
 		border-collapse: collapse;
 		margin-bottom: 20px;
 		font-size: 1em;
 		display: table;
-		tr{
-			&:nth-of-type(odd){ background-color: #f9f9f9; }
-			&:hover, &:focus{
+
+		tr {
+			&:nth-of-type(odd) {
+				background-color: #f9f9f9;
+			}
+
+			&:hover,
+			&:focus {
 				background-color: #fff3e3;
 			}
-			td, th{ padding: 10px 8px; }
-			td{
+
+			td,
+			th {
+				padding: 10px 8px;
+			}
+
+			td {
 				color: #666;
 				border: #ddd 1px solid;
-				&:first-child{ width: 10%;}
+
+				&:first-child {
+					width: 10%;
+				}
+
 				// &:nth-child(2), &:nth-child(3){ width: 45%;}
 			}
-			th{
+
+			th {
 				color: #fff;
 				border: #a7a7a7 1px solid;
 				background-color: #5a5a5a;
@@ -749,44 +987,73 @@ table{
 			}
 		}
 	}
-	.break-table{
-		th.width40{ width: 40px; }
-		th.width90{ width: 90px; }
-		td{
-			.Name{ font-size: 1em; }// RWD Table名稱
+
+	.break-table {
+		th.width40 {
+			width: 40px;
+		}
+
+		th.width90 {
+			width: 90px;
+		}
+
+		td {
+			.Name {
+				font-size: 1em;
+			}
+
+			// RWD Table名稱
 		}
 	}
 }
 
 @media only screen and (max-width: 767px) {
 
-	.table-responsive{
+	.table-responsive {
 		border: solid 1px transparent;
-		.Smooth_Table{
-			#TansForm-table{
-				tr td{
+
+		.Smooth_Table {
+			#TansForm-table {
+				tr td {
 					min-height: 60px;
-					&:first-child{ width: 100%;}
-					&:nth-child(2), &:nth-child(3){ width: 100%;}
+
+					&:first-child {
+						width: 100%;
+					}
+
+					&:nth-child(2),
+					&:nth-child(3) {
+						width: 100%;
+					}
 				}
 			}
 
 			// Force table to not be like tables anymore
-			.break-table{
+			.break-table {
 				background-color: transparent !important;
 				display: block;
-				thead, tbody, th, td, tr{ display: block; }
+
+				thead,
+				tbody,
+				th,
+				td,
+				tr {
+					display: block;
+				}
+
 				// Hide table headers (but not display: none;, for accessibility)
 				thead tr {
 					position: absolute;
 					top: -9999px;
 					left: -9999px;
 				}
+
 				tr {
 					border: 1px solid #ccc;
 					margin-bottom: 10px;
 					background-color: #ffffff;
 				}
+
 				td {
 					// Behave like a "row"
 					border: none !important;
@@ -795,10 +1062,11 @@ table{
 					// padding-left: 26% !important;
 					padding-left: 120px !important;
 					white-space: normal;
-					text-align:left;
-					&:before{
+					text-align: left;
+
+					&:before {
 						position: absolute; // Now like a table header
-						top: 6px;			// Top/left values mimic padding
+						top: 6px; // Top/left values mimic padding
 						left: 6px;
 						// width: 30%;
 						width: 100px;
@@ -817,36 +1085,34 @@ table{
 }
 
 // ------------------------- 展開收合內容
-.According{
-	.box{
+.According {
+	.box {
 		height: 200px;
 		overflow: hidden;
 		position: relative;
-		&:after{
-		    content: '';
+
+		&:after {
+			content: '';
 			position: absolute;
-			background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); 
+			background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
 			width: 100%;
 			height: 60px;
 			bottom: 0;
 		}
 	}
 
-	.intro{}
-	.links{ height: 480px; }
-	
-	.act{
+	.intro {}
+
+	.links {
+		height: 480px;
+	}
+
+	.act {
 		height: 100%;
-		&:after{
+
+		&:after {
 			// background: none;
 			display: none;
 		}
 	}
 }
-
-
-
-
-
-
-
