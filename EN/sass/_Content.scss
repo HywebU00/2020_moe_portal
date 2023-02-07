@@ -123,26 +123,30 @@ $aHover: darken($aColor, 10);
 			list-style-type: none;
 			padding: 0;
 			margin: 0;
+
+			li{
+				display: flex;
+				flex-wrap: wrap;
+				position: relative;
+				padding-left: 1.5em;
+				
+				&:before {
+					content: '·';
+					font-size: 2em;
+					font-weight: bold;
+					width: 1em;
+					height: 1em;
+					position: absolute;
+					top: .32em;
+					left: .1em;
+					color: #666;
+				}
+			}
 		}
 
 		li {
-			display: flex;
-			flex-wrap: wrap;
-			position: relative;
-			padding: .5em 0 .5em 1.5em;
+			padding: .5em 0;
 			border-bottom: solid 1px #eee;
-
-			&:before {
-				content: '·';
-				font-size: 2em;
-				font-weight: bold;
-				width: 1em;
-				height: 1em;
-				position: absolute;
-				top: .32em;
-				left: .1em;
-				color: #666;
-			}
 
 			.file_name {
 				line-height: 1.8em;

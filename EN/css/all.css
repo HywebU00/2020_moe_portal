@@ -1654,16 +1654,15 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   padding: 0;
   margin: 0;
 }
-.Content_page .file_download li,
-.Content_page .List li {
+.Content_page .file_download ul li,
+.Content_page .List ul li {
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  padding: .5em 0 .5em 1.5em;
-  border-bottom: solid 1px #eee;
+  padding-left: 1.5em;
 }
-.Content_page .file_download li:before,
-.Content_page .List li:before {
+.Content_page .file_download ul li:before,
+.Content_page .List ul li:before {
   content: '·';
   font-size: 2em;
   font-weight: bold;
@@ -1673,6 +1672,11 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   top: .32em;
   left: .1em;
   color: #666;
+}
+.Content_page .file_download li,
+.Content_page .List li {
+  padding: .5em 0;
+  border-bottom: solid 1px #eee;
 }
 .Content_page .file_download li .file_name,
 .Content_page .List li .file_name {
