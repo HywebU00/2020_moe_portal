@@ -5,30 +5,29 @@ a#gotoMainContent{
 	// z-index: 4000;
 
 	position: absolute;
-    top: -2.2em;
-    left: 50%;
-    margin-left: -480px;
-    padding: 0 .5em;
-    height: 2em;
-    line-height: 2em;
-    background: #781f79;
-    color: #fff;
-    text-decoration: none;
-    z-index: 999999999999;
-    opacity: 0;
-    transition: .5s;
-    border-radius: 0px 0px 4px 4px;
-    color: #FFF;
+	top: -2.2em;
+	left: 50%;
+	margin-left: -480px;
+	padding: 0 .5em;
+	height: 2em;
+	line-height: 2em;
+	background: #781f79;
+	color: #fff;
+	text-decoration: none;
+	z-index: 999999999999;
+	opacity: 0;
+	transition: .5s;
+	border-radius: 0px 0px 4px 4px;
+	color: #FFF;
 
-    @media (max-width: 767px) { 
-        display: none;
-    }
-    &:hover, &:focus {
-        outline: none;
-        top: 0;
-        opacity: 1;
-    }
-
+	@media (max-width: 767px) { 
+			display: none;
+	}
+	&:hover, &:focus {
+			outline: none;
+			top: 0;
+			opacity: 1;
+	}
 }
 // ------------------------- Header
 #Header{
