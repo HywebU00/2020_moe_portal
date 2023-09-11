@@ -349,6 +349,7 @@ table{
 			// 圖片 + 文字項目
 			// position: relative;
 			width: 555px;
+			padding-bottom: 1.5em;
 			img{
 				width: auto;
 				height:325px;
@@ -533,7 +534,7 @@ table{
 	}
 	// 圓點位置
 	.slick-dots {
-		bottom: -28px;
+		bottom: 0;
 		// text-align: right;
 		li button{
 			&:before{
