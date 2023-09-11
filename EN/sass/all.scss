@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import "mixin";	 // 變數
-@import "reset";
+// @import "reset";
+@import "_normalize";
 @import "compass/css3";
 @import "extend";	 //
 @import "Framework"; // HTML框架
