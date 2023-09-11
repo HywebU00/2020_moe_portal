@@ -1,5 +1,15 @@
 $(function(){
-
+	// sideFunc
+  $('.btn-switch').click(function(){
+    if ($(this).hasClass('act')) {
+      $(this).removeClass('act');
+      $('.sideFunc ul').removeClass('Show'); 
+    } else {
+      $(this).addClass('act');
+      $('.sideFunc ul').addClass('Show'); 
+    }
+  });
+	
 	// 主選單鍵盤控制
 
 	// 1.第一層被 keyup 時，第二層選單展開

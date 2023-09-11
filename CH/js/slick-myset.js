@@ -1,4 +1,34 @@
 $(function(){
+    // 首頁輪播
+    $('.mpSlider').slick({
+    centerMode: true,
+    centerPadding: '300px',
+    slidesToShow: 1,
+    autoplay: false,
+    autoplaySpeed: 5000,
+    speed: 1200, 
+    arrows: true,
+    focusOnSelect: true,
+    dots: true,
+    // infinite: true,
+    responsive: [{
+        breakpoint: 992,
+        settings: {
+            centerPadding: '100px',
+        },
+        },{
+        breakpoint: 768,
+        settings: {
+            centerPadding: '100px',
+        },
+        },{
+        breakpoint: 575,
+        settings: {
+            centerPadding: '0',
+        },
+        },
+    ],
+    });
     // 單張輪播
     $('.Singleplay').slick({
         arrows: true,

@@ -479,6 +479,61 @@ table {
 	border: 0 !important;
 	// margin: 0 !important;
 
+	// 首頁大圖輪播 
+	.mpSlider {
+			width: 100%;
+			padding-bottom: 3em;
+			.col{
+					padding: 4px; // focus-visible outline 的空間
+					.caption{
+							display: block;
+							text-align: center;
+							font-weight: bold;
+							padding: 1em 0;
+							font-size: 112.5%;
+					}
+					a{
+							color: red;
+							display: block;
+					}
+					transition: .6s;
+					&.slick-center{
+							transform: scale(1);
+							.caption{
+									opacity: 1;
+							}
+					}
+			}
+			.img-container {
+					@include aspect-ratio(2,1); //PC版比例
+					background: transparent;
+					img{
+							max-width: 96%;
+					}
+			}
+
+			.slick-prev,
+			.slick-next{
+					top: calc(50% - 50px);
+			}
+			.slick-prev {
+					@media (max-width: 768px) {
+							top: 35%;
+							left: 2%;
+					}
+			}
+			.slick-next {
+					@media (max-width: 768px) {
+							top: 35%;
+							right: 2%;
+					}
+			}
+			.slick-dots{
+					bottom: 1em;
+			}
+	}
+	
+
 	// 單張輪播(主圖)
 	.Singleplay {
 		.Pic {
