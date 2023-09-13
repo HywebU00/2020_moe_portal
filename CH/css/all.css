@@ -2661,6 +2661,13 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
 .Main_page .View_area .mpSlider .slick-disabled {
   opacity: 0.25;
 }
+.Main_page .View_area .mpSlider .slick-slide {
+  transform: translateY(80px);
+  transition: 0.3s;
+}
+.Main_page .View_area .mpSlider .slick-slide.slick-center {
+  transform: translateY(0);
+}
 .Main_page .View_area .SocialLink {
   text-align: right;
   margin: 0 0 30px;

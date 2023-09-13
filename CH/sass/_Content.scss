@@ -776,6 +776,14 @@ $aHover: darken($aColor, 10);
 			.slick-disabled {
 					opacity: .25;
 			}
+
+			.slick-slide{
+				transform: translateY(80px);
+				transition: .3s;
+				&.slick-center{
+					transform: translateY(0);
+				}
+			}
 		}
 
 		.SocialLink {
