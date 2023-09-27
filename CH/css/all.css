@@ -2925,6 +2925,7 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   .Main_page .Busniess-2 .AD a img {
     width: auto;
     margin: 0 auto;
+    height: 100%;
   }
   .Main_page .Busniess-2 .row div:nth-child(2) {
     margin: 1em 0;
