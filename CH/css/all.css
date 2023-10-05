@@ -3142,6 +3142,9 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
 .Main_page .ActInfo a.Item .meta {
   color: #fff;
   background: #106332;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 .Main_page .ActInfo a.Item .meta span {
   line-height: 31px;
@@ -3150,17 +3153,15 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   vertical-align: top;
 }
 .Main_page .ActInfo a.Item .meta span:nth-child(1) {
+  flex: 0 0 120px;
   padding-left: 2.2em;
   background: url(../images/basic/icon/icon_clock_w.svg) 0.8em 50% no-repeat;
   background-size: 16px 16px;
 }
 .Main_page .ActInfo a.Item .meta span:nth-child(2) {
-  display: inline-block;
-  width: calc(100% - 200px);
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  padding-left: 5px;
 }
 .Main_page .ActInfo a.Item .meta .MetaNew {
   background: #c34f00;

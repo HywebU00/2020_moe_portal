@@ -1494,6 +1494,9 @@ $aHover: darken($aColor, 10);
 				color: #fff;
 				background: adjust_hue(desaturate(darken($color-secondary, 4), 28), 20);
 
+				display: flex;
+				flex-wrap: nowrap;
+				justify-content: space-between;
 				span {
 					line-height: 31px;
 					padding-left: 10px;
@@ -1502,21 +1505,24 @@ $aHover: darken($aColor, 10);
 					vertical-align: top;
 
 					&:nth-child(1) {
+						// 時間
+						flex: 0 0 120px;
 						padding-left: 2.2em;
 						background: url(../images/basic/icon/icon_clock_w.svg) .8em 50% no-repeat;
 						background-size: 16px 16px;
 					}
 
 					&:nth-child(2) {
-						// color: red;
-						// background: #222;
-						display: inline-block;
-						// width: 125px;
-						width: calc(100% - 200px);
+						// 課程地點
+						// // color: red;
+						// // background: #222;
+						// display: inline-block;
+						// // width: 125px;
+						// width: calc(100% - 200px);
 						overflow: hidden;
 						white-space: nowrap;
 						text-overflow: ellipsis;
-						padding-left: 5px;
+						// padding-left: 5px;
 					}
 				}
 
