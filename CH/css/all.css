@@ -3150,17 +3150,18 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   line-height: 31px;
   padding-left: 10px;
   font-size: 1em;
+  box-sizing: border-box;
   vertical-align: top;
 }
 .Main_page .ActInfo a.Item .meta span:nth-child(1) {
-  flex: 0 0 140px;
+  flex: 0 0 120px;
   padding-left: 2.2em;
   background: url(../images/basic/icon/icon_clock_w.svg) 0.8em 50% no-repeat;
   background-size: 16px 16px;
 }
 .Main_page .ActInfo a.Item .meta span:nth-child(2) {
   flex: 1 1 100%;
-  background: pink;
+  background: deepskyblue;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
