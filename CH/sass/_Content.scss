@@ -1506,7 +1506,7 @@ $aHover: darken($aColor, 10);
 
 					&:nth-child(1) {
 						// 時間
-						flex: 0 0 120px;
+						flex: 0 0 140px;
 						padding-left: 2.2em;
 						background: url(../images/basic/icon/icon_clock_w.svg) .8em 50% no-repeat;
 						background-size: 16px 16px;
@@ -1519,6 +1519,8 @@ $aHover: darken($aColor, 10);
 						// display: inline-block;
 						// // width: 125px;
 						// width: calc(100% - 200px);
+						flex: 1 1 100%;
+						background: pink;
 						overflow: hidden;
 						white-space: nowrap;
 						text-overflow: ellipsis;
