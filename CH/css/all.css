@@ -3160,7 +3160,6 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
 }
 .Main_page .ActInfo a.Item .meta span:nth-child(2) {
   flex: 1 1 100%;
-  background: violet;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
