@@ -415,6 +415,11 @@ $aHover: darken($aColor, 10);
 .FunctionTop {
 	float: right;
 	margin-top: -30px;
+
+	@media (max-width: 991px) {
+		display: block;
+		margin-top: 10px;
+	}
 }
 
 .FunctionLp {
