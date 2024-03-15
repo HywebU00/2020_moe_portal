@@ -3742,7 +3742,6 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
 .Content_page .FotoxText .LeftFoto img {
   display: block;
   width: 100%;
-  height: 280px;
   margin: 0 auto;
   background: #eee;
 }
