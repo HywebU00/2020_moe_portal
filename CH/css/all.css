@@ -3749,6 +3749,19 @@ select::-ms-expand {
   max-width: 100% !important;
   flex: 0 0 100% !important;
 }
+.form-column .form_content._nowrap {
+  flex-wrap: nowrap;
+}
+.form-column .form_content._nowrap > span {
+  width: 30px;
+}
+.form-column .form_content._nowrap .upload_grp {
+  flex: 1 1 100%;
+}
+.form-column .form_content._nowrap .upload_grp input[readonly],
+.form-column .form_content._nowrap .upload_grp input[disable] {
+  width: calc(100% - 0.5em);
+}
 
 label,
 legend {
@@ -3978,7 +3991,7 @@ input[type=checkbox]:focus {
 .upload_grp .upload_btn {
   position: absolute;
   overflow: hidden;
-  right: 5px;
+  right: 3px;
   background: #0066cc;
   border: 1px solid #0066cc;
   color: #FFF;

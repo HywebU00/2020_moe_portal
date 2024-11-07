@@ -1261,6 +1261,21 @@ select::-ms-expand {
         max-width: 100% !important;
         flex: 0 0 100% !important;
     }
+    .form_content {
+        &._nowrap{
+            flex-wrap: nowrap;
+            > span{
+                width: 30px;
+            }
+            .upload_grp{
+                flex: 1 1 100%;
+                input[readonly],
+                input[disable] {
+                    width: calc(100% - .5em);                    
+                }
+            }
+        }
+    }
 }
 
 //---------------------------------------------下拉選單--------//
@@ -1495,7 +1510,7 @@ input[type="checkbox"]:focus {
         position: absolute;
         overflow: hidden;
         // top: 11px;
-        right: 5px;
+        right: 3px;
         @extend %btn;
         @include btn_setting($form-focus, #FFF);
         // padding: .2em 1em !important;
