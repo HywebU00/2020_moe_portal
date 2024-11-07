@@ -13,6 +13,13 @@ $Btn-color: adjust_hue(desaturate(darken($color-secondary, 8), 37), -237); 	// �
 $Btn_More_color: #082c6d;
 $Btn_Search_color: #50595d;
 
+// gutter
+$data: 1em;
+@mixin gutter($data) {
+  padding-left: $data;
+  padding-right: $data;
+}
+
 
 // 顏色
 $color-blue: blue;

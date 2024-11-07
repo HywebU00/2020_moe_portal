@@ -1,14 +1,53 @@
 @charset "UTF-8";
-@import "mixin";	 // 變數
-@import "_image";
-// @import "reset";
-@import "_normalize";
+// base on hyuiFlex
+@import "_variable";	 // 變數
+
+// 共通 common
+@import 'common/_mixin'; //客製MIXIN
+@import 'common/_grid';  //格線 - bootstrap
+@import 'common/_grid-flex'; //格線 - flex
+@import 'common/_normalize'; //reset
+// @import 'common/_accessibility'; //無障礙關閉js設定
+@import 'common/_hack'; //瀏覽器修正
 @import "compass/css3";
-@import "extend";	 //
-@import "Framework"; // HTML框架
-@import "Header";	 // 頁頭
-@import "Footer";	 // 頁尾
-@import "Content";	 // 內頁
+
+// 元件 element
+// @import 'element/_font'; //文字設定
+// @import 'element/_language'; //語言選單
+@import 'element/_btn'; //按鈕設定
+// @import 'element/_breadcrumb'; //麵包屑
+// @import 'element/_divider'; //分隔線
+// @import 'element/_image'; //圖片
+@import 'element/_icon'; //圖示
+// @import 'element/_tooltip'; //tooltip
+// @import 'element/_category'; //資料大類
+// @import 'element/_tag'; //文章標籤
+@import "element/_element"; //小元素
+
+@import 'modual/_form-beta'; //表單（純flex）
+@import 'modual/_table'; //表格
+// @import 'modual/_list'; //表單樣式
+// @import 'modual/_link'; //連結樣式
+// @import 'modual/_tabs'; //頁籤
+// @import 'modual/_thumbnail'; //縮圖
+// @import 'modual/_modal'; //pop視窗
+// @import 'modual/_slick'; //slick
+// @import 'modual/_function_panel'; //內頁功能面板
+// @import 'modual/_marquee'; //跑馬燈
+// @import 'modual/_paginations'; //分頁
+@import 'modual/_notice'; //提示
+// @import 'modual/_accordion.scss'; //收合式選單
+// @import "../vendor/fancyBox/fancybox.css"; //燈箱
+// @import "../vendor/slick/slick.css"; //燈箱
+// @import "../vendor/slick/slick-theme.css"; //燈箱
+
+
+@import "_image";
+@import "_mixinOriginal";
+@import "_Framework"; // HTML框架
+@import "_Header";	  // 頁頭
+@import "_Footer";	  // 頁尾
+@import "_Content";	  // 內頁
 
 @import "print";	 // 友善列印
 

@@ -66,10 +66,14 @@ a#gotoMainContent{
 					input::-moz-placeholder,
 					textarea::-moz-placeholder { color: #444 }
 
-					.form-control { background: #dcdcdc; }
+					.form-control {
+						background: #dcdcdc;
+						margin: 0;
+					}
 					.navbar-form{
 						padding: 0;
-						.input-group{ margin-right: 5px;}
+						// background: pink;
+						// .input-group{ margin-right: 5px;}
 					}
 
 					.accesskey{}
@@ -78,6 +82,10 @@ a#gotoMainContent{
 						background: $Btn-color;
 						color: #fff;
 						height: 34px;
+						font-size: .875em;
+						padding: 6px 12px;
+						margin: 0;
+						margin-left: 4px;
 						span{}
 						&:hover, &:focus{
 							background: darken($Btn-color,10);
@@ -91,6 +99,7 @@ a#gotoMainContent{
 						button{
 							background: url(../images/basic/icon/icon_search.svg) 50% 50% no-repeat;
 							background-size: 14px 14px;
+							border-color: transparent;
 							// filter: invert(100%);
 							width: 42px;
 						}

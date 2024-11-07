@@ -66,6 +66,103 @@
 $aColor: #0066cc;
 $aHover: darken($aColor, 10);
 
+// ------------------------- 20241107
+.LinkItem{
+	display: flex;
+	justify-content: center;
+	a{
+		padding: .65em 1.75em;
+		border-radius: 4px;
+		background: #fff;
+		color: #222;
+		border: 1px solid #222;
+		margin: 0 4px;
+		&:hover, &:focus, &:focus-visible{
+			text-decoration: none;
+			color: #222;
+			background: #eee;
+		}
+		&.act{
+			background: #082C6D;
+			color: #fff;
+		}
+	}
+	+form{
+		margin: 2em 0;
+		.form_grp{
+			border-bottom: none;
+		}
+		.flex-form .form_title{
+			flex: 0 0 auto;
+			margin-bottom: 0;
+			padding-top: 16px;
+		}
+	}
+}
+// // 字級
+// .font_size {
+// 	display: flex;
+// 	align-items: center;
+// 	span {
+// 		font-size: .875em;
+// 		color: #222;
+// 		width: 100px;
+// 		text-align: right;
+// 	}
+// 	ul {
+// 		@include li-reset;
+// 		display: flex;
+// 		flex: 0 0 6em;
+// 		li {
+// 			font-size: 1em;
+// 			flex:0 0 auto;
+// 			margin: 2px;
+// 			align-items: center;
+// 			a {
+// 				display: block;
+// 				text-align: center;
+// 				line-height: 32px;
+// 				border-radius: 50%;
+// 				background: #F1F1F1;
+// 				width: 32px;
+// 				height: 32px;
+// 				color: #333;
+// 				&:hover, &:focus {
+// 					background: $aHover;
+// 					color: #FFF;
+// 				}
+// 				&.active {
+// 					background: $aHover;
+// 					color: #FFF;
+// 					&:hover, &:focus {
+// 						background: $aHover;
+// 						color: #FFF;
+// 					}
+// 				}
+// 				&.small { font-size: .938em; }
+// 				&.large { font-size: 1.125em; }
+// 			}
+// 		}
+// 	}
+// 	@include screen('mobile') {
+// 		display: none;
+// 	}
+// }
+.setFunction{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+ol.cjk{
+	list-style: cjk-ideographic;
+}
+.table_list{
+	tbody th{
+		width: 20%;
+		text-align: right;
+	}
+}
+
 // ------------------------- Content
 
 #MainContent {
@@ -1637,18 +1734,6 @@ $aHover: darken($aColor, 10);
 				text-decoration: none;
 			}
 		}
-
-		a.red {
-			color: #a90000;
-		}
-
-		a.blue {
-			color: #002ba2;
-		}
-
-		a.green {
-			color: #00652d;
-		}
 	}
 
 	@media (min-width: 992px) {
@@ -1658,6 +1743,18 @@ $aHover: darken($aColor, 10);
 			}
 		}
 	}
+}
+.red,
+a.red {
+	color: #a90000 !important;
+}
+.blue,
+a.blue {
+	color: #002ba2 !important;
+}
+.green,
+a.green {
+	color: #00652d !important;
 }
 
 // 右側邊欄 function
@@ -1837,7 +1934,8 @@ $aHover: darken($aColor, 10);
 	}
 
 	p {
-		margin-bottom: 1.5em;
+		// margin-bottom: 1.5em;
+		margin-bottom: 1em;
 	}
 
 	blockquote {
@@ -2783,8 +2881,12 @@ $aHover: darken($aColor, 10);
 	.Terms {
 		background: #f5f5f5;
 		border-radius: 5px;
-		padding: 25px;
+		padding: 25px 2.5em;
 		margin-bottom: 8px;
+		h3{
+			text-align: center;
+			margin: 1em 0;
+		}
 
 		.Btns {
 			text-align: center;
