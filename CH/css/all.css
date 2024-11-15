@@ -5071,6 +5071,7 @@ table tr td a {
   .FontSize_Change {
     position: relative;
     margin: 10px 15px;
+    text-align: right;
   }
 }
 .Slider {
@@ -6138,6 +6139,7 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   color: #222;
   border: 1px solid #222;
   margin: 0 4px;
+  text-align: center;
 }
 .LinkItem a:hover, .LinkItem a:focus, .LinkItem a:focus-visible {
   text-decoration: none;
@@ -6158,6 +6160,14 @@ a#gotoMainContent:hover, a#gotoMainContent:focus {
   flex: 0 0 auto;
   margin-bottom: 0;
   padding-top: 16px;
+}
+@media (max-width: 991px) {
+  .LinkItem {
+    flex-direction: column;
+  }
+  .LinkItem a:nth-child(2) {
+    margin: 4px;
+  }
 }
 
 .setFunction {

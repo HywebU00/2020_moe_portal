@@ -77,6 +77,7 @@ $aHover: darken($aColor, 10);
 		color: #222;
 		border: 1px solid #222;
 		margin: 0 4px;
+		text-align: center;
 		&:hover, &:focus, &:focus-visible{
 			text-decoration: none;
 			color: #222;
@@ -96,6 +97,15 @@ $aHover: darken($aColor, 10);
 			flex: 0 0 auto;
 			margin-bottom: 0;
 			padding-top: 16px;
+		}
+	}
+
+	@media (max-width: 991px){
+		flex-direction: column;
+		a{
+			&:nth-child(2){
+				margin: 4px;
+			}
 		}
 	}
 }
