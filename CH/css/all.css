@@ -3810,7 +3810,6 @@ button {
   padding: 0.6em 1em;
   background: #fff;
   vertical-align: middle;
-  margin: 0.3em;
   box-sizing: border-box;
   border-radius: 0.2em;
   transition: all 0.3s ease-out;
@@ -3888,7 +3887,6 @@ textarea {
   padding: 0.6em 1em;
   background: #fff;
   vertical-align: middle;
-  margin: 0.3em;
   box-sizing: border-box;
   border-radius: 0.2em;
   transition: all 0.3s ease-out;
@@ -6185,6 +6183,34 @@ ol.cjk {
   text-align: right;
 }
 
+.qpsearch {
+  background: #f4f4f4;
+  padding: 1.5em 2em;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.qpsearch::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background: #8bc56c;
+  left: 0;
+  top: 0;
+}
+.qpsearch label {
+  margin-bottom: 0;
+  word-break: keep-all;
+}
+.qpsearch select {
+  width: auto;
+  margin: 0 10px;
+}
+.qpsearch input[type=submit] {
+  border-radius: 30px;
+}
+
 #MainContent .Title {
   color: #000;
   margin: 0 0 30px;
@@ -6664,8 +6690,8 @@ ol.cjk {
   margin-left: 8px;
   color: #fff;
   background: rgba(0, 0, 0, 0.5);
-  padding: 5px 10px;
-  border-radius: 15px;
+  padding: 0.5em 1em;
+  border-radius: 4px;
   text-decoration: none;
 }
 .Function a:before {
@@ -7840,11 +7866,10 @@ a.green {
   background: transparent;
 }
 .Content_page .Tag {
-  margin: 10px 0;
+  margin: 1.5em 0;
 }
 .Content_page .Tag a {
   margin-right: 8px;
-  margin-bottom: 10px;
   display: inline-block;
   border-radius: 5px;
   min-width: 80px;
