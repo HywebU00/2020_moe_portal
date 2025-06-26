@@ -207,6 +207,10 @@ ol.cjk{
 // ------------------------- Content
 
 #MainContent {
+	> .accesskey{
+		position: absolute;
+		z-index: 1;
+	}
 	.Title {
 		color: $color-black;
 		margin: 0 0 30px

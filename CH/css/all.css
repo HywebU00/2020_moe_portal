@@ -4396,6 +4396,88 @@ table.table_sprite tr:nth-child(even) {
     right: 0.3em;
   }
 }
+.hotNews {
+  position: relative;
+  width: 100%;
+  border: 8px solid #ffaba3;
+  background: #feebeb;
+  box-sizing: border-box;
+}
+.hotNews .container {
+  width: 100%;
+  max-width: 100%;
+  padding: 15px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0;
+}
+.hotNews a {
+  position: relative;
+  display: inline-block;
+  width: -moz-max-content;
+  width: max-content;
+  color: #CC0000;
+  font-size: 1.25em;
+  font-weight: bold;
+  line-height: 30px;
+  padding-left: 35px;
+  animation: loop-slide 15s infinite linear;
+}
+.hotNews a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: url(../images/hotNews-icon.svg) 50% 50% no-repeat #CC0000;
+  background-size: 18px 18px;
+}
+.hotNews a:hover, .hotNews a:focus {
+  color: #ff5722;
+  animation-play-state: paused;
+  animation-fill-mode: forwards;
+}
+.hotNews a:hover::before, .hotNews a:focus::before {
+  background: url(../images/hotNews-icon.svg) 50% 50% no-repeat #ff5722;
+  background-size: 18px 18px;
+}
+
+@media screen and (max-width: 990px) {
+  .hotNews {
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .hotNews {
+    margin-top: 70px;
+  }
+}
+@media screen and (min-width: 991px) {
+  .hotNews a {
+    font-family: "PingFang TC Semibold", "微軟雅黑", "Microsoft YaHei";
+  }
+}
+@media screen and (min-width: 1640px) {
+  .hotNews a {
+    animation: loop-slide 20s infinite linear;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .hotNews a {
+    animation: loop-slide 30s infinite linear;
+  }
+}
+@keyframes loop-slide {
+  0% {
+    left: 100%;
+    transform: translateX(0);
+  }
+  100% {
+    left: 0;
+    transform: translateX(-100%);
+  }
+}
 *[class^=notice] {
   padding: 0.25em 2.25em;
   margin: 0 0.3em;
@@ -6211,6 +6293,10 @@ ol.cjk {
   border-radius: 30px;
 }
 
+#MainContent > .accesskey {
+  position: absolute;
+  z-index: 1;
+}
 #MainContent .Title {
   color: #000;
   margin: 0 0 30px;

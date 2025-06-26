@@ -1,91 +1,217 @@
-.marquee {
-    height: 45px;
-    display: block;
-    overflow: hidden;
-    background: #FFF;
-    margin: 2em 4em;
-    text-align: left;
-    padding: 0 3em 0 2em;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    border-bottom: 1px solid #dadada;
-    @media(max-width:991px) {
-        margin: 1.5em 0em;
-    }
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style: none
-    }
-    .slick-prev {
-        width: 10px;
-        height: 10px;
-        transform: rotate(90deg);
-        right: 0px !important;
-        top: 1px !important;
-        left: auto;
-        opacity: .5;
-        background: url('../vendor/slick/icon_arrow_up_s.png') no-repeat center center;
-        background-size: 16px;
-        width: 20px !important;
-        height: 20px !important;
-        box-shadow: none;
-        &:hover,
-        &:focus {
-            opacity: 1
-        }
-        &:before {
-            width: 10px !important;
-            height: 10px !important
-        }
-    }
-    .slick-next {
-        width: 10px;
-        height: 10px;
-        transform: rotate(-90deg);
-        right: 0px !important;
-        top: 22px !important;
-        left: auto;
-        opacity: .5;
-        width: 20px !important;
-        height: 20px !important;
-        background: url('../vendor/slick/icon_arrow_up_s.png') no-repeat center center;
-        background-size: 16px;
-        box-shadow: none;
-        &:hover,
-        &:focus {
-            opacity: 1
-        }
-        &:before {
-            width: 10px !important;
-            height: 10px !important
-        }
-    }
-    >div {
-        padding: 0;
-        margin: 0
+// .marquee {
+//     height: 45px;
+//     display: block;
+//     overflow: hidden;
+//     background: #FFF;
+//     margin: 2em 4em;
+//     text-align: left;
+//     padding: 0 3em 0 2em;
+//     position: relative;
+//     min-height: 1px;
+//     padding-left: 15px;
+//     padding-right: 15px;
+//     -moz-box-sizing: border-box;
+//     -webkit-box-sizing: border-box;
+//     box-sizing: border-box;
+//     border-bottom: 1px solid #dadada;
+//     @media(max-width:991px) {
+//         margin: 1.5em 0em;
+//     }
+//     ul {
+//         margin: 0;
+//         padding: 0;
+//         list-style: none
+//     }
+//     .slick-prev {
+//         width: 10px;
+//         height: 10px;
+//         transform: rotate(90deg);
+//         right: 0px !important;
+//         top: 1px !important;
+//         left: auto;
+//         opacity: .5;
+//         background: url('../vendor/slick/icon_arrow_up_s.png') no-repeat center center;
+//         background-size: 16px;
+//         width: 20px !important;
+//         height: 20px !important;
+//         box-shadow: none;
+//         &:hover,
+//         &:focus {
+//             opacity: 1
+//         }
+//         &:before {
+//             width: 10px !important;
+//             height: 10px !important
+//         }
+//     }
+//     .slick-next {
+//         width: 10px;
+//         height: 10px;
+//         transform: rotate(-90deg);
+//         right: 0px !important;
+//         top: 22px !important;
+//         left: auto;
+//         opacity: .5;
+//         width: 20px !important;
+//         height: 20px !important;
+//         background: url('../vendor/slick/icon_arrow_up_s.png') no-repeat center center;
+//         background-size: 16px;
+//         box-shadow: none;
+//         &:hover,
+//         &:focus {
+//             opacity: 1
+//         }
+//         &:before {
+//             width: 10px !important;
+//             height: 10px !important
+//         }
+//     }
+//     >div {
+//         padding: 0;
+//         margin: 0
+//     }
+//     a {
+//         display: block;
+//         line-height: 40px;
+//         margin-right: 3em;
+//         font-weight: bold;
+//         overflow: hidden;
+//         white-space: nowrap;
+//         text-overflow: ellipsis;
+//         color: #000;
+//       text-decoration: none;
+//         span {
+//             color:#7cb52f;
+//             margin-right: 15px;
+//         }
+//         &:hover {
+//             color: #7cb52f;
+//         }
+//     }
+// }
+
+.hotNews {
+	position:relative;
+	width:100%;
+	border:8px solid #ffaba3;
+	background:#feebeb;
+	box-sizing:border-box;
+
+    .container {
+        width:100%;
+        max-width:100%;
+        padding:15px 0;
+        box-sizing:border-box;
+        overflow:hidden;
+        margin:0;
     }
     a {
-        display: block;
-        line-height: 40px;
-        margin-right: 3em;
-        font-weight: bold;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        color: #000;
-      text-decoration: none;
-        span {
-            color:#7cb52f;
-            margin-right: 15px;
+        position:relative;
+        display:inline-block;
+        width:max-content;
+        color:#CC0000;
+        font-size: 1.25em;
+        font-weight:bold;
+        line-height: 30px;
+        padding-left:35px;
+        animation:loop-slide 15s infinite linear;
+        // &:before {
+        //     content:"";
+        //     display:block;
+        //     position:absolute;
+        //     top:50%;
+        //     left:0;
+        //     width:29px;
+        //     height:29px;
+        //     margin-top:-14.5px;
+        //     background:#CC0000;
+        //     z-index:1;
+        //     -webkit-border-radius:100px;
+        //     -moz-border-radius:100px;
+        //             border-radius:100px;
+        //     -webkit-transition:all 0.5s ease;
+        //     -moz-transition:all 0.5s ease;
+        //         -o-transition:all 0.5s ease;
+        //             transition:all 0.5s ease;
+        // }
+        // &:after {
+        //     content:"";
+        //     display:block;
+        //     position:absolute;
+        //     top:50%;
+        //     left:0;
+        //     width:29px;
+        //     height:29px;
+        //     background-color:#FFF;
+        //     background-position:50% 50%;
+        //     background-repeat:no-repeat;
+        //     background-size:70% 70%;
+        //     margin-top:-14.5px;
+        //     z-index:2;
+        //     -webkit-mask-image:url(../images/hotNews-icon.svg);
+        //             mask-image:url(../images/hotNews-icon.svg);
+        //     -webkit-mask-size:70% 70%;
+        //             mask-size:70% 70%;
+        //     -webkit-mask-position:50% 50%;
+        //             mask-position:50% 50%;
+        //     -webkit-mask-repeat:no-repeat;
+        //             mask-repeat:no-repeat;
+        //     -webkit-transition:all 0.5s ease;
+        //     -moz-transition:all 0.5s ease;
+        //         -o-transition:all 0.5s ease;
+        //             transition:all 0.5s ease;
+        // }
+        &:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: url(../images/hotNews-icon.svg) 50% 50% no-repeat #CC0000;
+            background-size: 18px 18px;
         }
-        &:hover {
-            color: #7cb52f;
+
+        &:hover,
+        &:focus{
+            color:#ff5722;
+            animation-play-state:paused;
+            animation-fill-mode:forwards;
+            &::before{
+                background: url(../images/hotNews-icon.svg) 50% 50% no-repeat #ff5722;
+                background-size: 18px 18px;
+            }
         }
     }
+}
+@media screen and (max-width:990px) {
+	.hotNews {
+		margin-top:80px;
+	}
+}
+@media screen and (max-width:460px) {
+	.hotNews {
+		margin-top:70px;
+	}
+}
+@media screen and (min-width:991px) {
+	.hotNews a {
+		font-family:"PingFang TC Semibold", "微軟雅黑", "Microsoft YaHei";
+		// font-size:1.9em;
+	}
+}
+@media screen and (min-width:1640px) {
+	.hotNews a {
+		animation:loop-slide 20s infinite linear;
+	}
+}
+@media screen and (min-width:1920px) {
+	.hotNews a {
+		animation:loop-slide 30s infinite linear;
+	}
+}
+
+@keyframes loop-slide {
+	0%{ left:100%;transform: translateX(0);}
+	100%{ left:0;transform: translateX(-100%);}
 }
